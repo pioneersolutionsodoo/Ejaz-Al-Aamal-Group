@@ -1,0 +1,21 @@
+{
+    'name': 'Vacation Resettlement',
+    'version': '15.0.0.1',
+    'summary': 'Vacation Resettlement',
+    'description': 'Vacation Resettlement',
+    'category': 'hr',
+    'author': 'Mostafa Mahmoud ,Pioneer solution',
+    'website': 'ps-sa.net',
+    'depends': ['base', 'hr','account','hr_contract','hr_payroll','hr_loan_advance','alshrooq_employee_details','alshrooq_employee_contract','pioneer_HR_Leave'],
+    'data': [
+        'views/vacation_resettlement_view.xml',
+        'views/hr_employee_view.xml',
+        'views/hr_leave_view.xml',
+        'data/data.xml',
+        'security/ir.model.access.csv',
+        'report/employee_vacation_resettlement_report.xml',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

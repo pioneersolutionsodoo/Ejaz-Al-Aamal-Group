@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="view_inherit_res_config_settings_form" model="ir.ui.view">
+            <field name="name">view.inherit.res.config.settings.form</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="hr.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <div data-key="hr" position="inside">
+                    <h2>Reminder Period Limit</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box" title="Iqama expiry limit.">
+                            <div class="o_setting_left_pane">
+                                <field name="iqama_expiry_limit"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="iqama_expiry_limit"/>
+                                <div class="text-muted">
+                                    Iqama expiry limit
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box" title="Users will receive expiry details emails">
+                            <div class="o_setting_right_pane">
+                                <label for="remind_user_id"/>
+                                <div class="content-group">
+                                    <div class="mt16">
+                                        <field name="remind_user_id" />
+                                        <field name="hr_remind_user_id" />
+                                    </div>
+                                    <div class="text-muted">
+                                        Users that will receive emails
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box" title="Passport expiry limit">
+                            <div class="o_setting_left_pane">
+                                <field name="passport_expiry_limit"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="passport_expiry_limit"/>
+                                <div class="text-muted">
+                                    Passport expiry limit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </field>
+        </record>
+
+    </data>
+</odoo>

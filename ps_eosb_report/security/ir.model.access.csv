@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_eosb_employee_report,eosb.employee.report,model_eosb_employee_report,,1,1,1,1
+access_reward_yearly,reward.yearly,model_reward_yearly,,1,1,1,1

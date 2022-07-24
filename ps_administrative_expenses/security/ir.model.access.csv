@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_administrative_expenses,administrative_expenses,model_administrative_expenses,base.group_user,1,1,1,1
+access_administrative_expenses_type,administrative_expenses_type,model_administrative_expenses_type,base.group_user,1,1,1,1
+access_officer_administrative_expenses,administrative_expenses_officer,model_administrative_expenses,hr.group_hr_user,1,0,0,0

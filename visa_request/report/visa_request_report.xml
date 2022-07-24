@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="visa_request_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Visa Request Form</strong>
+                        </h4>
+                        <div class="page">
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee Code
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_no"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Company
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.company_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Job Title
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.job_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Project
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.project_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Type
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.type"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Request Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.date"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Visa Request Details
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Vacation Start
+                                        Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.vacation_start_date"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Quantity
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.quantity"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Visa Start Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.visa_start_date"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Vacation End
+                                        Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.vacation_end_date"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Visa Allowed
+                                        Allowance
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.visa_allowed_allowance"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Amount to be
+                                        deducted
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.amount_to_deduct"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Total Amount
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.total_amount"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Quantity
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.quantity"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!--===================================================================-->
+                             <br></br>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br></br>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.d_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Direct Manager</strong>
+                                            <br/>
+                                            <span t-field="o.d_manager"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.hr_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">HR Manager</strong>
+                                            <br/>
+                                            <span t-field="o.hr_manager_id"/>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+        <record id="visa_request_report" model="ir.actions.report">
+            <field name="name">Visa Request</field>
+            <field name="model">visa.request</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">visa_request.visa_request_template</field>
+            <field name="report_file">visa_request.visa_request_template</field>
+            <field name="binding_model_id" ref="model_visa_request"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">'%s Visa Request' % (object.employee_id.name)</field>
+        </record>
+
+    </data>
+</odoo>

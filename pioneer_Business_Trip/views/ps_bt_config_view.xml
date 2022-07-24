@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+<!--MOVE TO COMPANY-->
+       <!-- <record id="view_hr_accounting_config_daamah" model="ir.ui.view">
+            <field name="name">hr.accounting.config.daamah</field>
+            <field name="model">hr.accounting.config</field>
+            <field name="inherit_id" ref="common_ps.view_hr_accounting_config"/>
+            <field name="arch" type="xml">
+                <xpath expr="//separator[@name='hr_accounting_configuration']" position="after">
+                    <group name="daamah_journal">
+                        <label for="business_trip_journal_id"/>
+                        <div name="business_trip_journal_id">
+                            <div name="business_trip_journal_id">
+                                <field name="business_trip_journal_id" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>-->
+
+
+    </data>
+</odoo>

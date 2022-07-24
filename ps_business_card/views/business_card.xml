@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="business_card_request_tree_view">
+            <field name="name">Business Card Request List View</field>
+            <field name="model">business.card</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="document_type"/>
+                    <field name="category_id"/>
+                    <field name="employee_id"/>
+                    <field name="employee_code" optional="hide"/>
+                    <field name="job_id" optional="hide"/>
+                    <field name="department_id" optional="hide"/>
+                    <field name="mobile" optional="hide"/>
+                    <field name="work_email" optional="hide"/>
+                    <field name="number_of_cards"/>
+                    <field name="state" widget="badge" decoration-info="state in ('draft', 'wait_4_hr_mgr')"
+                           decoration-success="state == 'approve'" decoration-danger="state == 'refuse'" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="business_card_request_form_view">
+            <field name="name">Business Card Request Form View</field>
+            <field name="model">business.card</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_send_request" type="object" states="draft" string="Request From HRM" class="oe_highlight"/>
+                        <button name="action_approve" type="object" states="wait_4_hr_mgr" string="Approve" class="oe_highlight"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_refuse" type="object" states="wait_4_hr_mgr" string="Refuse"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_cancel" type="object" states="wait_4_hr_mgr" string="Cancel"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_draft" type="object" states="cancel" string="Set to Draft"
+                                groups="hr.group_hr_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="employee_code"/>
+                                <field name="emp_arabic_name"/>
+                                <field name="mobile"/>
+                                <field name="work_email"/>
+                            </group>
+                            <group >
+                                <field name="job_id"/>
+                                <field name="department_id"/>
+                                <field name="document_type" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="category_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="number_of_cards" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Description">
+                                <group>
+                                    <field name="description" placeholder="Description..." nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft','draft'))]}"/>
+                                </group>
+                            </page>
+                            <page string="Note">
+                                <group>
+                                    <field name="note" placeholder="Notes..." nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="business_card_request_search_view">
+            <field name="name">Business Card Request Search View</field>
+            <field name="model">business.card</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_code"/>
+                    <field name="mobile"/>
+                    <field name="job_id"/>
+                    <field name="department_id"/>
+
+                    <filter name="my_requests" string='My Requests' domain="[('employee_id.user_id', '=', uid)]"/>
+                    <filter name="to_be_approved" string='To Be Approved' domain="[('state', '=', 'wait_4_hr_mgr')]"/>
+
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_business_card_request">
+            <field name="name">Business Card Request</field>
+            <field name="res_model">business.card</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_my_requests': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a new Business Card Request</p>
+            </field>
+        </record>
+
+
+        <menuitem id="business_card_request_menu" name="Business Card Request" action="action_business_card_request"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service" sequence="1"/>
+
+
+        <menuitem id="business_card_config_menu" name="Business Card"
+                  parent="hr.menu_human_resources_configuration" sequence="2"/>
+    </data>
+</odoo>

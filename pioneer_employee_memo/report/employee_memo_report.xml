@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <template id="english_employee_memo_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Employee Memo Form</strong>
+                        </h4>
+                        <div class="page">
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee Code
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_no"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Company
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.company_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.date"/>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <!--===================================================================-->
+                            <br></br>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.hr_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">HR Manager</strong>
+                                            <br/>
+                                            <span t-field="o.hr_manager_id"/>
+                                        </th>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+        <record id="paperformat_employee_a4" model="report.paperformat">
+            <field name="name">A4</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">25</field>
+            <field name="margin_bottom">25</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">20</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <record id="english_employee_memo_report" model="ir.actions.report">
+            <field name="name">Employee Memo</field>
+            <field name="model">employee.memo</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">pioneer_employee_memo.english_employee_memo_template</field>
+            <field name="report_file">pioneer_employee_memo.english_employee_memo_template</field>
+            <field name="binding_model_id" ref="pioneer_employee_memo.model_employee_memo"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_employee_a4"/>
+            <field name="print_report_name">'%s Employee Memo' % (object.employee_id.name)</field>
+        </record>
+
+        <!--        <template id="arabic_employee_memo_template">-->
+        <!--            <t t-call="web.html_container">-->
+        <!--                <t t-call="web.internal_layout">-->
+        <!--                    <div class="page">-->
+        <!--                        <t t-foreach="docs" t-as="o">-->
+        <!--                            <div style="float:right">-->
+        <!--                                 <span t-esc="o.date" style="color:#333"/> <strong> التاريخ </strong>-->
+        <!--                            </div>-->
+        <!--                            <br/>-->
+        <!--                            <div style="float:right">-->
+        <!--                               <span t-esc="o.letter_to" style="color:#333"/> <strong> إلى </strong>-->
+        <!--                            </div>-->
+        <!--                            <br/>-->
+        <!--                            <div style="float:right">-->
+        <!--                                <span t-esc="o.letter_subject" style="color:#333"/> <strong> الموضوع </strong>-->
+        <!--                            </div>-->
+        <!--                            <br/>-->
+        <!--                            <br/>-->
+        <!--                            <h3 style="text-align:center">السادة/الموقرين</h3>-->
+        <!--                            <br/>-->
+        <!--                            <h4 style="text-align:center"> السلام عليكم ورحمة اللة وبركاتة</h4>-->
+        <!--                            <br/>-->
+        <!--                            <div style="color:#333;line-height: 1.6;font-size:20px;text-align:right">-->
+        <!--                               <strong><span t-esc="o.country_id.name"/> </strong>,<strong><span t-esc="o.employee_id.name"/> </strong>  <span>نفيدكم نحن مؤسسة النظم الخبيرة لتقنية المعلومات سجل تجاري رقم ( 1010264654 ) بأن </span>-->
+        <!--                                <span>يحمل اقامة رقم</span>-->
+        <!--                                <strong>(<span t-esc="o.iqama" />)</strong>-->
+        <!--                                <span>صادرة من جوازات الرياض، يعمل لدينا وتحت كفالتنا من</span>-->
+        <!--                                <strong><span t-esc="o.iqama_date_of_issue" /></strong>-->
+        <!--                                <span>حتى تاريخه بمهنة مترجم، ويتقاضى راتب شهري قدره</span>-->
+        <!--                                <strong>(<span t-esc="o.gross" />)</strong>-->
+        <!--                                <span>وقد اصدار هذا الخطاب بناءاً على رغبة الموظف دون أدني مسؤولة للشركة عن أي التزامات مالية وخلافه على الموظف</span>-->
+        <!--                            </div>-->
+        <!--                            <br/>-->
+        <!--                            <h3 style="color:#333;text-align:center">-->
+        <!--                                وتفضّلوا بقبول فائق الاحترام والتقدير-->
+        <!--                            </h3>-->
+        <!--                            <br/>-->
+        <!--                        </t>-->
+        <!--                    </div>-->
+        <!--                </t>-->
+        <!--            </t>-->
+        <!--        </template>-->
+
+        <!--        <report-->
+        <!--            id="arabic_employee_memo_report"-->
+        <!--            model="employee.memo"-->
+        <!--            report_type="qweb-pdf"-->
+        <!--            string="Employee Memo"-->
+        <!--            menu="False"-->
+        <!--            name="pioneer_employee_memo.arabic_employee_memo_template"-->
+        <!--            file="pioneer_employee_memo.arabic_employee_memo_template"-->
+        <!--        />-->
+    </data>
+</odoo>

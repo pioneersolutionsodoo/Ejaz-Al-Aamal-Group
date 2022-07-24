@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="hr_employee_form_inherit_1112" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='hr_settings']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <page string="Yearly Rewards" invisible="1">
+                        <field name="reward_yearly" readonly="1">
+                            <tree>
+                                <field name="employee_id" invisible="1"/>
+                                <field name="year"/>
+                                <field name="amount"/>
+                            </tree>
+                            <form>
+                                <group>
+                                    <field name="employee_id" invisible="1"/>
+                                    <field name="year"/>
+                                    <field name="amount"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

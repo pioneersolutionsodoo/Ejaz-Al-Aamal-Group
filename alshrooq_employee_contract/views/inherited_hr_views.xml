@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Purpose: Renaming 'Employee Tags' into 'Tags' in Tags form view. -->
+        <record id="hr_contract_view_form_inherit_alshrooq_contract" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherited.alshrooq_contract</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+<!--                <xpath expr="//group[@name='main_info']" position="after">-->
+                <xpath expr="//group[@name='salary_info']" position="after">
+                    <group string="Allowance Details">
+                        <group>
+                            <field name="housing_allowance" string="Housing Allowance"/>
+                            <field name="transportation_allowance" string="Transportation Allowance"/>
+                            <field name="project_allowance" string="Project Allowance"/>
+                            <field name="supervisory_allowance" string="Supervisory Allowance"/>
+                            <field name="coordination_allowance" string="Coordination Allowance"/>
+                            <field name="developement_allowance" string="Development Allowance"/>
+                            <field name="mobile_allowance" string="Mobile Allowance"/>
+                            <field name="employee_medical_insurance" string="Employee Medical Insurance"/>
+                            <field name="family_medical_insurance" string="Family Medical Insurance"/>
+                        </group>
+                        <group>
+                            <field name="travel_allowance" string="Travel Allowance"/>
+                            <field name="gosi_allowance" string="Gosi Allowance"/>
+                            <field name="other_allowance" string="Other Allowance"/>
+                            <field name="gosi_deduction" string="Gosi Deduction"/>
+                            <field name="other_deduction" string="Other Deduction"/>
+                            <field name="rentry_allowance" string="VISA allowance (Reentry)"/>
+                            <field name="recruitment_allowance" string="Recruitment Allownace"/>
+                            <field name="number_of_tickets_per_year" string="Number Of Tickets Per Year"/>
+                            <field name="iqama_transfer" string="Iqama Transfer"/>
+                            <field name="iqama_expense" string="Iqama Expense"/>
+                            <field name="iqama_per_month" string="Iqama Per Month"/>
+                            <field name="contract_period" string="Contract Period [Days]"/>
+                        </group>
+                        <group>
+                            <field name="total" string="Total"/>
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//label[@for='wage']" position="attributes">
+                    <attribute name="string">Basic</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Inherit Salary Rule Form View to Add Other Input Types Page -->
+        <record id="view_salary_rule_form_inherit" model="ir.ui.view">
+            <field name="name">view.salary.rule.form.inherit</field>
+            <field name="model">hr.salary.rule</field>
+            <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='description']" position="after">
+                    <page string="Input Types">
+                        <field name="input_type_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="code"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Inherit Other Input Types Form View to add Salary Rule -->
+        <record id="view_input_type_form_inherit" model="ir.ui.view">
+            <field name="name">view.input.type.form.inherit</field>
+            <field name="model">hr.payslip.input.type</field>
+            <field name="inherit_id" ref="hr_payroll.hr_payslip_input_type_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='code']" position="after">
+                    <field name="salary_rule_id"/>
+                </xpath>
+            </field>
+        </record>
+
+       <!--  Inherit 	HR Payslip Form View to add Salary Rule in other Inputs one2many Field-->
+        <!--<record id="view_HR_Payslip_form_inherit" model="ir.ui.view">
+            <field name="name">view.HR.Payslip.form.inherit</field>
+            <field name="model">hr.payslip.input</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//notebook/field[@name='input_line_ids']/tree/field[@name='amount']" position="after">
+                    &lt;!&ndash; Add your fields or attributes here &ndash;&gt;
+                    <field name="salary_rule_id"/>
+                </xpath>
+
+            </field>
+        </record>-->
+    </data>
+</odoo>

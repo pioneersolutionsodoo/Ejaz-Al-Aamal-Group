@@ -1,0 +1,496 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* return_from_vacation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-02 09:05+0000\n"
+"PO-Revision-Date: 2020-09-02 11:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: return_from_vacation
+#: model:ir.actions.report,print_report_name:return_from_vacation.return_from_report
+msgid "'%s Return From Vacation' % (object.employee_id.name)"
+msgstr ""
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "<strong>Approval From Responsibles</strong>"
+msgstr "<strong>موافقة المسئولين</strong>"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid ""
+"<strong>Direct Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong>المدير المباشر</strong>\n"
+"                                            <br/>"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid ""
+"<strong>HR Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong>مدير الموارد البشرية</strong>\n"
+"                                            <br/>"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "<strong>Responsible</strong>"
+msgstr "<strong>المسئول</strong>"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "<strong>Responsibles Notes</strong>"
+msgstr "<strong>ملاحظات المسئول</strong>"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "<strong>Return From Vacation Form</strong>"
+msgstr "<strong> نموذج العودة من الإجازة </strong>"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Add notes ..."
+msgstr "إضافة ملاحظات ..."
+
+#. module: return_from_vacation
+#: code:addons/assrooh-addons/return_from_vacation/models/return_from_vacation.py:0
+#: code:addons/return_from_vacation/models/return_from_vacation.py:0
+#: model:ir.model.fields.selection,name:return_from_vacation.selection__return_from_vacation__vacation_type__annual
+#, python-format
+msgid "Annual"
+msgstr "سنوي"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields.selection,name:return_from_vacation.selection__return_from_vacation__state__approved
+msgid "Approved"
+msgstr "وافق"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__company_id
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "Company"
+msgstr "شركة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها فى"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__date
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__department_id
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Department"
+msgstr "القسم"
+
+#. module: return_from_vacation
+#: code:addons/assrooh-addons/return_from_vacation/models/return_from_vacation.py:0
+#: code:addons/return_from_vacation/models/return_from_vacation.py:0
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__d_manager
+#: model:ir.model.fields.selection,name:return_from_vacation.selection__return_from_vacation__state__direct_manager
+#, python-format
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Direct Manager Approve"
+msgstr "موافقة المدير المباشر"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__d_manager_note
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Direct Manager Note"
+msgstr "ملاحظة المدير المباشر"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: return_from_vacation
+#: code:addons/assrooh-addons/return_from_vacation/models/return_from_vacation.py:0
+#: code:addons/return_from_vacation/models/return_from_vacation.py:0
+#: model:ir.model.fields.selection,name:return_from_vacation.selection__return_from_vacation__state__draft
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: return_from_vacation
+#: code:addons/assrooh-addons/return_from_vacation/models/return_from_vacation.py:0
+#: code:addons/return_from_vacation/models/return_from_vacation.py:0
+#: model:ir.model.fields.selection,name:return_from_vacation.selection__return_from_vacation__vacation_type__emergency
+#, python-format
+msgid "Emergency Leave"
+msgstr "اجازة طارئة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__employee_id
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid ""
+"Employee\n"
+"                                            Code"
+msgstr ""
+"موظف\n"
+"                                             كود"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__employee_no
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Employee Info"
+msgstr "معلومات الموظف"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_tree
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: return_from_vacation
+#: code:addons/assrooh-addons/return_from_vacation/models/return_from_vacation.py:0
+#: code:addons/return_from_vacation/models/return_from_vacation.py:0
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__hr_manager_id
+#: model:ir.model.fields.selection,name:return_from_vacation.selection__return_from_vacation__state__hr_manager
+#, python-format
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "HR Manager Approve"
+msgstr "موافقة مدير الموارد البشرية"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__hr_manager_note
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "HR Manager Note"
+msgstr "ملاحظة مدير الموارد البشرية"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__hr_leave
+msgid "Hr Leave"
+msgstr ""
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__id
+msgid "ID"
+msgstr "هوية شخصية"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_needaction
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: return_from_vacation
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_has_error
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__is_direct_manager
+msgid "Is Direct Manager"
+msgstr "مدير مباشر"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__job_id
+msgid "Job Position"
+msgstr "الوظيفه"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Job Title"
+msgstr "مسمى الوظيفة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Leave Type"
+msgstr "نوع الإجازة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_tree
+msgid "No Returning from leave"
+msgstr "لا يعد من الإجازة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid ""
+"No.of Days to\n"
+"                                        be deducted"
+msgstr ""
+"عدد الأيام حتى\n"
+"                                         يتم خصمها"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "No.of Days to be deducted"
+msgstr "عدد الأيام المراد خصمها"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__not_returning_from_leave
+msgid "Not Returning From Leave"
+msgstr "لم يعد عدم من الإجازة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Not returning from leave"
+msgstr "لم يعد عدم من الإجازة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__name
+msgid "Number"
+msgstr "رقم"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__number_of_delay_days
+msgid "Number Of Delay Days"
+msgstr "عدد أيام التأخير"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Other Notes"
+msgstr "الملاحظات الأخرى"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__project_id
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Project"
+msgstr "المشروع"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+msgid ""
+"Return From\n"
+"                                        leave"
+msgstr ""
+"العودة من\n"
+"                                         الإجازة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__return_from_leave
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_tree
+msgid "Return From Leave"
+msgstr "عاد من الإجازة"
+
+#. module: return_from_vacation
+#: model:ir.actions.act_window,name:return_from_vacation.view_return_from_vacation_action
+#: model:ir.actions.report,name:return_from_vacation.return_from_report
+#: model:ir.model,name:return_from_vacation.model_return_from_vacation
+#: model:ir.ui.menu,name:return_from_vacation.view_return_from_vacation_menu
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_tree
+msgid "Return From Vacation"
+msgstr "عاد من الإجازة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Return From Vacation Info"
+msgstr "معلومات العودة من الاجازة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Return From leave"
+msgstr "عاد من الإجازة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+msgid "Send Request"
+msgstr "إرسال طلب"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__show_direct_manager_button
+msgid "Show Direct Manager Button"
+msgstr "إظهار زر المدير المباشر"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__state
+msgid "State"
+msgstr "حالة"
+
+#. module: return_from_vacation
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_tree
+msgid "Status"
+msgstr ""
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__vacation_type
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.return_from_vacation_template
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_form
+#: model_terms:ir.ui.view,arch_db:return_from_vacation.view_return_from_vacation_tree
+msgid "Vacation Type"
+msgstr "نوع الاجازة"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,field_description:return_from_vacation.field_return_from_vacation__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: return_from_vacation
+#: model:ir.model.fields,help:return_from_vacation.field_return_from_vacation__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"

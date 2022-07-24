@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Visa Request [form] view-->
+        <record id="view_visa_request_form" model="ir.ui.view">
+            <field name="name">Visa Request Form</field>
+            <field name="model">visa.request</field>
+            <field name="arch" type="xml">
+                <form string="Visa Request">
+                    <header>
+                        <button name="send_request" string="Send Request" class="oe_highlight" states="draft"
+                                type="object"/>
+
+                        <button name="direct_manager" string="Direct Manager Approve"
+                                attrs="{'invisible':[('show_direct_manager_button','=',False)]}"
+                                class="oe_highlight"
+                                type="object"/>
+
+                        <button name="hr_manager" string="HR Manager Approve"
+                                class="oe_highlight" states="hr_manager" groups="hr.group_hr_manager"
+                                type="object"/>
+
+                        <field name="state" widget="statusbar"/>
+                        <field name="is_direct_manager" invisible="1"/>
+                        <field name="show_direct_manager_button" invisible="1"/>
+                    </header>
+                    <sheet>
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" string="Employee Name" required="1"/>
+                                <field name="job_id" string="Job Title"/>
+                                <field name="department_id" string="Department"/>
+                                <field name="date" string="Date"/>
+                                <field name="type" string="Type" required="1"/>
+                            </group>
+                            <group>
+                                <field name="employee_no" string="Employee Code"/>
+                                <field name="project_id" string="Project Name"/>
+                                <field name="company_id" string="Company Name"/>
+                            </group>
+                        </group>
+                        <group string="Visa Request Info">
+                            <group>
+                                <field name="vacation_start_date" string="Vacation Start Date" required="1"/>
+                                <field name="visa_start_date" string="Visa Start Date" required="1"/>
+                                <field name="quantity" string="Quantity"/>
+                                <field name="total_amount" string="Total Amount"/>
+                                <field name="amount_to_deduct" string="Amount to be deducted"/>
+                            </group>
+                            <group>
+                                <field name="vacation_end_date" string="Vacation End Date" required="1"/>
+                                <field name="visa_duration" string="Visa Duration"/>
+                                <field name="beneficiary" string="Beneficiary"/>
+                                <field name="visa_allowed_allowance" string="Visa Allowed Allowance"/>
+                                <field name="visa_already_taken" string="Visa Already Taken"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Approval Notes">
+                                <group>
+                                    <group>
+                                        <field name="d_manager" readonly="1"/>
+                                        <field name="d_manager_note" nolabel="1" placeholder="Direct Manager Note"
+                                               attrs="{'readonly':[('state','!=','direct_manager')]}"/>
+                                        <field name="hr_manager_id" readonly="1"/>
+                                        <field name="hr_manager_note" nolabel="1" placeholder="HR Manager Note"
+                                               attrs="{'readonly':[('state','!=','hr_manager')]}"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                        <group string="Notes">
+                            <field name="note" string="Notes" nolabel="1" placeholder="Add notes ..."/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!--        Visa Request [tree] view-->
+        <record id="view_visa_request_tree" model="ir.ui.view">
+            <field name="name">Visa Request Tree</field>
+            <field name="model">visa.request</field>
+            <field name="arch" type="xml">
+                <tree string="Visa Request">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="vacation_start_date" string="Vacation Start Date"/>
+                    <field name="vacation_end_date" string="Vacation End Date"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Visa Request [action] view-->
+        <record id="view_visa_request_action" model="ir.actions.act_window">
+            <field name="name">Visa Request</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">visa.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+        <!--        Visa Request [menu] view-->
+        <menuitem id="view_visa_request_menu"
+                  name="Visa Request"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="view_visa_request_action" sequence="1"/>
+    </data>
+</odoo>

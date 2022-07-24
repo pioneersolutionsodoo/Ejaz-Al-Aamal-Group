@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+manpower_request_all,manpower.request.all,model_manpower_request,base.group_user,1,1,1,1
+qualification_line_all,qualification.line.all,model_qualification_line,base.group_user,1,1,1,1
+

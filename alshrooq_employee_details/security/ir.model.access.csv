@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_religion,access_religion,model_religion,base.group_user,1,1,1,1
+access_mother_tongue,access_mother_tongue,model_mother_tongue,base.group_user,1,1,1,1
+access_expiration_type,access_expiration_type,model_expiration_type,base.group_user,1,1,1,1
+access_contract_type,access_contract_type,model_contract_type,base.group_user,1,1,1,1
+access_contract_status,access_contract_status,model_contract_status,base.group_user,1,1,1,1
+access_contract_duration,access_contract_duration,model_contract_duration,base.group_user,1,1,1,1
+access_hr_family_details,access_hr_family_details,model_hr_family_details,base.group_user,1,1,1,1
+access_hr_employee_type_employee,hr.official.holidays.saudi.employee,model_hr_employee_type,base.group_user,1,0,0,0
+access_hr_employee_type_manager,hr.official.holidays.saudi.manager,model_hr_employee_type,hr.group_hr_manager,1,1,1,1
+

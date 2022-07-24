@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="yearly_reward_report_wizard_view_form" model="ir.ui.view">
+            <field name="name">yearly.reward.report.form</field>
+            <field name="model">eosb.employee.report</field>
+            <field name="arch" type="xml">
+                <form string="Yearly Rewards Report">
+                    <group>
+                        <field width="50%" name="date" readonly="1"/>
+                    </group>
+                    <group col="4">
+                        <field name="year_from" options="{'datepicker':{'showType':'years'}}"/>
+                        <field name="year_to"  options="{'datepicker':{'showType':'years'}}"/>
+                        <field name="department_ids" widget="many2many_tags"/>
+                        <field name="employees_ids" widget="many2many_tags"/>
+                    </group>
+                    <footer>
+                        <button name="print_report" string="Print PDF Report" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_yearly_rewards_eosb" model="ir.actions.act_window">
+            <field name="name">EOSB Yearly Rewards Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">eosb.employee.report</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="yearly_reward_report_wizard_view_form"/>
+            <field name="target">new</field>
+        </record>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="yearly_rewards_eosb" name="EOSB Yearly Rewards"
+                  action="action_yearly_rewards_eosb"
+                  parent="hr.hr_menu_hr_reports" sequence="2"/>
+    </data>
+</odoo>

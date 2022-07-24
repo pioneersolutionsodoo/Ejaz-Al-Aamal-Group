@@ -1,0 +1,654 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pioneer_hr_clearance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-25 07:11+0000\n"
+"PO-Revision-Date: 2020-10-25 07:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pioneer_hr_clearance
+#: model:ir.actions.report,print_report_name:pioneer_hr_clearance.hr_employee_clearance_report
+msgid "'%s Clearance' % (object.employee_id.name)"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Accounting Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">مدير الحسابات</strong>\n"
+"                                            <br/>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Admin Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">المدير العام</strong>\n"
+"                                            <br/>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Direct Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">المدير المباشر</strong>\n"
+"                                            <br/>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Employee</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">الموظف</strong>\n"
+"                                            <br/>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">HR Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">مدير الموارد البشرية</strong>\n"
+"                                            <br/>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Applicant</strong>"
+msgstr "<strong>مقدم الطلب</strong>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Approval From Responsibles</strong>"
+msgstr "<strong>موافقة المسئولين</strong>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Clearance Form</strong>"
+msgstr "<strong>اخلاء طرف</strong>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Date</strong>"
+msgstr "<strong>التاريخ</strong>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Responsible</strong>"
+msgstr "<strong>المسئول</strong>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Responsibles Notes</strong>"
+msgstr "<strong> ملاحظات المسئول</strong>"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "<strong>Signature</strong>"
+msgstr "<strong>التوقيع</strong>"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__account_manager_date
+msgid "Account Manager Date"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__state__account
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#, python-format
+msgid "Accounting Depart"
+msgstr "قسم المحاسبة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__account_manager_id
+msgid "Accounting Manager"
+msgstr "مدير الحسابات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__account_manager_note
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Accounting Manager Note"
+msgstr "تعليق مدسر الحسابات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Admin & Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__admin_manager_id
+msgid "Admin & Finance Manager"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__admin_manager_note
+msgid "Admin & Finance Manager Note"
+msgstr "ملاحظات مدير الشؤون الإدارية والمالية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__state__admin_fd
+msgid "Admin Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__admin_manager_date
+msgid "Admin Manager Date"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Admin Manager Note"
+msgstr "ملاحظات مدير الشؤون الإدارية والمالية"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__state__approve
+#, python-format
+msgid "Approved"
+msgstr "موافق علية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_leave__check_clearance
+msgid "Check Clearance"
+msgstr "فحص إذا كان هناك إخلاء"
+
+#. module: pioneer_hr_clearance
+#: model:ir.actions.act_window,name:pioneer_hr_clearance.view_hr_employee_clearance_action
+#: model:ir.ui.menu,name:pioneer_hr_clearance.view_hr_employee_clearance_menu
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_holidays_saudi_form_inherit
+msgid "Clearance"
+msgstr "الإخلاء"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_holidays_saudi_form_inherit
+msgid "Clearance Count"
+msgstr "عدد الإخلاءات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__company_id
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Company"
+msgstr "شركة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Contract Details"
+msgstr "تفاصيل العقد"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_holidays_saudi_form_inherit
+msgid "Create Clearance"
+msgstr "إنشاء إخلاء"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__create_uid
+msgid "Created by"
+msgstr "أنشاء بواسطة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__create_date
+msgid "Created on"
+msgstr "أنشاء بتاريخ"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__d_manager_date
+msgid "D Manager Date"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__date
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__department_id
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+msgid "Department"
+msgstr "القسم"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__d_manager
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__state__direct_manager
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#, python-format
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__d_manager_note
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Direct Manager Note"
+msgstr "ملاحظات المدير المباشر"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__display_name
+msgid "Display Name"
+msgstr "اسم"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__state__draft
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__employee_id
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: pioneer_hr_clearance
+#: model:ir.actions.report,name:pioneer_hr_clearance.hr_employee_clearance_report
+#: model:ir.model,name:pioneer_hr_clearance.model_hr_employee_clearance
+msgid "Employee Clearance"
+msgstr "طلب إخلاء طرف للموظف"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__employee_no
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "FAX: 966 11 49 12 162"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__hr_manager_id
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__hr_manager_note
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "HR Manager Note"
+msgstr "ملاحظات مدير الموارد البشرية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_leave__hr_clearance_id
+msgid "Hr Clearance"
+msgstr "الإخلاء"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__state__hr_manager
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#, python-format
+msgid "Hr Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__hr_manager_date
+msgid "Hr Manager Date"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__id
+msgid "ID"
+msgstr "الهوية شخصية"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_needaction
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_has_error
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_loan_ps__inverse_employee_clearance_id
+msgid "Inverse Employee Clearance"
+msgstr "إخلاء الموظف العكسي"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__is_direct_manager
+msgid "Is Direct Manager"
+msgstr "هل هو المدير المباشر"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__job_id
+msgid "Job Position"
+msgstr "المسمى الوظيفى"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+msgid "Job Title"
+msgstr "اسم الوظيفة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Joining Date"
+msgstr "تاريخ الالتحاق بالوظيفة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "Kingdom of Saudi Arabia"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance____last_update
+msgid "Last Modified on"
+msgstr "اخر تاريخ تعديل"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__write_uid
+msgid "Last Updated by"
+msgstr "اخر شخص قام بالتعديل"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid ""
+"Last Working\n"
+"                                        Date"
+msgstr ""
+"آخر عمل\n"
+"                                         تاريخ"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__last_working_date
+msgid "Last Working Date"
+msgstr "اخر يوم عمل"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+msgid "Last working date"
+msgstr "اخر يوم عمل"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model,name:pioneer_hr_clearance.model_hr_employee_loan_ps
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__loan_ids
+msgid "Loan"
+msgstr "السلف"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__loan_number
+msgid "Loan Number"
+msgstr "عدد السلف"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#, python-format
+msgid "Loans"
+msgstr "السلف"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "Logo"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__name
+msgid "Number"
+msgstr "عدد"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Other Notes"
+msgstr "الملاحظات الأخرى"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "P.O.BOX 295933"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid ""
+"Page:\n"
+"                    <span class=\"page\"/>\n"
+"                    /\n"
+"                    <span class=\"topage\"/>"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Project"
+msgstr "المشروع"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__project_id
+msgid "Project Name"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Request Details"
+msgstr "تاريخ الطلب"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Request Name"
+msgstr "اسم الطلب"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__type__resignation_exit
+#, python-format
+msgid "Resignation / Exit"
+msgstr "الاستقالة / الخروج"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "Riyadh 11351"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+msgid "Send Request"
+msgstr "ارسال طلب"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__show_direct_manager_button
+msgid "Show Direct Manager Button"
+msgstr "إظهار زر المدير المباشر"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__state
+msgid "State"
+msgstr "حالة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model,name:pioneer_hr_clearance.model_hr_leave
+msgid "Time Off"
+msgstr "الاجازات"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__type
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_form
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.view_hr_employee_clearance_tree
+msgid "Type"
+msgstr "نوع"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "UNA: 92 00 33 162"
+msgstr ""
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: pioneer_hr_clearance
+#: code:addons/Assrooh-Athakiyah-dev/pioneer_hr_clearance/models/hr_clearance.py:0
+#: code:addons/pioneer_hr_clearance/models/hr_clearance.py:0
+#: model:ir.model.fields.selection,name:pioneer_hr_clearance.selection__hr_employee_clearance__type__vacation
+#, python-format
+msgid "Vacation"
+msgstr "أجازة"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,field_description:pioneer_hr_clearance.field_hr_employee_clearance__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: pioneer_hr_clearance
+#: model:ir.model.fields,help:pioneer_hr_clearance.field_hr_employee_clearance__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.employee_clearance_template
+msgid "Work Location"
+msgstr "مكان العمل"
+
+#. module: pioneer_hr_clearance
+#: model_terms:ir.ui.view,arch_db:pioneer_hr_clearance.external_layout_standard_custom
+msgid "www.aa.edu.sa"
+msgstr ""

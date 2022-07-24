@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.menu" id="hr_daamah.main_menu_hr_daamah">
+            <field name="name">Other Details</field>
+        </record>
+
+    </data>
+
+</odoo>

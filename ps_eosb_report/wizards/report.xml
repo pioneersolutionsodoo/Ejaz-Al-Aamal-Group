@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="eosb_reward_report">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout" t-lang="en_US">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <div style="color:#66b3ff; width: 100%">
+                            <strong>
+                                <h2 class="text-center">
+                                    <strong>EOSB Yearly Rewards Report</strong>
+                                </h2>
+                            </strong>
+                        </div>
+                        <t t-foreach="final" t-as="o">
+                            <table class="table table-condensed table-bordered" style="width: 100%">
+                                <thead style=" background-color: #8080ff;">
+                                    <th class="text-center" style="width: 50%">Employee Name</th>
+                                    <th class="text-center" style="width: 50%">
+                                        <span t-esc="o['employee']"/>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <table style="width:100%;" class="table-condensed table-bordered">
+                                        <thead>
+                                            <th style="background-color:#A9A9A9" class="text-center">Year</th>
+                                            <th style="background-color:#A9A9A9" class="text-center"
+                                                t-foreach="o['year']" t-as="y">
+                                                <span t-esc="y"/>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color:#A9A9A9" class="text-center">Amount</td>
+                                                <td class="text-center" t-foreach="o['amount']" t-as="a">
+                                                    <span t-esc="a"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:#A9A9A9" class="text-center">Total</td>
+                                                <td class="text-center">
+                                                    <span t-esc="sum(o['amount'])"/>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </tbody>
+                            </table>
+                            <br/>
+                        </t>
+                        <!--<table class="table table-condensed table-bordered" style="width: 100%">
+                            <thead style=" background-color: #8080ff;">
+                                <th class="text-center" style="width: 11%">PO Name</th>
+                                <th class="text-center" style="width: 11%">Vendor</th>
+                                <th class="text-center" style="width: 11%">Picking Ref</th>
+                                <th class="text-center" style="width: 11%">Vendor Ref</th>
+                                <th class="text-center" style="width: 11%">Destination</th>
+                                <th class="text-center" style="width: 11%">Product Name</th>
+                                <th class="text-center" style="width: 11%">Undelivered</th>
+                                <th class="text-center" style="width: 11%">Reason</th>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="res" t-as="doc">
+                                    <tr>
+                                        <td class="text-center">
+                                            <span t-esc="doc['order_name']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['vendor']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['picking_name']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['partner_ref']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['des']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['product_name']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['undelivered']"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="doc['reason']"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>-->
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <record id="eosb_reward_report_action" model="ir.actions.report">
+            <field name="name">Eosb Yearly Rewards Report</field>
+            <field name="model">eosb.employee.report</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_eosb_report.eosb_reward_report</field>
+            <field name="report_file">ps_eosb_report.eosb_reward_report</field>
+            <field name="binding_model_id" ref="model_eosb_employee_report"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

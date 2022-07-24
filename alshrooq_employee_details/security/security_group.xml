@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="allow_change_employee_bank_account" model="res.groups">
+           <field name="name">Allow Change Employee Bank Account</field>
+           <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+           <field name="category_id" ref="hr_loan_advance.module_hr_group"/>
+       </record>
+
+    </data>
+</odoo>

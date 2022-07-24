@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_hr_business_trip_form_inherit">
+            <field name="name">hr business trip</field>
+            <field name="model">hr.business.trip</field>
+            <field name="inherit_id" ref="pioneer_Business_Trip.view_hr_business_trip_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='direct_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

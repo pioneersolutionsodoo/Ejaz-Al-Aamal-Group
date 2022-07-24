@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_employee_clearance_sequence" model="ir.sequence">
+            <field name="name">Employee Clearance</field>
+            <field name="code">hr.employee.clearance</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">EC</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record model="ir.rule" id="hr_employee_clearance_rule">
+            <field name="name">HR Employee Clearance multi-company</field>
+            <field name="model_id" ref="model_hr_employee_clearance"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+    </data>
+</odoo>

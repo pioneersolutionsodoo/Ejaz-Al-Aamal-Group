@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_view_performance_evaluation_tree" model="ir.ui.view">
+            <field name="name">hr_view_performance_evaluation_tree</field>
+            <field name="model">hr.performance.evaluation</field>
+            <field name="arch" type="xml">
+                <tree string="Performance Evaluation">
+                    <field name="employee_id" required="1"/>
+                    <field name="pe_quality"/>
+                    <field name="pe_quantity"/>
+                    <field name="pe_implementation"/>
+                    <field name="pe_completition"/>
+                    <field name="pe_team"/>
+                    <field name="pe_desire"/>
+                    <field name="pe_professional"/>
+                    <field name="pe_pressure"/>
+                    <field name="pe_adapt"/>
+                    <field name="pe_reporting"/>
+                    <field name="pe_honesty"/>
+                    <field name="pe_assets"/>
+                    <field name="pe_relationship"/>
+                    <field name="pe_punctuality"/>
+                    <field name="pe_appearance"/>
+                    <field name="pe_percentage"/>
+
+                </tree>
+
+            </field>
+        </record>
+        <record id="hr_view_performance_evaluation_form" model="ir.ui.view">
+            <field name="name">hr_view_performance_evaluation_form</field>
+            <field name="model">hr.performance.evaluation</field>
+            <field name="arch" type="xml">
+                <form string="Performance Evaluation">
+                    <header>
+                        <button string="Send Request" name="button_hrm_request"
+                                type="object"
+                                class="oe_highlight"
+                                attrs="{'invisible':[('is_show_request_button','=',False)]}"/>
+                        <button string="DM Approve" class="oe_highlight"
+                                name="button_dm_approve" type="object"
+                                attrs="{'invisible':[('is_show_dm_button','=',False)]}"
+                        />
+                        <button string="GM Approve" class="oe_highlight"
+                                name="button_gm_approve" type="object"
+                                attrs="{'invisible':[('is_show_gm_button','=',False)]}"/>
+                        <button string="Refuse" name="action_refuse"
+                                type="object" attrs="{'invisible':[('state','=','refuse')]}"
+                                groups="hr.group_hr_manager"/>
+                        <!--<button string="Refuse" name="action_refuse" type="object" states="progress"
+                                groups="base.group_account_manager"/>-->
+                        <!--  <button string="Financial Manager Approve" name="action_fm_approve" type="object"
+                                  states="progress"
+                                  groups="account.group_account_manager"/>-->
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,request,progress,approve"
+                               statusbar_colors='{"draft":"red"}'/>
+                        <button string="Print Performance Evaluation" name="button_print_performance_evaluation"
+                                class="oe_highlight"
+                                type="object"/>
+                    </header>
+                    <sheet>
+                        <field name="is_direct_manager" invisible="1"/>
+                        <label for="employee_id" class="oe_inline"/>
+                        <div class="oe_inline">
+                            <h1>
+                                <field name="employee_id" required="1"/>
+
+                            </h1>
+                        </div>
+                        <div class="oe_inline">
+                            <h1>
+                                <field name="performance"/>
+                            </h1>
+                        </div>
+                        <group col="2" colspan="2">
+                            <separator string="Comprehension of work techniques"/>
+                            <field name="pe_technique" nolabel="1"/>
+                            <separator string="Quality of work accomplished"/>
+                            <field name="pe_quality" nolabel="1"/>
+                            <separator string="Quantity of work accomplished"/>
+                            <field name="pe_quantity" nolabel="1"/>
+                            <separator string="Implementation level of Instruction"/>
+                            <field name="pe_implementation" nolabel="1"/>
+                            <separator string="Completion of work within normal working hours"/>
+                            <field name="pe_completition" nolabel="1"/>
+                            <separator string="Team work attitude"/>
+                            <field name="pe_team" nolabel="1"/>
+                            <separator string="Desire to develop oneself"/>
+                            <field name="pe_desire" nolabel="1"/>
+                            <separator string="Professional development"/>
+                            <field name="pe_professional" nolabel="1"/>
+                            <separator string="Performance under pressure"/>
+                            <field name="pe_pressure" nolabel="1"/>
+                            <separator string="Adapts to changes and improvements in work techniques"/>
+                            <field name="pe_adapt" nolabel="1"/>
+                            <separator string="Reports information to superiors clearly and concisely"/>
+                            <field name="pe_reporting" nolabel="1"/>
+                            <separator string="Honesty, confidentiality"/>
+                            <field name="pe_honesty" nolabel="1"/>
+                            <separator string="Safeguarding assets of institution"/>
+                            <field name="pe_assets" nolabel="1"/>
+                            <separator string="Colleagues Relationship"/>
+                            <field name="pe_relationship" nolabel="1"/>
+                            <separator string="Discipline &amp; punctuality of work"/>
+                            <field name="pe_punctuality" nolabel="1"/>
+                            <separator string="General appearance"/>
+                            <field name="pe_appearance" nolabel="1"/>
+                            <separator string="Percentage"/>
+                            <field name="pe_percentage" nolabel="1"/>
+                        </group>
+                        <group>
+                            <label for="performance"
+                                   string="Approval Process : 1. Requested By HR Manager 2. Approve By Direct Manager 3. Approve By General Manager"/>
+
+                        </group>
+                        <group>
+                            <field name="is_show_request_button" invisible="1"/>
+                            <field name="is_show_dm_button" invisible="1"/>
+                            <field name="is_show_gm_button" invisible="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_action_performance_evaluation" model="ir.actions.act_window">
+            <field name="name">Performance Evaluation</field>
+            <field name="res_model">hr.performance.evaluation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="domain">[]</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="hr_action_performance_evaluation"
+                  id="menu_hr_performance_evaluation"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  groups="hr.group_hr_manager"
+                  sequence="8"/>
+
+        <!-- PRINT CERTIFICATE-->
+
+        <report
+                id="hr_event_certificate_report"
+                model="hr.performance.evaluation"
+                string="Performance Evaluation Report"
+                report_type="qweb-pdf"
+                name="hr_performance_ps.hr_performance_evaluation_report"
+                file="hr_performance_ps.hr_performance_evaluation_report"
+                multi="True"
+        />
+    </data>
+</odoo>

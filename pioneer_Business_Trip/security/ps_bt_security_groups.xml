@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+<!--declared other place-->
+       <!-- <record id="base.group_hr_general_manager" model="res.groups">
+            <field name="name">General Manager</field>
+            <field name="comment">the user will have an access to the human resources configuration as well as statistic
+                reports.
+            </field>
+            <field name="category_id" ref="base.module_category_human_resources"/>
+            <field name="implied_ids" eval="[(4, ref('hr.group_hr_manager'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>-->
+
+    </data>
+
+    <data>
+        <record id="hr_hr_business_trip_rule" model="ir.rule">
+        <field name="name">Trip rule</field>
+        <field name="model_id" ref="model_hr_business_trip"/>
+        <field name="global" eval="True"/>
+        <field name="groups" eval="[(4, ref('base.user_root'))]"/>
+        <field name="domain_force">['|',('employee_id.user_id','=',user.id),('employee_id.parent_id.user_id','=',user.id)]</field>
+
+    </record>
+
+        <record id="hr_hr_business_trip_rule_manager" model="ir.rule">
+        <field name="name">Trip rule Manager</field>
+        <field name="model_id" ref="model_hr_business_trip"/>
+        <field name="global" eval="True"/>
+        <field name="groups" eval="[(4, ref('hr.group_hr_manager')),(4, ref('account.group_account_manager'))]"/>
+        <field name="domain_force">[(1 ,'=', 1)]</field>
+        </record>
+    </data>
+</odoo>

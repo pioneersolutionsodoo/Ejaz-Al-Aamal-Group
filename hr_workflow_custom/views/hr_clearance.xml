@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_hr_employee_clearance_form_inherit">
+            <field name="name">HR clearance</field>
+            <field name="model">hr.employee.clearance</field>
+            <field name="inherit_id" ref="pioneer_hr_clearance.view_hr_employee_clearance_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='direct_manager']" position="attributes">
+                    <attribute name="string">Line Manager</attribute>
+                </xpath>
+                <xpath expr="//field[@name='d_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

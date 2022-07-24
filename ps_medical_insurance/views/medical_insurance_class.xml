@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="medical_insurance_class_tree_view">
+            <field name="name">Medical Insurance Class List View</field>
+            <field name="model">medical.insurance.class</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="medical_insurance_class_form_view">
+            <field name="name">Medical Insurance Class Form View</field>
+            <field name="model">medical.insurance.class</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Name"/>
+                            </h1>
+                        </div>
+                        <group string="Description">
+                            <field name="description" string="Notes" nolabel="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_medical_insurance_class">
+            <field name="name">Medical Insurance Class</field>
+            <field name="res_model">medical.insurance.class</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a new Medical Insurance Class</p>
+            </field>
+        </record>
+
+        <menuitem id="medical_insurance_class_menu" name="Medical Insurance Class"
+                  parent="ps_medical_insurance.medical_insurance_root" action="action_medical_insurance_class"
+                  sequence="3" groups="hr.group_hr_manager"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_return_from_vacation_form_inherit">
+            <field name="name">return from vacation</field>
+            <field name="model">return.from.vacation</field>
+            <field name="inherit_id" ref="return_from_vacation.view_return_from_vacation_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='direct_manager']" position="attributes">
+                    <attribute name="string">Line Manager Approve</attribute>
+                </xpath>
+                <xpath expr="//field[@name='d_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

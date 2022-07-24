@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_hr_holidays_saudi_form_inherit_002" model="ir.ui.view">
+            <field name="name">view hr holidays saudi form inherit 002</field>
+            <field name="model">hr.leave</field>
+            <field name="inherit_id" ref="pioneer_HR_Leave.view_hr_holidays_saudi_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='request_date']" position="after">
+                    <field name="air_ticket_id" string="Air Ticket" readonly="1"/>
+                    <field name="check_air_ticket" string="Air Ticket Count" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//header" position="inside">
+                    <button type="object" string="Create Air Ticket" class="btn-primary"
+                            name="create_air_ticket"
+                            attrs="{'invisible':[('check_air_ticket','=',1)]}"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

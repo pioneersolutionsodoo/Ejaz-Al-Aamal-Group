@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="emp_def_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <table dir="rtl" style="border:none;width:100%">
+                            <tr dir="rtl">
+                                <td dir="rtl" style="text-align:right;width:100%">
+                                    <span>التاريخ:</span>
+                                    <span t-esc="o.date"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="page">
+                            <style>
+                                h1{
+                                text-align:center;
+                                text-decoration: underline;
+                                }
+                            </style>
+                            <h1>تعريف موظف</h1>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="width:100%;text-align:right">
+                                        <span>السادة/ </span><span t-if="o.to" t-esc="o.to"/><span t-else="">................................................................................................................</span><span>المحترمين</span><br/>
+                                        <span>السلام عليكم ورحمة الله وبركاته،،،</span><br/>
+                                        <span>نفيدكم بان السيد / </span><span t-esc="o.employee_id.name"/><span>،الجنسية: </span><span t-if="o.country_id.name" t-esc="o.country_id.name"/><span t-else="">............................................</span>
+                                        <span>،رقم الإقامة / الهوية: </span>(<span t-esc="o.iqama_national_id"/> / <span t-esc="o.identification_id"/>)<br></br>
+                                        <span>يعمل لدينا بوظيفة / </span><span t-if="o.job_title" t-esc="o.job_title"/><span t-else="">............................................</span>
+                                        <span>من تاريخ : </span><span t-if="o.aj_date" t-esc="o.aj_date"/><span t-else="">............................................</span>م
+                                        <span> ،ومازال علي راس العمل حتي تاريخه ويتقاضي راتب قدره </span>(<span t-esc="o.total"/>) ريال فقط ،<br></br>
+                                        <span>وبناءً علي طلبه أعطي هذا </span><span>.............................</span><span>دون أدني مسئولية علي الشركة.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr>
+                                    <td width="70%" style="text-align:center"></td>
+                                    <td width="30%" style="text-align:center">الرئيس التنفيذي</td>
+                                </tr>
+                                <tr>
+                                    <td width="70%" style="text-align:center"></td>
+                                    <td width="30%" style="text-align:center">عمار الرجوب</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+        <record id="emp_def_action_report" model="ir.actions.report">
+            <field name="name">تعريف موظف</field>
+            <field name="model">employee.memo</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_report_custom.emp_def_template</field>
+            <field name="report_file">ps_hr_report_custom.emp_def_template</field>
+            <field name="binding_model_id" ref="model_employee_memo"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+        </record>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+        <template id="emp_salary_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <table dir="rtl" style="border:none;width:100%">
+                            <tr dir="rtl">
+                                <td dir="rtl" style="text-align:right;width:100%">
+                                    <span>التاريخ:</span>
+                                    <span t-esc="o.date"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="page">
+                            <style>
+                                h1{
+                                color:black;
+                                text-align:center;
+                                }
+                            </style>
+                            <h1>نموذج التزام جهة العمل بتحويل راتب الموظف</h1>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="width:100%;text-align:right">
+                                        <span>السادة / بنك </span><span t-if="o.bank" t-esc="o.bank"/><span t-else="">................................................................................................................</span><span>المحترمين</span><br/>
+                                        <span>السلام عليكم ورحمة الله وبركاته،،،</span><br/>
+                                        <span>اســم المـوظـــــف : </span><span t-esc="o.employee_id.name"/><span>، رقــــم الهوية/ </span><span t-if="o.identification_id" t-esc="o.identification_id"/><span t-else="">............................................</span>
+                                        <span> الرقم الوظيفي: </span><span t-if="o.employee_no" t-esc="o.employee_no"/><span t-else="">............................................</span><br></br>
+                                        <span>مســمى الـوظيــــفة : </span><span t-if="o.job_title" t-esc="o.job_title"/><span t-else="">............................................</span>
+                                        <span>، تـاريخ الالتـحاق بالـعمـل: </span><span t-if="o.aj_date" t-esc="o.aj_date"/><span t-else="">............................................</span>م
+                                        <span>، مستحقات نهاية الخدمة ( حتى تاريخه):</span><br></br><br></br>
+                                        <span>مستحقات نهاية الخدمة في حالة الاستقالة قبل نهاية العقد. </span><br></br>
+                                        <span>تقدم موظفنا الموضحة بياناته أعلاه طالباً تحويل راتبه وبدلاته الشهرية وجميع مستحقاته الوظيفية إلى حسابه الجاري رقم </span><span t-if="o.employee_id.bank_account_id">(<span t-esc="o.employee_id.bank_account_id.acc_number"/>)</span><span t-else="">............................................</span><br></br>
+                                        <span>لأجل سداد الديون التي سوف تترتب عليه لصالح بنك </span><span t-if="o.bank" t-esc="o.bank"/><span t-else="">...............................................</span>
+                                        <span>لذا نود أن نؤكد لكم موافقتنا والتزامنا بهذا التحويل في مواعيده الشهرية واستمراره حتى نهاية علاقته الوظيفية معنا مع التزامنا بعدم تسليم الموظف المذكور مستحقات نهاية الخدمة أو أي مستحقات أخرى حتى نحصل على مخالصة معتمدة منكم تفيد بانتهاء الالتزامات المترتبة عليه لصالحكم وموافقتكم على إلغاء تحويل راتبه. </span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr>
+                                    <td width="100%" style="text-align:center">وتقبلوا تحياتي ،،،</td>
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr>
+                                    <td width="70%" style="text-align:center"></td>
+                                    <td width="30%" style="text-align:center">الرئيس التنفيذي</td>
+                                </tr>
+                                <tr>
+                                    <td width="70%" style="text-align:center"></td>
+                                    <td width="30%" style="text-align:center">عمار الرجوب</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="emp_salary_action_report" model="ir.actions.report">
+            <field name="name">نموذج التزام جهة العمل بتحويل راتب الموظف</field>
+            <field name="model">employee.memo</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_report_custom.emp_salary_template</field>
+            <field name="report_file">ps_hr_report_custom.emp_salary_template</field>
+            <field name="binding_model_id" ref="model_employee_memo"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+        </record>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <template id="salary_def_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <table dir="rtl" style="border:none;width:100%">
+                            <tr dir="rtl">
+                                <td dir="rtl" style="text-align:right;width:100%">
+                                    <span>التاريخ:</span>
+                                    <span t-esc="o.date"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="page">
+                            <style>
+                                h1{
+                                text-align:center;
+                                }
+                            </style>
+                            <h1>الموضوع / تعريف راتب</h1>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="width:100%;text-align:right">
+                                        <span>السادة/ بنك</span><span t-if="o.to" t-esc="o.to"/><span t-else="">................................................................................................................</span><span>المحترمين</span><br/>
+                                        <span>السلام عليكم ورحمة الله وبركاته،،،</span><br/>
+                                        <style>
+                                            h1{
+                                            text-align:center;
+                                            }
+                                        </style>
+                                        <h1>تعريف راتب</h1>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table dir="rtl" style="border:1px solid black;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="2" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">اسم الموظف</td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">الجنسية</td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="2" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.employee_id.name"/></td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.country_id.name"/></td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="2" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">رقم إثبات الاقامة</td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">الرقم الوظيفي</td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="2" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.iqama_national_id"/></td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.employee_no"/></td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="2" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">الوظيفة</td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">تاريخ التعيين</td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="2" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.job_title"/></td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.aj_date"/></td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="25%" style="text-align:center;background:#A9A9A9;border:1px solid black">إجمالي الراتب</td>
+                                    <td dir="rtl" width="25%" style="text-align:center;background:#A9A9A9;border:1px solid black">الراتب الأساسي</td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#A9A9A9;border:1px solid black">تفاصيل البدلات</td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="25%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.total"/></td>
+                                    <td dir="rtl" width="25%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.employee_id.contract_id.wage"/></td>
+                                    <td dir="rtl" width="50%" style="text-align:center;background:#FFFFFF;border:1px solid black">
+                                        <span>بدل سكن </span><span t-esc="o.employee_id.contract_id.housing_allowance"/><span>ريال </span>
+                                        <span> ،وبدل نقل </span><span t-esc="o.employee_id.contract_id.transportation_allowance"/><span>ريال </span>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="3" width="100%" style="text-align:center;background:#A9A9A9;border:1px solid black">رقم حساب الموظف</td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" colspan="3" width="100%" style="text-align:center;background:#FFFFFF;border:1px solid black"><span t-esc="o.employee_id.bank_account_id.acc_number"/></td>
+                                </tr>
+                            </table>
+                            <br/>
+
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr>
+                                    <td style="text-align:right" dir="rtl">كما نفيدكم أن الموظف المذكور بياناته أعلاه لازال يعمل لدينا حتى تاريخه . </td>
+                                </tr>
+                            </table>
+                            <br></br>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr>
+                                    <td width="70%" style="text-align:center"></td>
+                                    <td width="30%" style="text-align:center">الرئيس التنفيذي</td>
+                                </tr>
+                                <tr>
+                                    <td width="70%" style="text-align:center"></td>
+                                    <td width="30%" style="text-align:center">عمار الرجوب</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="salary_def_action_report" model="ir.actions.report">
+            <field name="name">تعريف راتب</field>
+            <field name="model">employee.memo</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_report_custom.salary_def_template</field>
+            <field name="report_file">ps_hr_report_custom.salary_def_template</field>
+            <field name="binding_model_id" ref="model_employee_memo"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+        </record>
+
+
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+        <template id="emp_statement_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <div class="page">
+                            <style>
+                                h1{
+                                color:black;
+                                text-decoration: underline;
+                                text-align:center;
+                                }
+                            </style>
+                            <h1>نموذج إفادة موظف</h1>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="text-align:right;width:100%">
+                                        <span>التاريخ:</span>
+                                        <span t-esc="o.date"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table dir="rtl" style="border:1px solid black;width:100%">
+                                <tr style="line-height: 40px;" dir="rtl">
+                                    <td dir="rtl" style="width:65%;text-align:right;border:1px solid black;">
+                                        <span>السيد / </span><span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td dir="rtl" style="width:35%;text-align:right;border:1px solid black;">
+                                        <span>الرقم الوظيفي : </span><span t-esc="o.job_code"/>
+                                    </td>
+                                </tr>
+                                <tr  style="line-height: 40px;" dir="rtl">
+                                    <td dir="rtl" style="width:65%;text-align:right;border:1px solid black;">
+                                        <span>الادارة : </span><span t-esc="o.department_id.name"/>
+                                    </td>
+                                    <td dir="rtl" style="width:35%;text-align:right;border:1px solid black;">
+                                        <span>القسم : </span><span t-esc="o.department"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td colspan="3" dir="rtl" style="text-align:right;width:100%">
+                                        <h3>يرجى الإفادة عن : </h3>
+                                        <span t-esc="o.report"/>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>الاسم:</span>
+                                    </td>
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>التوقيع:</span>
+                                    </td>
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>التاريخ:</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td colspan="3" dir="rtl" style="text-align:right;width:100%">
+                                        <h3>إفادة الموظف :</h3>
+                                        <span t-esc="o.emp_report"/>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>الاسم:</span>
+                                    </td>
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>التوقيع:</span>
+                                    </td>
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>التاريخ:</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td colspan="3" dir="rtl" style="text-align:right;width:100%">
+                                        <h3>توصية المدير المباشر</h3>
+                                        <span t-esc="o.dir_manager_report"/>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>الاسم:</span>
+                                    </td>
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>التوقيع:</span>
+                                    </td>
+                                    <td dir="rtl" style="text-align:right;width:33%">
+                                        <span>التاريخ:</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="emp_statement_action_report" model="ir.actions.report">
+            <field name="name">نموذج إفادة موظف</field>
+            <field name="model">employee.statement</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_report_custom.emp_statement_template</field>
+            <field name="report_file">ps_hr_report_custom.emp_statement_template</field>
+            <field name="binding_model_id" ref="model_employee_statement"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+        </record>
+
+
+        <template id="job_offer_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <div class="page" style="border:1px solid black;">
+                            <style>
+                                h1{
+                                color:black;
+                                text-align:center;
+                                }
+                                h4{
+                                color:black;
+                                text-align:right;
+                                padding-right:10px;
+                                text-decoration: underline;
+                                }
+
+                            </style>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="text-align:right;width:70%;border-bottom:1px solid black"></td>
+                                    <td dir="rtl" style="background:#A9A9A9;text-align:right;width:30%;border:1px solid black;border-top:none"><h1>عرض عمل</h1></td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>التاريخ:</span>
+                                        <span t-esc="o.date"/>
+                                        <br></br>
+                                        <span>السيد / </span><span t-if="o.name" t-esc="o.name"/><span t-else="">................................................................................................................</span><span>المحترم</span><br/>
+                                        <span>بعد التحية،،،</span><br/>
+                                        <span>إشارة لطلب العمل المقدم منكم للعمل لدينا يسرنا إعلامكم بموافقتنا على تعيينكم وذلك وفق الشروط التالية : </span>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="50%" style=";text-align:right">
+                                        <br></br>
+                                        <span style="padding-right:30px">1. الوظيفة :</span><span t-esc="o.job_id.name"/>
+                                    </td>
+                                    <td dir="rtl" width="50%" style=";text-align:right">
+                                        <br></br>
+                                        <span style="padding-right:30px">1. الدرجة :</span><span t-esc="o.degree"/>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="100%" colspan="2" style="padding-right:10px;;text-align:right">
+                                        <br></br>
+                                        <span style=";">3.الراتب وبدلاته على النحو التالي : </span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <br></br>
+                            <table dir="rtl" style="border:1px solid black;width:100%">
+                                <tr style="" dir="rtl">
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;">
+                                        <span>راتب أساسي</span>
+                                    </td>
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;border-right:none">
+                                        <span>بدل سكن</span>
+                                    </td>
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;">
+                                        <span>بدل نقل</span>
+                                    </td>
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;border-left:none">
+                                        <span>الإجمالي</span>
+                                    </td>
+                                </tr>
+                                <tr style="" dir="rtl">
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;border-right:none">
+                                        <span t-esc="o.bias_salary"/>
+                                    </td>
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;">
+                                        <span t-esc="o.housing_allowance"/>
+                                    </td>
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;">
+                                        <span t-esc="o.transportation_allowance"/>
+                                    </td>
+                                    <td dir="rtl" style="width:25%;text-align:center;border:1px solid black;border-left:none">
+                                        <span t-esc="o.bias_salary+o.transportation_allowance+o.housing_allowance"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="100%" colspan="2" style="padding-right:10px;;text-align:right">
+                                        <br></br>
+                                        <span style=";">4. الإجازة السنوية: يحق لك إجازة سنوية مدتها ( 21  ) يوم بعد مرور12 شهر عمل.</span><br></br>
+                                        <span style=";">5. فترة التجربة: تكون تحت التجربة لمدة (3 أشهر ) اعتبارا من تاريخ مباشرتك العمل.</span><br></br>
+                                        <span style=";">6. مدة العقد: مدة هذا العقد </span>(<span t-esc="o.contract_duration"/> )<br></br>
+                                        <span style=";">7. شروط أخرى: التامين الطبي مؤمن حسب نظام الشركة.</span><br></br>
+                                        <span style=";">8. يعتبر هذا العرض جزءا لا يتجزأ من عقد العمل الذي سيوقع بيننا بعد مباشرة العمل.</span><br></br>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <br></br>
+
+                            <table dir="rtl" style="border-bottom:1px solid black;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="100%" colspan="2" style="padding-right:10px;;text-align:right">
+                                    <span>في حالة موافقتكم على ما ورد أعلاه، يرجى توقيع النسخة الثانية وإعادتها إلينا.</span>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="100%" colspan="2" style="padding-right:10px;;text-align:center">
+                                    <span>شركة معنا للاستثمار</span>
+                                    </td>
+                                </tr>
+                            </table>
+                              <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="100%" colspan="2" style="padding-right:10px;;text-align:right">
+                                    <h4>أوافق على هذا العرض</h4>
+                                    </td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="100%" colspan="2" style="padding-right:10px;;text-align:right">
+                                    <span>الاسم : ..................................................................................... </span><br></br>
+                                    <span>التوقيع : ..................................................................................... </span><br></br>
+                                    <span>التاريخ :</span><span style="padding-right:50px">/</span><span style="padding-right:50px">/</span><br></br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="job_offer_action_report" model="ir.actions.report">
+            <field name="name">عرض عمل</field>
+            <field name="model">job.offer</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_report_custom.job_offer_template</field>
+            <field name="report_file">ps_hr_report_custom.job_offer_template</field>
+            <field name="binding_model_id" ref="model_job_offer"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+        </record>
+
+
+
+
+        <template id="resignation_acceptance_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <div class="page" style="border:1px solid black;">
+                            <style>
+                                h1{
+                                color:black;
+                                text-align:center;
+                                }
+                                h4{
+                                color:black;
+                                text-align:right;
+                                padding-right:10px;
+                                text-decoration: underline;
+                                }
+
+                            </style>
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" style="text-align:right;width:70%;border-bottom:1px solid black"></td>
+                                    <td dir="rtl" style="background:#A9A9A9;text-align:right;width:30%;border:1px solid black;border-top:none"><h1>تقرير قبول استقالة</h1></td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>اسم الموظف : </span>
+                                        <span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>رقم الموظف : </span>
+                                        <span t-esc="o.emp_code"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>الوظيفة : </span>
+                                        <span t-esc="o.job_title"/>
+                                    </td>
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>رقم الوظيفة : </span>
+                                        <span t-esc="o.job_code"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>الإدارة / القسم : </span>
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>الراتب : </span>
+                                        <span t-esc="o.total"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>المؤهل العلمي : </span>
+                                        <span t-esc="o.qualification"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>جهة الحصول عليه : </span>
+                                        <span t-esc="o.qualification_institution"/>
+                                    </td>
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>تاريخ الحصول عليه : </span>
+                                        <span t-esc="o.qualification_date"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>تاريخ الالتحاق بالعمل : </span>
+                                        <span t-esc="o.aj_date"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>تاريخ ترك العمل : </span>
+                                        <span t-esc="o.leave_date"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>سبب الاستقالة : </span><br></br>
+                                        <span t-esc="o.reason"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>سبب الاستقالة : </span><br></br>
+                                        <span t-esc="o.reason"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>آخر تقييم للموظف : </span>
+                                        <span t-esc="o.last_evaluation"/>
+                                    </td>
+                                    <td dir="rtl" style="padding-right:10px;text-align:right;width:50%">
+                                        <span>معدل التقييم : </span>
+                                        <span t-esc="o.evaluation_rate"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>ملاحظة اللجنة : </span><br></br>
+                                        <span t-esc="o.committee_note"/>
+                                    </td>
+                                </tr>
+                                <tr style="line-height:40px" dir="rtl">
+                                    <td colspan="2" dir="rtl" style="padding-right:10px;text-align:right;width:100%">
+                                        <span>التوصيات : </span><br></br>
+                                        <span t-esc="o.recommendations"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br></br>
+
+                            <table dir="rtl" style="border:none;width:100%">
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="33%" colspan="1" style="padding-right:10px;;text-align:center">عضو</td>
+                                    <td dir="rtl" width="33%" colspan="1" style="padding-right:10px;;text-align:center">عضو</td>
+                                    <td dir="rtl" width="33%" colspan="1" style="padding-right:10px;;text-align:center">عضو</td>
+                                </tr>
+                                <tr dir="rtl">
+                                    <td dir="rtl" width="33%" colspan="1" style="padding-right:10px;;text-align:right">
+                                    <span>الاسم : ........................................................ </span><br></br>
+                                    <span>الوظيفة : ........................................................ </span><br></br>
+                                    <span>التوقيع : ........................................................ </span><br></br>
+                                    <span>التاريخ :</span><span style="padding-right:50px">/</span><span style="padding-right:50px">/</span><br></br>
+                                    </td>
+                                    <td dir="rtl" width="33%" colspan="1" style="padding-right:10px;;text-align:right">
+                                    <span>الاسم : ........................................................ </span><br></br>
+                                    <span>الوظيفة : ........................................................ </span><br></br>
+                                    <span>التوقيع : ........................................................ </span><br></br>
+                                    <span>التاريخ :</span><span style="padding-right:50px">/</span><span style="padding-right:50px">/</span><br></br>
+                                    </td>
+                                    <td dir="rtl" width="33%" colspan="1" style="padding-right:10px;;text-align:right">
+                                    <span>الاسم : ........................................................ </span><br></br>
+                                    <span>الوظيفة : ........................................................ </span><br></br>
+                                    <span>التوقيع : ........................................................ </span><br></br>
+                                    <span>التاريخ :</span><span style="padding-right:50px">/</span><span style="padding-right:50px">/</span><br></br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="resignation_acceptance_action_report" model="ir.actions.report">
+            <field name="name">تقرير قبول استقالة</field>
+            <field name="model">resignation.acceptance</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_report_custom.resignation_acceptance_template</field>
+            <field name="report_file">ps_hr_report_custom.resignation_acceptance_template</field>
+            <field name="binding_model_id" ref="model_resignation_acceptance"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+        </record>
+    </data>
+
+</odoo>

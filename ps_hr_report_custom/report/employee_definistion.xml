@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_employee_memo_form_inherit_0014" model="ir.ui.view">
+            <field name="name">employee.memo</field>
+            <field name="model">employee.memo</field>
+            <field name="inherit_id" ref="pioneer_employee_memo.view_employee_memo_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//notebook" position="before">
+                    <group string="Report Info" col="4">
+                        <field name="country_id"/>
+                        <field name="identification_id"/>
+                        <field name="iqama_national_id"/>
+                        <field name="aj_date"/>
+                        <field name="total"/>
+                        <field name="to"/>
+                        <field name="bank"/>
+                    </group>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

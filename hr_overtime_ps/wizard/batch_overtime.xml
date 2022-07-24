@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="batch_overtime_form_view" model="ir.ui.view">
+           <field name="name">batch.overtime.form.view</field>
+           <field name="model">batch.overtime</field>
+           <field name="arch" type="xml">
+               <form string="Batch Overtime">
+
+                       <div class="oe_title">
+                           <h1>
+                               <field name="name" readonly="1"/>
+                           </h1>
+                       </div>
+                       <group>
+                           <group>
+                               <field name="date_from"/>
+                               <field name="overtime_summary"/>
+                           </group>
+                           <group>
+                               <field name="date_to"/>
+                               <field name="request_hours"/>
+                               <field name="company_id" readonly="1" groups="base.group_multi_company"/>
+                           </group>
+                       </group>
+                       <group>
+                           <field name="employee_ids" nolabel="1">
+                               <tree>
+                                   <field name="name"/>
+                                   <field name="contract_id"/>
+                                   <field name="department_id"/>
+                                   <field name="job_id"/>
+                               </tree>
+                           </field>
+                       </group>
+                   <footer>
+                       <button name="create_overtime" type="object" string="Create" class="btn-primary"/>
+                       <button string="Cancel" class="btn-secondary" special="cancel" />
+                   </footer>
+               </form>
+           </field>
+       </record>
+
+        <record id="batch_overtime_action_view" model="ir.actions.act_window">
+            <field name="name">Batch Overtime</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">batch.overtime</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="batch_overtime_form_view"/>
+            <field name="target">new</field>
+        </record>
+
+
+        <menuitem id="batch_overtime_menu_action" name="Batch Overtime" parent="hr_overtime_ps.hr_overtime_main_menu" action="batch_overtime_action_view"/>
+    </data>
+</odoo>

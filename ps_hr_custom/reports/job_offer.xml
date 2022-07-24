@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="job_offer_report_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <h2 style="text-align:center;margin-top:0px;">
+                            <strong>عــــــرض عمــــــل</strong>
+                        </h2>
+                        <style >
+                            td, th {vertical-align:middle;padding-left:5px;padding-right:5px;}
+                            * { font-family: 'Almarai', sans-serif; }
+                        </style>
+                        <div class="page" style="dir:rtl;">
+
+                            <br/>
+                            <p style="text-align:right;margin-bottom:10px;" dir="rtl">
+                                التاريــــــــــخ:
+                                <strong style="margin-right:10px;" t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                            </p>
+                            <p style="text-align:right;margin-bottom:10px;" dir="rtl">
+                                اليــــــــــــوم:
+                                <strong style="margin-right:10px;" t-esc="o.get_ar_day()"/>
+                            </p>
+                            <p style="text-align:right;margin-bottom:10px;"  dir="rtl">
+                                الموضـــوع:
+                                <strong style="margin-right:10px;">عـــرض وظيفــــى</strong>
+                            </p>
+                            <p style="text-align:right;" dir="rtl">
+                                 السيــــد / ة:
+                                <strong style="margin-right:10px;" t-esc="o.employee_id.name"/>
+                            </p>
+
+                            <p style="text-align:center;margin-bottom:10px;margin-top:25px;" dir="rtl">تحيـــــة طيبـــــة وبعـــــد ،،،</p>
+                            <p style="text-align:right;margin-bottom:10px;" dir="rtl">
+                                إشـــارة إلــى الإتفــاق الـذى تـم معكــم حيـــال شغـــل وظيفــة
+                                <strong> (<t t-esc="o.job_id.name"/>) </strong>
+                                لــدى الشركـــة فإنــه يسرنـــا أن نقــدم لكــم عرضنـــا الوظيفـــى التالــى:
+
+
+                            </p>
+
+                            <table style="border-spacing:0;margin-bottom:0; width 100%; border: 1px solid gray;width:100%;font-size:13px;">
+                                <tr style="border:1px solid gray;height:40px;">
+
+                                    <td rowspan="2" style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">التأمين الطبى
+                                    </td>
+                                    <td rowspan="2" style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">مــدة الإجــازة
+                                    </td>
+                                    <td colspan="2" style="border:1px solid gray;width:20%;background-color:#e6e6ff;text-align:center;">العقد
+                                    </td>
+                                    <td colspan="4" style="border:1px solid gray;width:40%;background-color:#e6e6ff;text-align:center;">الراتـــــب
+                                    </td>
+
+                                    <td rowspan="2" style="border:1px solid gray;width:20%;background-color:#e6e6ff;text-align:center;">المسمى الوظيفى
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;height:40px;">
+                                    <td style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">مـــدة العقــــد
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">فتـرة التجربـــة
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">صافـــى
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">بدل نقــل
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">بدل سكــن
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;background-color:#e6e6ff;text-align:center;">أساســـى
+                                    </td>
+
+                                </tr>
+
+                                <tr style="border:1px solid gray;height:50px;">
+                                    <td style="border:1px solid gray;width:10%;text-align:center;"><t t-esc="o.gosi_allowance"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;"><t t-esc="o.employee_id.accumlate_days"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;">
+                                        <t t-esc="o.contract_period"/>
+                                        <br/>
+                                        يوم
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;">
+                                        90
+                                        <br/>
+                                        يوم
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;"><t t-esc="o.total"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;"><t t-esc="o.transportation_allowance"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;"><t t-esc="o.housing_allowance"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:10%;text-align:center;"><t t-esc="o.wage"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:20%;text-align:center;"><t t-esc="o.job_id.name"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/>
+
+                            <p style="text-align:center;margin-bottom:10px;">واللــه الموفـــــق</p>
+                            <br/>
+                            <br/>
+                            <h5 style="text-align:right;margin-bottom:10px;color:#555555;"><strong>إدارة المـــوارد البشريــــة</strong></h5>
+                            <hr style="height:.25px;background-color:grey;margin-top:1px;"/>
+
+
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+
+
+        <record id="job_offer_report" model="ir.actions.report">
+            <field name="name">Job Offer</field>
+            <field name="model">hr.contract</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_custom.job_offer_report_template</field>
+            <field name="report_file">ps_hr_custom.job_offer_report_template</field>
+            <field name="print_report_name">'Job Offer - %s' % (object.name)</field>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>
+

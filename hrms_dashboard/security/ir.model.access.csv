@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_employee_broad_factor,access_hr_employee_road_factor,model_hr_employee_broad_factor,base.group_user,1,0,0,0
+access_hr_payslip_hossam,access_hr_payslip_hossam,model_hr_payslip,base.group_user,1,0,0,0
+access_hr_employee_loan_ps_hossam,access_hr_employee_loan_ps_hossam,model_hr_employee_loan_ps,base.group_user,1,1,1,0
+access_hr_business_trip_hossam,access_hr_business_trip_hossam,model_hr_business_trip,base.group_user,1,1,1,0
+access_hr_performance_evaluation_hossam,access_hr_performance_evaluation_hossam,model_hr_performance_evaluation,base.group_user,1,1,1,0
+access_hr_payslip_line_hossam,access_hr_payslip_line_hossam,model_hr_payslip_line,base.group_user,1,0,0,0
+access_hr_payslip_worked_days_hossam,access_hr_payslip_worked_days_hossam,model_hr_payslip_worked_days,base.group_user,1,0,0,0
+access_hr_payslip_input_hossam,access_hr_payslip_input_hossam,model_hr_payslip_input,base.group_user,1,0,0,0
+access_hr_leave_hossam,access_hr_leave_hossam,model_hr_leave,base.group_user,1,1,1,0
+access_hr_contract_hossam,access_hr_contract_hossam,model_hr_contract,base.group_user,1,0,0,0
+access_account_analytic_line_hossam,access_account_analytic_line_hossam,model_account_analytic_line,base.group_user,1,1,1,0

@@ -1,0 +1,777 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vacation_resettlement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-01 11:20+0000\n"
+"PO-Revision-Date: 2020-09-01 13:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: vacation_resettlement
+#: model:ir.actions.report,print_report_name:vacation_resettlement.vacation_resettlement_report
+msgid "'%s Vacation Resettlement' % (object.employee_id.name)"
+msgstr ""
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"<strong>Accounting Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong> مدير حسابات </strong>\n"
+"                                            <br/>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"<strong>Admin Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong>مدير الشئون الإدارية والمالية</strong>\n"
+"                                            <br/>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "<strong>Approval From Responsibles</strong>"
+msgstr "<strong>موافقة المسئولين</strong>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"<strong>HR Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong>مدير الموارد البشرية</strong>\n"
+"                                            <br/>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "<strong>Responsible</strong>"
+msgstr "<strong>المسئول</strong>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "<strong>Responsibles Notes</strong>"
+msgstr "<strong>ملاحظات المسئول</strong>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "<strong>Signature</strong>"
+msgstr "<strong>التوقيع</strong>"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"<strong>Vacation Resettlement Form\n"
+"                                </strong>"
+msgstr ""
+"<strong> مباشرة العمل  بعد الاجازة\n"
+"                                </strong>"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__account_manager_id
+msgid "Accounting Manager"
+msgstr "مدير الحسابات"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__account_manager_note
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Accounting Manager Note"
+msgstr "تعليق مدير الحسابات"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات المطلوبة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Add notes ..."
+msgstr "إضافة ملاحظات"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Admin & Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__admin_manager_id
+msgid "Admin & Finance Manager"
+msgstr "مدير الشئون الإدارية والمالية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__admin_manager_note
+msgid "Admin & Finance Manager Note"
+msgstr "تعليق مدير الشئون الإدارية والمالية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields.selection,name:vacation_resettlement.selection__vacation_resettlement__state__admin_fd
+msgid "Admin Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Admin Manager Note"
+msgstr "تعليق المدير العام"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__air_fare_difference
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Air Fare Difference"
+msgstr "فرق أجرة الطيران"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__airline
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Airline"
+msgstr "شركة طيران"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields.selection,name:vacation_resettlement.selection__vacation_resettlement__state__approved
+msgid "Approved"
+msgstr "موافق عليه"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Basic"
+msgstr "أساسى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "Basic Salary"
+msgstr "راتب اساسي"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_hr_leave__check_vacation_resettlement
+msgid "Check Vacation Resettlement"
+msgstr "تحقق من مباشرة العمل بعد الاجازة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__company_id
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "Company"
+msgstr "شركة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__contract_period
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Contract Period"
+msgstr "مدة العقد"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_hr_holidays_saudi_form_inherit_003
+msgid "Create Vacation Resettlement"
+msgstr "إنشاء عطلة مداومة العمل"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__create_uid
+msgid "Created by"
+msgstr "أنشاء بواسطة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__create_date
+msgid "Created on"
+msgstr "انشاء بتاريخ"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__currency_id
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Currency"
+msgstr "العملة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__current_salary_status
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Current Salary Status"
+msgstr "الوضع الحالى للراتب"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__date
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__days
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Days"
+msgstr "أيام"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__deduction
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Deduction"
+msgstr "الخصم"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__department_id
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Department"
+msgstr "القسم"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__departure_date
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Departure Date"
+msgstr "تاريخ المغادرة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__display_name
+msgid "Display Name"
+msgstr "اسم"
+
+#. module: vacation_resettlement
+#: code:addons/assrooh-addons/vacation_resettlement/models/vacation_resettlement.py:0
+#: code:addons/vacation_resettlement/models/vacation_resettlement.py:0
+#: model:ir.model.fields.selection,name:vacation_resettlement.selection__vacation_resettlement__state__draft
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: vacation_resettlement
+#: model:ir.model,name:vacation_resettlement.model_hr_employee
+#: model:ir.model.fields,field_description:vacation_resettlement.field_hr_payslip__employee_id
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__employee_id
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: vacation_resettlement
+#: code:addons/assrooh-addons/vacation_resettlement/models/vacation_resettlement.py:0
+#: code:addons/vacation_resettlement/models/vacation_resettlement.py:0
+#, python-format
+msgid "Employee %s has no Private Address \"Partner\" "
+msgstr ""
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__employee_no
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Employee Info"
+msgstr "معلومات عن الموظف"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_tree
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: vacation_resettlement
+#: model:ir.actions.report,name:vacation_resettlement.vacation_resettlement_report
+msgid "Employee Vacation Resettlement"
+msgstr "طلب مباشرة العمل بعد الاجازة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__contract_basic
+msgid "Employee's monthly gross wage."
+msgstr "الأجر الإجمالي الشهري للموظف"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields.selection,name:vacation_resettlement.selection__vacation_resettlement__state__finance_manager
+msgid "Finance Manager"
+msgstr "المدير المالى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Finance Manager Approve"
+msgstr "موافقة المدير المالى"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__finish_duty
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Finish Duty"
+msgstr "أنهاء الخدمة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: vacation_resettlement
+#: code:addons/assrooh-addons/vacation_resettlement/models/vacation_resettlement.py:0
+#: code:addons/vacation_resettlement/models/vacation_resettlement.py:0
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__hr_manager_id
+#: model:ir.model.fields.selection,name:vacation_resettlement.selection__vacation_resettlement__state__hr_manager
+#, python-format
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "HR Manager Approve"
+msgstr "موافقة مدير الموارد البشرية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__hr_manager_note
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "HR Manager Note"
+msgstr "تعليق مدير الموارد البشرية"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "House Allowance"
+msgstr "بدل السكن"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__house_allowance
+msgid "Housing Allowance"
+msgstr "بدل سكن"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__id
+msgid "ID"
+msgstr "هوية شخصية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__iqama
+msgid "Identification No"
+msgstr "رقم التعريف"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_needaction
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_has_error
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Iqama"
+msgstr "إقامة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__job_id
+msgid "Job Position"
+msgstr "الوظيفة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Job Title"
+msgstr "المسمى الوظيفى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"Last Date From\n"
+"                                        Vacation"
+msgstr ""
+"تاريخ آخر من\n"
+"                                         عطلة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__last_date_from_vacation
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Last Date From Vacation"
+msgstr "آخر موعد للعطلة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__loan_amount
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Loan Amount"
+msgstr "ملبغ السلفيات"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__tel_allowance
+msgid "Mobile Allowance"
+msgstr "بدل اتصالات"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__months
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Months"
+msgstr "شهور"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__country_id
+msgid "Nationality (Country)"
+msgstr "الجنسية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__net_pay
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Net Pay"
+msgstr "صافي الأجر"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_hr_employee__no_payroll
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_inherit_hr_employee_form_0003
+msgid "No Payroll"
+msgstr "لا يستحق الرواتب"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__note
+msgid "Note"
+msgstr "ملحوظة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__name
+msgid "Number"
+msgstr "رقم"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__other_allowance
+msgid "Other"
+msgstr "اخرى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Other Allowance"
+msgstr "بدلات أخرى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Other Deduction"
+msgstr "خصومات أخرى"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__other_deductions
+msgid "Other Deductions"
+msgstr "خصومات اخرى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Other Info"
+msgstr "معلومات اخرى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Other Notes"
+msgstr "الملاحظات الأخرى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Passport"
+msgstr "جواز السفر"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__passport_id
+msgid "Passport No"
+msgstr "رقم جواز السفر"
+
+#. module: vacation_resettlement
+#: model:ir.model,name:vacation_resettlement.model_hr_payslip
+msgid "Pay Slip"
+msgstr "إيصال المرتب"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Salary Info"
+msgstr "معلومات عن الراتب"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Send Request"
+msgstr "إرسال طلب"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_hr_employee__no_payroll
+msgid "Specify if the No Payroll."
+msgstr "حدد ما إذا كان لا يستحق الرواتب."
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__other_allowance
+msgid "Specify if the Other."
+msgstr "حدد ما إذا كان أخرى."
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_tree
+msgid "Status"
+msgstr "الحالة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Tel Allowance"
+msgstr "بدل هاتف"
+
+#. module: vacation_resettlement
+#: model:ir.model,name:vacation_resettlement.model_hr_leave
+msgid "Time Off"
+msgstr "أجازة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__total
+msgid "Total"
+msgstr "الإجمالى"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Total Deduction"
+msgstr "إجمالى الخصم"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__total_deductions
+msgid "Total Deductions"
+msgstr "إجمالى الخصم"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__total_services
+msgid "Total Services"
+msgstr "إجمالى الخدمات"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Total [Days]"
+msgstr "إجمالى عدد الايام"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Total services"
+msgstr "إجمالى الخدمات"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Transport Allowance"
+msgstr "بدل النقل"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__transport_allowance
+msgid "Transportation Allowance"
+msgstr "بدل مواصلات"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Travel Order NO"
+msgstr "رقم أمر السفر"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__travel_order_no
+msgid "Travel Order No"
+msgstr "رقم أمر السفر"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__vacation_end_date
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_tree
+msgid "Vacation End Date"
+msgstr "تاريخ نهاية الأجازة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__vacation_pay
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Vacation Pay"
+msgstr "مدفوعات الإجازة"
+
+#. module: vacation_resettlement
+#: model:ir.actions.act_window,name:vacation_resettlement.view_vacation_resettlement_action
+#: model:ir.model,name:vacation_resettlement.model_vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_hr_leave__vacation_resettlement_id
+#: model:ir.ui.menu,name:vacation_resettlement.view_vacation_resettlement_menu
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_hr_holidays_saudi_form_inherit_003
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_tree
+msgid "Vacation Resettlement"
+msgstr "إعادة مداومة العمل أثناء الإجازة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"Vacation Resettlement\n"
+"                                        Info"
+msgstr "معلومات  مباشرة العمل"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_hr_holidays_saudi_form_inherit_003
+msgid "Vacation Resettlement Count"
+msgstr " عدد إعادة مداومة العمل أثناء الإجازة"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Vacation Resettlement Info"
+msgstr " معلومات  مباشرة العمل"
+
+#. module: vacation_resettlement
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.vacation_resettlement_template
+msgid ""
+"Vacation Start\n"
+"                                        Date"
+msgstr "تاريخ بداية الإجازة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__vacation_start_date
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_tree
+msgid "Vacation Start Date"
+msgstr "بداية"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__vendor_bill_id
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Vendor Bill"
+msgstr "فاتورة"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__contract_basic
+msgid "Wage"
+msgstr "الراتب الأساسى"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,help:vacation_resettlement.field_vacation_resettlement__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: vacation_resettlement
+#: model:ir.model.fields,field_description:vacation_resettlement.field_vacation_resettlement__years
+#: model_terms:ir.ui.view,arch_db:vacation_resettlement.view_vacation_resettlement_form
+msgid "Years"
+msgstr "سنوات"
+
+#. module: vacation_resettlement
+#: code:addons/assrooh-addons/vacation_resettlement/models/vacation_resettlement.py:0
+#: code:addons/vacation_resettlement/models/vacation_resettlement.py:0
+#, python-format
+msgid "You must Create Service Product with Barcode \"re20000\" for Resettlement"
+msgstr "يجب عليك إنشاء خدمة المنتج مع الباركود \"re20000\" لإعادة دوام العمل"

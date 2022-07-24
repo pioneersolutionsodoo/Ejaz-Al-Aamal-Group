@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+business_card_all,business.card.all,model_business_card,base.group_user,1,1,1,1
+business_card_type_all,business.card.type.all,model_business_card_type,base.group_user,1,1,1,1
+business_card_category_all,business.card.category.all,model_business_card_category,base.group_user,1,1,1,1
+

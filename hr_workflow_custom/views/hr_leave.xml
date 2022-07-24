@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_hr_holidays_saudi_form_inherit">
+            <field name="name">HR leave</field>
+            <field name="model">hr.leave</field>
+            <field name="inherit_id" ref="pioneer_HR_Leave.view_hr_holidays_saudi_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_request']" position="attributes">
+                    <attribute name="string">Request For LM Approval</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_confirm']" position="attributes">
+                    <attribute name="string">LM Approve</attribute>
+                </xpath>
+                <xpath expr="//field[@name='direct_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

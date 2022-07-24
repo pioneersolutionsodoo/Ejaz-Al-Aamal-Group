@@ -1,0 +1,20 @@
+{
+    'name': 'Pioneer expiry reminder',
+    'version': '15.0.0.1',
+    'summary': 'expiry reminder',
+    'description': 'expiry reminder',
+    'category': 'hr',
+    'author': 'Mostafa Abbas ,Pioneer solution',
+    'website': 'ps-sa.net',
+    'depends': ['base', 'hr', 'alshrooq_employee_details','hr_contract'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/data.xml',
+        'views/res_config_settings_view.xml',
+        'wizard/expiry_reminder_wizard_view.xml',
+        'report/expiry_reminder_report.xml',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Return From Vacation [form] view-->
+        <record id="view_return_from_vacation_form" model="ir.ui.view">
+            <field name="name">Return From Vacation Form</field>
+            <field name="model">return.from.vacation</field>
+            <field name="arch" type="xml">
+                <form string="Return From Vacation">
+                    <header>
+                        <button name="send_request" string="Send Request" class="oe_highlight" states="draft"
+                                type="object"/>
+
+                        <button name="direct_manager" string="Direct Manager Approve"
+                                attrs="{'invisible':[('show_direct_manager_button','=',False)]}"
+                                class="oe_highlight" states="direct_manager" type="object"/>
+
+                        <button name="hr_manager" string="HR Manager Approve" groups="hr.group_hr_manager"
+                                class="oe_highlight" states="hr_manager" type="object"/>
+
+                        <field name="state" widget="statusbar"/>
+                        <field name="is_direct_manager" invisible="1"/>
+                        <field name="show_direct_manager_button" invisible="1"/>
+                    </header>
+                    <sheet>
+
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" string="Employee Name" required="1"/>
+                                <field name="job_id" string="Job Title"/>
+                                <field name="department_id" string="Department"/>
+                            </group>
+                            <group>
+                                <field name="employee_no" string="Employee Code"/>
+                                <field name="company_id" string="Company Name"/>
+                            </group>
+                        </group>
+                        <group string="Return From Vacation Info">
+                            <group>
+                                <field name="date" string="Date"/>
+                                <field name="vacation_type" string="Vacation Type" required="1"/>
+                                <field name="number_of_delay_days" string="No.of Days to be deducted"/>
+                                <field name="hr_leave" string="Leave Type"/>
+                            </group>
+                            <group>
+                                <field name="return_from_leave" string="Return From leave" required="1"/>
+                                <field name="not_returning_from_leave" string="Not returning from leave"/>
+                                <field name="project_id" string="Project"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Approval Notes">
+                                    <group>
+                                        <field name="d_manager" readonly="1"/>
+                                        <field name="d_manager_note" nolabel="1" placeholder="Direct Manager Note"
+                                               attrs="{'readonly':[('state','!=','direct_manager')]}"/>
+                                        <field name="hr_manager_id" readonly="1"/>
+                                        <field name="hr_manager_note" nolabel="1" placeholder="HR Manager Note"
+                                               attrs="{'readonly':[('state','!=','hr_manager')]}"/>
+                                    </group>
+                            </page>
+                            <page string="Other Notes">
+                                <group string="Notes">
+                                    <field name="note" string="Notes" nolabel="1" placeholder="Add notes ..."/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!--        Return From Vacation [tree] view-->
+        <record id="view_return_from_vacation_tree" model="ir.ui.view">
+            <field name="name">Return From Vacation Tree</field>
+            <field name="model">return.from.vacation</field>
+            <field name="arch" type="xml">
+                <tree string="Return From Vacation">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="vacation_type" string="Vacation Type"/>
+                    <field name="return_from_leave" string="Return From Leave"/>
+                    <field name="not_returning_from_leave" string="No Returning from leave"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Return From Vacation [action] view-->
+        <record id="view_return_from_vacation_action" model="ir.actions.act_window">
+            <field name="name">Return From Vacation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">return.from.vacation</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+        <!--        Return From Vacation [menu] view-->
+        <menuitem id="view_return_from_vacation_menu"
+                  name="Return From Vacation"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="view_return_from_vacation_action" sequence="4"/>
+    </data>
+</odoo>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template inherit_id="web.minimal_layout" id="minimal_layout_inherit">
+            <xpath expr="//head" position="inside">
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&amp;display=swap" rel="stylesheet"/>
+            </xpath>
+        </template>
+
+        <template id="payslip_report_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <h2 style="text-align:center;margin-top:0px;">
+                            <strong t-field="o.name"/>
+                        </h2>
+                        <style >
+                            td, th {vertical-align:middle;padding-left:5px;padding-right:5px;}
+                            * { font-family: 'Almarai', sans-serif; }
+                            td { font-size:13px; }
+                            tr { height:30px; }
+                            .strong-font td { font-weight:bold; }
+
+                            .watermark { position: absolute; opacity:0.2; font-size:100px; width:50%; text-align:center;
+                            z-index:99; border: 2px solid black; -webkit-transform: rotate(-30deg);border-radius:20px; }
+                        </style>
+
+                        <t t-set="can_be_printed" t-value="o._can_be_printed()"/>
+                        <t t-if="can_be_printed">
+                            <div class="watermark" style="top:600px;right:25%;">
+                                <strong style="font-family:sans-serif;">DRAFT</strong>
+                            </div>
+                        </t>
+
+                        <div class="page" >
+
+                            <!--                            <h6 style="text-align:center;margin-bottom:10px;">-->
+                            <!--                                <strong>Employee Details</strong>-->
+                            <!--                            </h6>-->
+                            <!--                            <h6 style="text-align:center;margin-bottom:10px;">-->
+                            <!--                                <strong>بيانـــــات الموظـــــــف</strong>-->
+                            <!--                            </h6>-->
+
+                            <table style="width:100%;margin-top:20px;">
+                                <tr style="width:100%;">
+                                    <td style="width:50%;text-align:right;padding-right:10px;">
+                                        <h6><strong>Employee Details</strong></h6>
+                                    </td>
+                                    <td style="width:50%;text-align:left;padding-left:10px;">
+                                        <h6><strong>بيانـــــات الموظـــــــف</strong></h6>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="strong-font" style="border-spacing:0;margin-bottom:0;border:1px solid gray;width:100%;">
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-center" style="border:1px solid gray;width:20%;background-color:#e6e6ff">
+                                        Employee Name
+                                        <br/>
+                                        إســـم الموظـــف
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:30%">
+                                        <span t-field="o.employee_id.name"/>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:20%;background-color:#e6e6ff;">
+                                        Employee Number
+                                        <br/>
+                                        الرقــم الوظيفـــى
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:30%">
+                                        <span t-field="o.employee_id.emp_code"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff">
+                                        Position
+                                        <br/>
+                                        المسمـى الوظيفــى
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.employee_id.job_id.name"/>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        Department
+                                        <br/>
+                                        الإدارة
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.employee_id.department_id.name"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff">
+                                        Date Of Join
+                                        <br/>
+                                        تاريــخ التعييــن
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.employee_id.aj_date"/>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        Job Location
+                                        <br/>
+                                        موقــع الوظيفــة
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.employee_id.work_location_id.name"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff">
+                                        ID No. / Iqama No.
+                                        <br/>
+                                        رقم الهوية/رقم الإقامة
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.employee_id.identification_id"/>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        Leave Balance
+                                        <br/>
+                                        رصيـــد الاجــازات
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.employee_id.balance_leave"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff">
+                                        Bank Name
+                                        <br/>
+                                        اســــم البنـــك
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.res_partner_bank_id.bank_id.name"/>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        IBAN No.
+                                        <br/>
+                                        رقـــم الأيبــان
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;">
+                                        <span t-field="o.res_partner_bank_id.acc_number"/>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+
+                            <br/>
+<!--                            <h6 style="text-align:center;margin-bottom:10px;"><strong>Salary Details</strong></h6>-->
+<!--                            <h6 style="text-align:center;margin-bottom:10px;"><strong>بيانـــــات الراتـــــــب</strong></h6>-->
+
+                            <table style="width:100%;">
+                                <tr style="width:100%;">
+                                    <td style="width:50%;text-align:right;padding-right:10px;">
+                                        <h6><strong>Salary Details</strong></h6>
+                                    </td>
+                                    <td style="width:50%;text-align:left;padding-left:10px;">
+                                        <h6><strong>بيانـــــات الراتـــــــب</strong></h6>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table style="border-spacing:0;margin-bottom:0;border:1px solid gray;width:100%;">
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;width:40%;background-color:#e6e6ff">
+                                        <strong>Earnings</strong>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:20%;background-color:#e6e6ff;">
+                                        <strong>SR / ر . س</strong>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;width:40%;background-color:#e6e6ff;">
+                                        <strong>المدفوعــــــات</strong>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Back Pay
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.back_pay"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        دفــع بأثــر رجعـــى
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Basic Salary
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.basic"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        الراتـــب الأساســــى
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Housing Allowance
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.housing_alw"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        بــدل السكــــــن
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Transport Allowance
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.transport_alw"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        بــدل المواصـــلات
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Responsibility Allowance
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.responsibility_alw"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        بــدل مسئوليــــة
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Provision Sales Invoices
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.provision"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        عمولــــة شهريـــــة
+                                    </td>
+                                </tr>
+                                <tr class="strong-font" style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        <strong>Total Earnings</strong>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff">
+                                        <t t-esc="'%.2f'% o.total_earnings"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        <strong>إجمالــــى المستحقــــات</strong>
+                                    </td>
+                                </tr>
+
+
+
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        <strong>Deductions</strong>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff">
+                                        <strong>SR / ر . س</strong>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        <strong>الحسميــــــات</strong>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        Employee GOSI Annuities
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.gosi_annuities"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        المعاشـــات - الموظـــــف
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        Employee GOSI Saned
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.gosi_saned"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        سانـــد - الموظـــــف
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Cash Shortage
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.cash_shortage"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        عجـــز الكـــاش
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Housing Allowance Deduction
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.housing_alw_deduct"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        خصــم بــدل السكـــن
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Transport Allowance Deduction
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.transport_alw_deduct"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        خصــم بــدل النقـــل
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Monthly Basic Deduction
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.monthly_basic_deduct"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        خصــم راتـــب أساســـى
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Salary Voucher Recovery
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.salary_voucher_recovery"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        خصـم مدفوعــات رواتـب تم دفعها على أسـاس دفـع بأثـر رجعـى
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        KSA AFR Disciplinary Action
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray">
+                                        <t t-esc="'%.2f'% o.disciplinary_action"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        إجـــراء تدريبـــى
+                                    </td>
+                                </tr>
+                                <tr class="strong-font" style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        <strong>Total Deductions</strong>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        <t t-esc="'%.2f'% o.total_deductions"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        <strong>إجمالـــى الحسميـــات</strong>
+                                    </td>
+                                </tr>
+                                <tr class="strong-font" style="border:1px solid gray;">
+                                    <td class="text-left" style="border:1px solid gray;background-color:#e6e6ff">
+                                        <strong>Net Pay Salary</strong>
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        <t t-esc="'%.2f'% o.net_pay_salary"/>
+                                    </td>
+                                    <td class="text-right" style="border:1px solid gray;background-color:#e6e6ff;">
+                                        <strong>الراتـــــب الصافـــــى</strong>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+
+                        <!--                        <div t-attf-class="footer o_standard_footer">-->
+                        <!--                            <div class="text-center" style="border-top: 1px solid black;">-->
+                        <!--                                <t t-if="o.res_partner_bank_id">-->
+                        <!--                                    <div style="width:100%;position:absolute;top:5px;left:0px;font-size:14px;">-->
+                        <!--                                        <span style="float:left;width:50%;color:#3E1625;text-align:center;">-->
+                        <!--                                            Bank Name:-->
+                        <!--                                            <span t-field="o.res_partner_bank_id.bank_id.name"/>-->
+                        <!--                                        </span>-->
+                        <!--                                        <span style="float:left;width:50%;color:#3E1625;text-align:center;">-->
+                        <!--                                            Account Number:-->
+                        <!--                                            <span t-field="o.res_partner_bank_id.acc_number"/>-->
+                        <!--                                        </span>-->
+                        <!--                                    </div>-->
+                        <!--                                </t>-->
+                        <!--                                <br/>-->
+                        <!--                                <ul class="list-inline mb4">-->
+                        <!--                                    <div t-raw="o.company_id.report_footer"/>-->
+                        <!--                                </ul>-->
+                        <!--                                <div t-if="report_type == 'pdf'" class="text-muted">-->
+                        <!--                                    Page: <span class="page"/> / <span class="topage"/>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!--                        -->
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+        <record id="payslip_report" model="ir.actions.report">
+            <field name="name">Payslip Customized</field>
+            <field name="model">hr.payslip</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_hr_custom.payslip_report_template</field>
+            <field name="report_file">ps_hr_custom.payslip_report_template</field>
+            <field name="print_report_name">'Payslip - %s' % (object.employee_id.name)</field>
+            <!--            <field name="binding_model_id" ref="hr_payroll.model_hr_payslip"/>-->
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

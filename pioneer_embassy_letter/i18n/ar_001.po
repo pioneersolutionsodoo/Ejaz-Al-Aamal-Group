@@ -1,0 +1,533 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pioneer_embassy_letter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-18 12:55+0000\n"
+"PO-Revision-Date: 2022-04-18 12:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid ""
+")\n"
+"                                is an"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid ""
+",\n"
+"                                South African Citizen her Iqama number is"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid ""
+"<span>   وقد اصدر هذا الخطاب بناءاً على رغبة الموظف دون أدني مسؤلية للشركة "
+"عن أي التزامات مالية وخلافه على الموظف</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>بأن السيد/السيدة</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>جوازات الرياض ,يعمل لدينا وتحت كفالتنا من تاريخ</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>حتى تاريخه بمهنة ،</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>صادرة من</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>نفيدكم نحن</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>ويتقاضى راتب شهري قدره</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<span>يحمل اقامة رقم</span>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<strong style=\"display:inline-block;float:right\">إلى</strong>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<strong style=\"display:inline-block;float:right\">التاريخ</strong>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "<strong style=\"display:inline-block;float:right\">الموضوع</strong>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "<strong>Date</strong>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "<strong>Subject</strong>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "<strong>To</strong>"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Add notes ..."
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields.selection,name:pioneer_embassy_letter.selection__embassy_letter__state__approved
+msgid "Approved"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Arabic Embassy Letter"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "Assrooh certifies that"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__company_id
+msgid "Company"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__date
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__department_id
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Department"
+msgstr "القسم"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: code:addons/pioneer_embassy_letter/models/embassy_letter.py:0
+#: model:ir.model.fields.selection,name:pioneer_embassy_letter.selection__embassy_letter__state__draft
+#, python-format
+msgid "Draft"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.actions.act_window,name:pioneer_embassy_letter.view_embassy_letter_action
+#: model:ir.actions.report,name:pioneer_embassy_letter.arabic_embassy_letter_report
+#: model:ir.actions.report,name:pioneer_embassy_letter.english_embassy_letter_report
+#: model:ir.model,name:pioneer_embassy_letter.model_embassy_letter
+#: model:ir.ui.menu,name:pioneer_embassy_letter.view_embassy_letter_menu
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_tree
+msgid "Embassy Letter"
+msgstr "خطاب السفارة"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Employee Info"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_tree
+msgid "Employee Name"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "English Embassy Letter"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__gross
+msgid "Gross"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Gross Salary"
+msgstr "الراتب الكلى"
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "HR Manager Approve"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: code:addons/pioneer_embassy_letter/models/embassy_letter.py:0
+#: model:ir.model.fields.selection,name:pioneer_embassy_letter.selection__embassy_letter__state__hr_manager
+#, python-format
+msgid "HR Manger"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__id
+msgid "ID"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__iqama
+msgid "Identification No"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_needaction
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_has_error
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "If you have any questions regarding"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Iqama"
+msgstr "الاقامة"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__iqama_date_of_issue
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Iqama Date Of Issue"
+msgstr "تاريخ الاقامة"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__employee_no
+msgid "Job Number"
+msgstr "الرقم الوظيفي"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__job_title
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Job Title"
+msgstr "المسمي الوظيفي"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Letter Info"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__letter_subject
+msgid "Letter Subject"
+msgstr "موضوع الخطاب"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__letter_to
+msgid "Letter To"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__country_id
+msgid "Nationality (Country)"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__note
+msgid "Note"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Notes"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__name
+msgid "Number"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: code:addons/pioneer_embassy_letter/models/embassy_letter.py:0
+#, python-format
+msgid ""
+"Only employee him self and his direct manager can create the Embassy Letter"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Passport"
+msgstr "جواز سفر"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__passport_id
+msgid "Passport No"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Send Request"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__state
+msgid "State"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_tree
+msgid "Status"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Subject"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: code:addons/pioneer_embassy_letter/models/embassy_letter.py:0
+#, python-format
+msgid "The user is not an employee."
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "This letter has been issued upon"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "To"
+msgstr "إلي"
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,help:pioneer_embassy_letter.field_embassy_letter__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model:ir.model.fields,field_description:pioneer_embassy_letter.field_embassy_letter__address_id
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.view_embassy_letter_form
+msgid "Work Address"
+msgstr "عنوان العمل"
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "and Passport number is ("
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "at"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "employment, please contact our office at [0546800401]"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid ""
+"of Saudi Electronic University\n"
+"                                Since 01-Sep.2013 up to the end of May 2020.\n"
+"                                His/Her current gross salary is SR"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid ""
+"per Month,\n"
+"                                his/her accommodation, transportation and medical insurance are provided by the company."
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.english_embassy_letter_template
+msgid "request for the purpose of his visa issuance."
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "السادة/الموقرون"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "السلام عليكم ورحمة اللة وبركاتة"
+msgstr ""
+
+#. module: pioneer_embassy_letter
+#: model_terms:ir.ui.view,arch_db:pioneer_embassy_letter.arabic_embassy_letter_template
+msgid "وتفضّلوا بقبول فائق الاحترام والتقدير"
+msgstr ""

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="hr_payslip_run_form_HRPW">
+            <field name="name">hr_payslip_run_form_HRPW</field>
+            <field name="model">hr.payslip.run</field>
+            <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header/button[@name='action_validate']" position="before">
+                    <button name="action_wait_ceo" type="object" states="verify" string="Request From CEO"
+                            class="oe_highlight"/>
+                    <button name="action_wait_fm" type="object" states="wait_ceo" string="CEO Approve"
+                            class="oe_highlight" groups="hr_payroll_workflow.group_ceo"/>
+                    <button name="action_wait_gm" type="object" states="wait_fm" string="FM Approve"
+                            class="oe_highlight" groups="hr_payroll_workflow.group_fm"/>
+                </xpath>
+                <xpath expr="//header/button[@name='action_validate']" position="attributes">
+                    <attribute name="string">GM Approve</attribute>
+                    <attribute name="states">wait_gm</attribute>
+                    <attribute name="groups">hr_payroll_workflow.group_gm</attribute>
+                </xpath>
+                <xpath expr="//header/button[@name='action_draft']" position="attributes">
+                    <attribute name="states">verify,wait_ceo,wait_fm,wait_gm,close</attribute>
+                </xpath>
+                <xpath expr="//header/field[@name='state']" position="attributes">
+                    <attribute name="statusbar_visible">draft,verify,close,paid</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

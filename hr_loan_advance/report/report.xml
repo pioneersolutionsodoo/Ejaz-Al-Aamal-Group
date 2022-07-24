@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="report_hr_loan" model="ir.actions.report">
+            <field name="name">Loan Report</field>
+            <field name="model">hr.employee.loan.ps</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_loan_advance.report_hr_loan_document</field>
+            <field name="report_file">hr_loan_advance.report_hr_loan</field>
+            <field name="binding_model_id" ref="model_hr_employee_loan_ps"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="report_hr_advance" model="ir.actions.report">
+            <field name="name">Advance Report</field>
+            <field name="model">hr.employee.advance.ps</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_loan_advance.report_hr_advance_document</field>
+            <field name="report_file">hr_loan_advance.report_hr_advance</field>
+            <field name="binding_model_id" ref="model_hr_employee_advance_ps"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="report_hr_loan_advance" model="ir.actions.report">
+            <field name="name">Loan Advance Report</field>
+            <field name="model">report.loan.advance</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_loan_advance.report_loan_advance</field>
+            <field name="report_file">hr_loan_advance.report_loan_advance</field>
+            <field name="binding_model_id" ref="model_report_loan_advance"/>
+            <field name="binding_type">report</field>
+        </record>
+
+
+    </data>
+</odoo>

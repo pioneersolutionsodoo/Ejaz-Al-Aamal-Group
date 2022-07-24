@@ -1,0 +1,1468 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* maena_hr_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-16 11:15+0000\n"
+"PO-Revision-Date: 2022-06-16 11:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,print_report_name:maena_hr_reports.advance_delay_permission_report
+msgid "'Advance delay permission - %s' %(object.name)"
+msgstr "'إذن تأخير مسبق - %s' %(object.name)"
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,print_report_name:maena_hr_reports.work_contract_report
+msgid "'Contract - %s' %(object.name)"
+msgstr "'عقد عمل - %s' %(object.name)"
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,print_report_name:maena_hr_reports.hr_certificate_report
+msgid "'Employment Certificate - %s' %(object.name)"
+msgstr "'شهادة خدمة - %s' %(object.name)"
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,print_report_name:maena_hr_reports.temporary_period_permission_report
+msgid "'Temporary period permission - %s' %(object.name)"
+msgstr "'استئذان لفترة مؤقتة - %s' %(object.name)"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+")\n"
+"                                أو أي مهنة أخرى يتم تكليفه بها حسب حاجة العمل\n"
+"                                وذلك في مدينة الرياض أو بأي جهة أخرى يمارس فيها الطرف الأول نشاطه داخل المملكة\n"
+"                                وأن يقوم بكافة ما يدخل في اختصاص هذه الوظيفة مستخدماً في ذلك كفاءته ومؤهلاته وخبراته."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+")\n"
+"                                ريال سعودي\n"
+"                                يستحق في نهاية كل شهر تفاصيله على النحو التالي:\n"
+"                                <br/>\n"
+"                                - مبلغ وقدره"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ", الإقامة/"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ", الجنسية/"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ", بريد إلكتروني/"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ", جواز سفر رقم/"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ", هاتف/"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+", وعنوانها الرياض حى المحمدية,\n"
+"                                <br/>\n"
+"                                بريد إلكتروني"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"<br/>\n"
+"                                        To :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid ""
+"<br/>\n"
+"                                        To:"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"<br/>\n"
+"                                        by the :\n"
+"                                        <br/>\n"
+"                                        From :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"<br/>\n"
+"                                        إلي :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"<br/>\n"
+"                                        خلال الفترة :\n"
+"                                        <br/>\n"
+"                                        من :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"<br/>\n"
+"                                        في مدينة الرياض، المملكة العربية السعودية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"<br/>\n"
+"                                ويمثلها فى التوقيع على هذا العقد ...............................................\n"
+"                                بصفته ...............................................\n"
+"                                ويشار إليها فيما بعد بـ(الطرف الأول).\n"
+"                                <br/>\n"
+"                                <br/>\n"
+"                                <b>ثانياًَ: </b>\n"
+"                                السيد/"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid ""
+"<span class=\"fa fa-check ml-2 mr-2\"/>\n"
+"                                    <span>)</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "<span class=\"mr-4\">اليوم :</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "<span style=\"margin-right:35px\">)</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid ""
+"<span style=\"margin-right:35px\">)</span>\n"
+"                                <span>لا يعفى المذكور من الخصم للأسباب التالية :</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "<span>(</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "<span>التاريخ :</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "<span>يعفى المذكور من الخصم</span>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"<strong>مدير الموارد البشرية</strong>\n"
+"                                        <br/>\n"
+"                                        <strong>Director of Human Resources</strong>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "<strong>واللــه الموفــق</strong>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_leave__date_actual_return
+msgid "Actual Return"
+msgstr "العودة الفعلية"
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,name:maena_hr_reports.advance_delay_permission_report
+msgid "Advance Delay Permission"
+msgstr "إذن تأخير مسبق"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"And he Received the benefits stated in the\n"
+"                                        Employment Agreement(s) that he signed"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_form_view
+msgid "Approve"
+msgstr "تأكيد"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_certificate__state__approve
+msgid "Approved"
+msgstr "تمت الموافقة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_leave__period_type
+msgid "Authorization Period"
+msgstr "فترة الاستئذان"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "CERTIFICATE OF EMPLOYMENT"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_form_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_certificate__state__cancel
+msgid "Canceled"
+msgstr "ملغاه"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Cause Authorization"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,name:maena_hr_reports.work_contract_report
+msgid "Contract"
+msgstr "عقد عمل"
+
+#. module: maena_hr_reports
+#: model_terms:ir.actions.act_window,help:maena_hr_reports.action_hr_certificate
+msgid "Create a new Employment Certificate"
+msgstr "قم بإنشاء شهادة خدمة جديدة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Date"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__join_date
+msgid "Date Of Join"
+msgstr "تاريخ الالتحاق"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Date of Authorization"
+msgstr "تاريخ الاستئذان"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_leave__deduction_exempt
+msgid "Deduction Exempt"
+msgstr "إعفاء من الخصم"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__department_id
+msgid "Department"
+msgstr "الإدارة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Division"
+msgstr "الإدارة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_certificate__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__employee_id
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_search_view
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid "Employee %s has a new %s waiting for your approval,\n"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__employee_code
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: maena_hr_reports
+#: model:ir.model,name:maena_hr_reports.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Employee Name"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.actions.act_window,name:maena_hr_reports.action_hr_certificate
+#: model:ir.actions.report,name:maena_hr_reports.hr_certificate_report
+#: model:ir.model,name:maena_hr_reports.model_hr_certificate
+#: model:ir.ui.menu,name:maena_hr_reports.hr_certificate_menu
+msgid "Employment Certificate"
+msgstr "شهادة خدمة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__date_end
+msgid "End Date"
+msgstr "تاريخ نهاية العمل"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_leave__period_type__pm
+msgid "Evening"
+msgstr "مسائية"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "Footer Logo Image"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "From:"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_search_view
+msgid "Group By"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid ""
+"Hello, %s\n"
+"\n"
+msgstr ""
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid ""
+"Hello, %s \n"
+"\n"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"His last job title was :\n"
+"                                        <br/>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__id
+msgid "ID"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_needaction
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_has_error
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"In accordance with the provisions of Article 64 of\n"
+"                                        <br/>\n"
+"                                        the Kingdom of Saudi Arabia Labor and Workmen,\n"
+"                                        <br/>\n"
+"                                        be it known that:\n"
+"                                        <br/>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__job_id
+msgid "Job"
+msgstr "الوظيفة"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Job Title"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_leave__period_type__am
+msgid "Morning"
+msgstr "صباحية"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_search_view
+msgid "My Requests"
+msgstr "طلباتي"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__name
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Name"
+msgstr ""
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__note
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_form_view
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"Page:\n"
+"                                <span class=\"page\"/>\n"
+"                                /\n"
+"                                <span class=\"topage\"/>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Period of Authorization"
+msgstr ""
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid ""
+"Please take necessary steps.\n"
+"\n"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_certificate__state__refuse
+msgid "Refused"
+msgstr "تم الرفض"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__date
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_form_view
+msgid "Request From HRM"
+msgstr "إرسال الطلب"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_form_view
+msgid "Set to Draft"
+msgstr "تحويل إلى مسودة"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Sign"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__date_start
+msgid "Start Date"
+msgstr "تاريخ بداية العمل"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "TO WHOM IT MAY CONCERN"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.actions.report,name:maena_hr_reports.temporary_period_permission_report
+msgid "Temporary Period Permission"
+msgstr "استئذان لفترة مؤقتة"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "The Actual Time to return"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "This certificate of service was issued on :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model,name:maena_hr_reports.model_hr_leave
+msgid "Time Off"
+msgstr "أجازة"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "Time of Authorization"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_search_view
+msgid "To Be Approved"
+msgstr "بانتظار الموافقة"
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields.selection,name:maena_hr_reports.selection__hr_certificate__state__wait_4_hr_mgr
+msgid "Waiting HRM Approval"
+msgstr "بانتظار موافقة مدير الموارد البشرية"
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "Was employed on :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,field_description:maena_hr_reports.field_hr_certificate__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model:ir.model.fields,help:maena_hr_reports.field_hr_certificate__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid "You cannot delete record which is not in Draft."
+msgstr "لا يمكنك حذف السجلات التى ليست فى حالة المسودة"
+
+#. module: maena_hr_reports
+#: code:addons/maena_hr_reports/models/hr_certificate.py:0
+#, python-format
+msgid ""
+"Your %s %s has been Approved by HR Manager.\n"
+"\n"
+"Best Regards."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+msgid "إذن تأخيــر مسبــق"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "إلى محاسب الأجور والرواتب"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "إلى مدير الموارد البشرية"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "إلى من يهمه الأمر"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "إنه في يوم:"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "اســم الموظــف"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "الإدارة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "الاســـــم :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "الاسم"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "التاريخ"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "التوقيع"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "التوقيــع :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "الشئــون الإداريــة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "الطرف الأول"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "الطرف الثاني"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الأولى: موضوع العقد"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة التاسعة: أحكام خاصة بالمرأة العاملة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الثالثة: أيام وساعات العمل"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الثامنة: مكافأة نهاية الخدمة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الثانية عشرة: الإخطارات والإشعارات"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الثانية: مدة العقد وفترة التجربة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الحادية عشرة: الإخطارات والإشعارات"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الخامسة: التزامات الطرف الأول الأخرى"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة الرابعة: التزامات الطرف الأول المتعلقة بالأجر / المزايا"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة السابعة: انتهاء أو انهاء أو فسخ العقد"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة السادسة: التزامات الطرف الثاني"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "المادة العاشرة: النظام الواجب التطبيق والاختصاص القضائي"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "الموظــف Employee"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "الوظيفــة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "الوقت الفعلي للعودة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "بعد التحية ،،،"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"بناء على أحكام المادة 64 من نظام العمل والعمال\n"
+"                                        <br/>\n"
+"                                        في المملكة العربية السعودية\n"
+"                                        <br/>\n"
+"                                        ليكن معلوما بأن السيد:\n"
+"                                        <br/>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "تاريخ الاستئذان"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"تتم الإخطارات، والاشعارات بين الطرفين\n"
+"                                كتابة على العنوان الموضح بصدر هذا العقد عن طريق البريد المستعجل، أو البريد الممتاز،\n"
+"                                أو البريد الالكتروني لكل من الطرفين، ويلتزم كل طرف بإشعار الطرف الاخر خطياً\n"
+"                                في حال تغييره للعنوان الخاص به، أو تغيير البريد الالكتروني،\n"
+"                                وإلا اعتبر الإرسال على العنوان، أو البريد الالكتروني المدونان أعلاه منتجاً لآثاره النظامية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"تحدد ايام العمل بـ (5) أيام في الاسبوع، بواقع (8) ثمانية ساعات في اليوم،\n"
+"                                ويلتزم الطرف الأول بأن يدفع للطرف الثاني أجراً إضافياً\n"
+"                                عن ساعات العمل الإضافية يوازي أجر الساعة، مضاف إليه (50%)\n"
+"                                من أجره الأساسي في حالة تكليفه مسبقاً بعمل إضافي خارج ساعات الدوام الرسمية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "تمهيـــــد:"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "رئيس القســم Supervisor"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "ريال بدل."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"ريال راتب أساسي.\n"
+"                                <br/>\n"
+"                                - مبلغ وقدره"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "سبب الاستئذان"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "شركــة معنــا للاستثمــار ويمثلها فى التوقيع على العقد :-"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "شهــادة خدمــة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "طلــب استئــذان لفتــرة مؤقتــة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "عقــــد عمــــل"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "فترة الاستئذان"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "كان يعمل لدى شركة :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"لقد اتفق الطرفان بعد أن أقرا بأهليتهما المعتبرة شرعاً ونظاماً\n"
+"                                لإبرام مثل هذا العقد على ما يلي:"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid "لقد تم إصدار شهادة الخدمة هذه بتاريخ :"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"م ,\n"
+"                                تم الاتفاق بمدينة الرياض بين كل من:-\n"
+"                                <br/>\n"
+"                                <br/>\n"
+"                                <b>أولاً: </b>\n"
+"                                شركــة معنـــا للإستثمـار, شركة مساهمة سعودية مقفلة, سجل تجارى رقم"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+msgid "مدير الموارد البشرية"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "مديــر الإدارة Division"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid ""
+"نرجو إعفاء الموظف المذكورة بياناته أعلاه من خصم التأخير لليوم المحدد أعلاه\n"
+"                                حيث تواجد بمهمة خاصة خارج الشركة لمصلحة العمل."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"هـ\n"
+"                                الموافق"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "وتقبلوا تحياتنا ،،،"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"وقد استلم جميع المستحقات المدونة\n"
+"                                        في اتفاقية (اتفاقيات) التوظيف التي وقعها"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.advance_delay_permission_template
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.temporary_period_permission_template
+msgid "وقـت الاستئذان"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.hr_certificate_template
+msgid ""
+"وكان مسمى آخر وظيفة مارسها :\n"
+"                                        <br/>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"ويشار إليه فيما بعد بـ(الطرف الثاني).\n"
+"                                <br/>"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- أقر الطرف الثاني أنه بناء على طلبه وموافقة الطرف الأول\n"
+"                                فقد قبل العمل لدى الطرف الأول وتحت إدارته وإشرافه وفق شروط هذا العقد بمهنة\n"
+"                                ("
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- أن ينجز العمل الموكل إليه وفقاً لأصول المهنة، ووفق تعليمات الطرف الاول،\n"
+"                                إذا لم يكن في هذه التعليمات ما يخالف العقد، أو النظام، أو الآداب العامة،\n"
+"                                ولم يكن في تنفيذها ما يعرضه للخطر."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- اتفق الطرفان على أن تكون مدة هذا العقد (سنة ميلادية واحدة)،\n"
+"                                تبدأ من تاريخ مباشرة الطرف الثاني للعمل\n"
+"                                وتتجدد لمدةٍ مماثلة، ما لم يُشعر أحد الطرفين الآخر خطياً\n"
+"                                بعدم رغبته في التجديد قبل ثلاثين يوماً من تاريخ انتهاء العقد."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "١- تحتسب كافة المدد في هذا العقد بالتقويم الميلادي."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- تستحق العاملة إجازة وضع بأجر كامل لمدة عشرة اسابيع توزعها كيف تشاء،\n"
+"                                تبدأ بحد اقصى بأربعة اسابيع قبل التاريخ المرجح للوضع،\n"
+"                                ويحدد التاريخ المرجح للوضع بواسطة طبيب المنشأة، أو بناءً على شهادة طبية مصدقة من جهة صحية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- يخضع هذا العقد لنظام العمل المعمول به\n"
+"                                في المملكة العربية السعودية الصادر بالمرسوم الملكي رقم (م/51) وتاريخ 23/08/1426هـ\n"
+"                                وتعديلاته اللاحقة ولائحته التنفيذية،\n"
+"                                والقرارات الصادرة تنفيذا له ولائحة تنظيم العمل المعتمدة\n"
+"                                لدى الطرف الأول وبصورة خاصة في كل ما لم يرد بشأنه نص في هذا العقد."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- يدفع الطرف الأول للطرف الثاني أجراً شهرياً\n"
+"                                قدره\n"
+"                                ("
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- يستحق الطرف الثاني عند إنهاء العلاقة التعاقدية من قبل الطرف الأول،\n"
+"                                أو باتفاق الطرفين، أو بانتهاء مدة العقد،\n"
+"                                أو نتيجة لقوةٍ قاهرة مكافأة قدرها أجر خمسة عشر يوماً عن كل سنة من السنوات الخمس الأولى،\n"
+"                                وأجر شهر عن كل سنة من السنوات التالية،\n"
+"                                ويستحق العامل مكافأة عن أجزاء السنة بنسبة ما قضاه منها في العمل،\n"
+"                                وتحسب المكافأة على اساس الأجر الأخير."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١- يلتزم الطرف الاول بتوفير الرعاية الطبية للطرف الثاني بالتامين الصحي،\n"
+"                                وفقاً لأحكام نظام الضمان الصحي التعاوني وحسب لوائح الشركة الداخلية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "١- ينتهي هذا العقد بانتهاء مدته، أو باتفاق الطرفين على إنهائه كتابةً."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid "١٠- ان يستخدم كل قدراته في تحسين وتطوير العمل."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١١- ان يلتزم بتنفيذ اية مهام او اعمال يكلفه بها الطرف الاول\n"
+"                                في حالات الضرورة سواء داخل المملكة العربية السعودية او خارجها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١٢- ان يتحمل كافة الرسوم والغرامات وغيرها المستحقة عليه\n"
+"                                وعلى من يعولهم شرعا للجهات الرسمية دون أن يحمل الطرف الأول أي شيئا منها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١٣- ان يلتزم بالمحافظة على ما في عهدته\n"
+"                                وأن يستخدمها في الأغراض المعدة لها ولأداء عمله الذي تتطلبه وظيفته."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١٤- ان يبلغ فورا الطرف الاول عن اي فعل\n"
+"                                او تقصير قد ينتج عنه الحاق ضرر أو خسارة مادية أو معنوية بالعمل."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"١٥- يلتزم بأن لا يعمل لدى أي جهة / طرف منافس للطرف الأول\n"
+"                                لمدة سنتين من انتهاء العلاقة التعاقدية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- إذا كان انتهاء علاقة العمل بسبب استقالة الطرف الثاني، يستحق في هذه ثُلث المكافأة،\n"
+"                                بعد خدمة لا تقل مدتها عن سنتين متتاليتين، ولا تزيد على خمس سنوات، ويستحق ثلثيها،\n"
+"                                إذا زادت مدة خدمته على خمس سنوات متتالية، ولم تبلغ عشر سنوات،\n"
+"                                ويستحق المكافأة كاملة، إذا بلغت مدة خدمته عشر سنوات فأكثر."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- ان يعتني عناية كافية بالأدوات، والمهمات المسندة إلية،\n"
+"                                والخامات المملوكة للطرف الأول؛ الموضوعة تحت تصرفه، أو التي تكون في عهدته،\n"
+"                                وأن يعيد للطرف الأول المواد الغير مستهلكة"
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- تم تحرير هذا العقد باللغة العربية، وفي حال وجود ترجمة باللغة الانجليزية\n"
+"                                واختلاف النص الإنجليزي للعقد عن العربي يكون النص العربي هو الأساس."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يؤمن الطرف الأول للطرف الثاني السكن والنقل من مكان السكن لمكان العمل "
+"والعكس."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يحق للعاملة عندما تعود إلى مزاولة عملها بعد إجازة الوضع،\n"
+"                                أن تأخذ بقصد إرضاع مولودها فترة،\n"
+"                                او فترات للاستراحة، لا تزيد في مجموعهما على الساعة في اليوم الواحد،\n"
+"                                وتحسب هذه الفترة، أو الفترات من ساعات العمل الفعلية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يحل هذا العقد محل كافة الاتفاقيات، والعقود السابقة الشفهية منها، أو "
+"الكتابية إن وجدت."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يخضع الطرف الثاني لفترة تجربة مدتها (90) تسعون يوماً، تبدأ من تاريخ مباشرته للعمل،\n"
+"                                ولا يدخل في حسابها إجازة عيدي الفطر، والأضحى، والاجازة المرضية،\n"
+"                                ويكون (للطرفين) الحق في انهاء العقد خلال هذه الفترة."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يقر الطرف الثاني كذلك بأنه مستعد للقيام بأي عمل يسنده إليه الطرف الأول،\n"
+"                                يكون متفقاً ومؤهلاته العلمية أو خبرته العملية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يلتزم أي من الطرفين عند إنهائه للعقد،\n"
+"                                إشعارٍ الطرف الأخر كتابةً قبل الإنهاء بمدةٍ لا تقل عن 30 يوماً."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٢- يلتزم الطرف الأول بتسجيل الطرف الثاني\n"
+"                                لدى المؤسسة العامة للتأمينات الاجتماعية، وسداد الاشتراكات حسب أنظمتها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- ان يقدم كل العون، ومساعدته دون ان يشترط لذلك اجراً إضافياً\n"
+"                                في حالات الأخطار التي تهدد سلامته مكان العمل، أو الاشخاص العاملين فيه."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- في حالة نشوء أي خلاف بين الطرفين حول هذا العقد،\n"
+"                                فإن الاختصاصي القضائي ينعقد للجهة المختصة بنظر القضايا العمالية بمدينة الرياض."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- لا يحتسب ضمن الأجر الذي تسوى على أساسه مكافأة نهاية الخدمة\n"
+"                                جميع مبالغ العمولات أو بعضها والنسب المئوية عن ثمن المبيعات\n"
+"                                وما أشبه ذلك من عناصر الأجر الذي يدفع إلى العامل وتكون قابلة بطبيعتها للزيادة والنقص."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- يجوز للطرف الأول في أي وقت نقل الطرف الثاني\n"
+"                                من مكان عمله الأصلي إلى أي مكان يقتضي تغيير محل إقامته\n"
+"                                حسب مقتضيات العمل وفقاً لما حدده النظام واللوائح."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- يحق للطرف الأول فسخ العقد دون مكافأةٍ، أو اشعارٍ للطرف الثاني أو تعويضه،\n"
+"                                شريطه إتاحة الفرصة للطرف الثاني في ابداء اسباب معارضته للفسخ،\n"
+"                                وذلك طبقاً للحالات الواردة في المادة (الثمانون) من نظام العمل."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- يحق للعاملة في حالة وفاة زوجها،\n"
+"                                إجازة عدة بأجر كامل لمدة لا تقل عن اربعة أشهر وعشرة أيام من تاريخ الوفاة\n"
+"                                ولها الحق في تمديد هذه الإجازة دون أجر إن كانت حاملاً -خلال هذه الفترة – حتى تضع حملها،\n"
+"                                ولا يجوز لها الاستفادة من باقي إجازات العدة الممنوحة لها بعد وضع حملها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- يستحق الطرف الثاني عن كل عام، إجازة سنوية مدتها (21) يوماً مدفوعة الأجر،\n"
+"                                ويحدد الطرف الأول تاريخها خلال سنة الاستحقاق،\n"
+"                                وفقاً لظروف العمل على أن يتم دفع أجر الإجازة مقدماً عند استحقاقها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- يقر الطرف الثاني بانه قد قام بالتوقيع على هذا العقد\n"
+"                                بطوعه واختياره وبعد الاطلاع على ما جاء في لائحة تنظيم العمل المعمول بها\n"
+"                                لدى الطرف الأول وأنه ملتزم بما جاء فيها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٣- يلتزم الطرف الاول بنفقات تجهيز جثمان الطرف الثاني\n"
+"                                إذا كان غير سعوي، ونقله إلى الجهة التي أبرم فيها العقد،\n"
+"                                أو استقدم العامل منها، مالم يدفن بموافقة ذويه داخل المملكة،\n"
+"                                أو تلتزم المؤسسات العامة للتأمينات الاجتماعية بذلك."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٤- ان يخضع وفقاً لطلب الطرف الاول\n"
+"                                للفحوص الطبية التي يرغب في إجرائها عليه قبل الالتحاق في العمل،\n"
+"                                أو اثناءه للتحقق من خلوه من الامراض المهنية، أو السارية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٤- حُرر هذا العقد من (2) نسختين أصليتين، وقد تسلم كل طرف نسخه منها للعمل "
+"بموجبها."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٤- في حال إنهاء العقد من قبل أحد الطرفين قبل انقضاء مدته دون سبب مشروع،\n"
+"                                يحق للطرف الاخر مقابل هذا الإنهاء تعويضاً لا يقل عن راتب شهرين."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٥- يلتزم الطرف الثاني بعدم افشاء اسرار الطرف الاول بعد انتهاء عقد العمل\n"
+"                                لمدة لا تقل عن سنتين ميلاديتين تبدأ من تاريخ انتهاء العلاقة التعاقدية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٦- يلتزم الطرف الثاني بحسن السيرة والسلوك،\n"
+"                                والأخلاق اثناء العمل، وفي جميع الاوقات يلتزم بالأنظمة،\n"
+"                                والأعراف، والعادات، والآداب المرعية في المملكة العربية السعودية،\n"
+"                                وكذلك في القواعد، واللوائح، والتعليمات المعمول بها لدى الطرف الأول،\n"
+"                                ويتحمل كافة الغرامات المالية الناتجة عن مخالفته لتلك الانظمة."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٧- الموافقة على استقطاع الطرف الاول للنسبة المقررة عليه من الأجر الشهري\n"
+"                                للاشتراك في المؤسسة العامة للتأمينات الاجتماعية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٨- أن يحافظ على الأسرار الفنية والتجارية والصناعية للمواد التي ينتجها،\n"
+"                                أو التي أسهم في إنتاجها بصورة مباشرة أو غير مباشرة، وجميع الأسرار المهنية\n"
+"                                المتعلقة بالعمل أو المنشأة التي من شأن إفشائها الإضرار بمصلحة الطرف الأول\n"
+"                                ويتعهد بان يحافظ على جميع تلك الاسرار لمدة (2) سنتين من تاريخ انتهاء العلاقة التعاقدية."
+msgstr ""
+
+#. module: maena_hr_reports
+#: model_terms:ir.ui.view,arch_db:maena_hr_reports.work_contract_template
+msgid ""
+"٩- أن يحافظ على تطبيق الأنظمة ويراعي التقاليد والعادات الخاصة بالمملكة "
+"العربية السعودية."
+msgstr ""

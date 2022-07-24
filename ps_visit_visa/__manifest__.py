@@ -1,0 +1,23 @@
+{
+    'name': 'Visit Visa',
+    'version': '15.0.1',
+    'summary': 'Visit Visa Request management',
+    'description': '',
+    'category': 'hr',
+    'author': 'Hossam Zaki | Pioneer Solutions',
+    'depends': ['base',
+                'hr',
+                'hr_contract',
+                'alshrooq_employee_details',
+                'ps_mail_bot',
+                ],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/data.xml',
+        'views/visit_visa.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <template id="administrative_expenses_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Administrative Expenses Form</strong>
+                        </h4>
+                        <div class="page">
+
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.employee_id.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Job Title
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.job_title"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid gray;border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Company
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.company_id.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.department_id.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Type
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.type_id.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Amount
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.amount"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.date"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Project
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.project_id"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--===================================================================-->
+                            <br/>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <!--                            <table style="border:1px solid gray;width:100%">-->
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.account_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Accounting Manager</strong>
+                                            <br/>
+                                            <span t-field="o.account_manager_id"/>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+        <record id="administrative_expenses_report" model="ir.actions.report">
+            <field name="name">Administrative Expenses</field>
+            <field name="model">administrative.expenses</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_administrative_expenses.administrative_expenses_template</field>
+            <field name="report_file">ps_administrative_expenses.administrative_expenses_template</field>
+            <field name="binding_model_id" ref="model_administrative_expenses"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">'%s Administrative Expenses' % (object.employee_id.name)</field>
+        </record>
+
+    </data>
+</odoo>

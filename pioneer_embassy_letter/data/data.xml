@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="embassy_letter_sequence" model="ir.sequence">
+            <field name="name">Embassy Letter</field>
+            <field name="code">embassy.letter</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">EL</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record model="ir.rule" id="embassy_letter_rule">
+            <field name="name">Embassy Letter multi-company</field>
+            <field name="model_id" ref="model_embassy_letter"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+    </data>
+</odoo>

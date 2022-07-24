@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!--    Housing Allowance Salary rule   -->
+        <record id="hr_rule_housing_allowance_request" model="hr.salary.rule">
+            <field name="name">Housing Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Housing</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.housing_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Transportation Allowance Salary rule   -->
+        <record id="hr_rule_transportation_allowance_request" model="hr.salary.rule">
+            <field name="name">Transportation Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Transportation</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.transportation_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Food Allowance Salary rule   -->
+<!--        <record id="hr_rule_food_allowance_request" model="hr.salary.rule">-->
+<!--            <field name="name">Food Allowance</field>-->
+<!--            <field name="sequence" eval="1"/>-->
+<!--            <field name="code">Food</field>-->
+<!--            <field name="category_id" ref="hr_payroll.ALW"/>-->
+<!--            <field name="condition_select">none</field>-->
+<!--            <field name="amount_select">code</field>-->
+<!--            <field name="amount_python_compute">result =  0</field>-->
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+<!--        </record>-->
+
+        <!--    Project Allowance Salary rule   -->
+        <record id="hr_rule_project_allowance_request" model="hr.salary.rule">
+            <field name="name">Project Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Project</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.project_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+
+        <!--    Supervisory Allowance Salary rule   -->
+        <record id="hr_rule_supervisory_allowance_request" model="hr.salary.rule">
+            <field name="name">Supervisory Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Supervisory</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.supervisory_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Coordination Allowance Salary rule   -->
+        <record id="hr_rule_coordination_allowance_request" model="hr.salary.rule">
+            <field name="name">Coordination Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Coordination</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.coordination_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Development Allowance Salary rule   -->
+        <record id="hr_rule_developement_allowance_request" model="hr.salary.rule">
+            <field name="name">Development Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Development</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.developement_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Mobile Allowance Salary rule   -->
+        <record id="hr_rule_mobile_allowance_request" model="hr.salary.rule">
+            <field name="name">Mobile Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Mobile</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.mobile_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Travel Allowance Salary rule   -->
+        <record id="hr_rule_travel_allowance_request" model="hr.salary.rule">
+            <field name="name">Travel Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Travel</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.travel_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Gosi Allowance Salary rule   -->
+        <record id="hr_rule_gosi_allowance_request" model="hr.salary.rule">
+            <field name="name">Gosi Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Gosi ALW</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.gosi_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+ <!--    Gosi Deduction Salary rule   -->
+        <record id="hr_rule_gosi_deduction_request" model="hr.salary.rule">
+            <field name="name">Gosi Deduction</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Gosi DED</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  - contract.gosi_deduction</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Other Allowance Salary rule   -->
+        <record id="hr_rule_other_allowance_request" model="hr.salary.rule">
+            <field name="name">Other Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">O AlW</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.other_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Other Deduction Salary rule   -->
+        <record id="hr_rule_other_deduction_request" model="hr.salary.rule">
+            <field name="name">Other Deduction</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">O DED</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  - contract.other_deduction</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Recruitment Allowance Salary rule   -->
+        <record id="hr_rule_recruitment_allowance_request" model="hr.salary.rule">
+            <field name="name">Recruitment Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Recruitment</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.recruitment_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Rentry Allowance Salary rule   -->
+        <record id="hr_rule_rentry_allowance_request" model="hr.salary.rule">
+            <field name="name">Rentry Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Rentry</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.rentry_allowance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Iqama Transfer Allowance Salary rule   -->
+        <record id="hr_rule_iqama_transfer_request" model="hr.salary.rule">
+            <field name="name">Iqama Transfer Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Iqama Transfer</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.iqama_transfer</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Iqama Expense Allowance Salary rule   -->
+        <record id="hr_rule_iqama_expense_request" model="hr.salary.rule">
+            <field name="name">Iqama Expense Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Iqama Expense</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.iqama_expense</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!--    Iqama Allowance Salary rule   -->
+        <record id="hr_rule_iqama_per_month_request" model="hr.salary.rule">
+            <field name="name">Iqama Allowance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Iqama</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.iqama_per_month</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!-- Employee Medical Insurance Salary rule   -->
+        <record id="hr_rule_employee_medical_request" model="hr.salary.rule">
+            <field name="name">Employee Medical Insurance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">EMPLOYEE MI</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.employee_medical_insurance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+        <!-- Family Medical Insurance Salary rule   -->
+        <record id="hr_rule_family_medical_request" model="hr.salary.rule">
+            <field name="name">Family Medical Insurance</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">FAMILY MI</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result =  contract.family_medical_insurance</field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+    </data>
+</odoo>

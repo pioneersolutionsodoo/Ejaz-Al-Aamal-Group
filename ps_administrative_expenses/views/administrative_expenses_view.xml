@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--       Administrative Expenses [form] view -->
+        <record id="view_administrative_expenses_form" model="ir.ui.view">
+            <field name="name">Administrative Expenses Form</field>
+            <field name="model">administrative.expenses</field>
+            <field name="arch" type="xml">
+                <form string="Administrative Expenses">
+                    <header>
+
+                        <button name="approved" string="Approve"
+                                class="oe_highlight" groups="hr.group_hr_manager,account.group_account_manager"
+                                states="draft"
+                                type="object"/>
+
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" nolabel="1" readonly="1" required="1"/>
+                        </group>
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Employee Name" required="1"/>
+                                <field name="department_id" string="Department"/>
+                                <field name="job_title" string="Job Title"/>
+                                <field name="project_id" string="Project"/>
+                            </group>
+                            <group>
+                                <field name="type_id" string="Type" required="1"/>
+                                <field name="amount" string="Amount"/>
+                                <field name="company_id" string="Company Name" readonly="1"/>
+                                <field name="date" string="Date" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="account_manager_id" readonly="1"/>
+                            <field name="account_manager_note" nolabel="1" placeholder="Accounting Manager Note"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+
+
+                        <group string="Remark">
+                            <field name="reason" string="Remark" nolabel="1" placeholder="Add Remark ..."/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!--       Administrative Expenses [tree] view-->
+        <record id="view_administrative_expenses_tree" model="ir.ui.view">
+            <field name="name">Administrative Expenses Tree</field>
+            <field name="model">administrative.expenses</field>
+            <field name="arch" type="xml">
+                <tree string="Administrative Expenses">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Administrative Expenses [action] view-->
+        <record id="view_administrative_expenses_action" model="ir.actions.act_window">
+            <field name="name">Administrative Expenses</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">administrative.expenses</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+        <!--        Administrative Expenses [menu] view-->
+        <menuitem id="view_administrative_expenses_menu"
+                  name="Administrative Expenses"
+                  groups="hr.group_hr_manager,account.group_account_manager"
+                  parent="hr.menu_hr_root"
+                  action="view_administrative_expenses_action" sequence="10"/>
+    </data>
+</odoo>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--       Employee Memo [form] view -->
+        <record id="view_employee_memo_form" model="ir.ui.view">
+            <field name="name">Employee Memo Form</field>
+            <field name="model">employee.memo</field>
+            <field name="arch" type="xml">
+                <form string="Employee Memo">
+                    <header>
+                        <button name="send_request" string="Send Request"
+                                class="oe_highlight" states="draft"
+                                type="object"  groups="hr.group_hr_manager" />
+
+                        <button name="hr_manager" string="HR Manager Approve"
+                                class="oe_highlight"  groups="hr.group_hr_manager"
+                                states="hr_manager"
+                                type="object"/>
+
+                         <button name="%(pioneer_employee_memo.english_employee_memo_report)d"
+                                 states="approved" groups="hr.group_hr_manager"
+                                 string="Employee Memo PDF" type="action"/>
+
+
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" nolabel="1" readonly="1"/>
+                        </group>
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Employee Name" required="1"/>
+                                <field name="employee_no" string="Employee Code"/>
+                                <field name="department_id" string="Department"/>
+                                <field name="job_title" string="Job Title"/>
+                            </group>
+                            <group>
+                                <field name="company_id" string="Company Name" readonly="1"/>
+                                <field name="date" string="Date" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Approval Notes">
+                                <group>
+                                    <field name="hr_manager_id" readonly="1"/>
+                                    <field name="hr_manager_note" nolabel="1" placeholder='HR Manager Note'
+                                           attrs="{'readonly':[('state','!=','hr_manager')]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+
+                        <group string="Reason">
+                            <field name="reason" string="Reason" nolabel="1" placeholder="Add Reason ..."/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!--       Employee Memo [tree] view-->
+        <record id="view_employee_memo_tree" model="ir.ui.view">
+            <field name="name">Employee Memo Tree</field>
+            <field name="model">employee.memo</field>
+            <field name="arch" type="xml">
+                <tree string="Employee Memo">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Employee Memo [action] view-->
+        <record id="view_employee_memo_action" model="ir.actions.act_window">
+            <field name="name">Employee Memo</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.memo</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+        <!--        Employee Memo [menu] view-->
+        <menuitem id="view_employee_memo_menu"
+                  name="Employee Memo"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="view_employee_memo_action" sequence="10"/>
+    </data>
+</odoo>

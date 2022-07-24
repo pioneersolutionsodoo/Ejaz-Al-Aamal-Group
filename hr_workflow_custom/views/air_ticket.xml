@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_air_ticket_form_inherit">
+            <field name="name">air ticket</field>
+            <field name="model">air.ticket</field>
+            <field name="inherit_id" ref="air_ticket.view_air_ticket_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='direct_manager']" position="attributes">
+                    <attribute name="string">Line Manager Approve</attribute>
+                </xpath>
+                <xpath expr="//field[@name='d_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

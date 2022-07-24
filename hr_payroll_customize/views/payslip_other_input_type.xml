@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- ============ [Payslip Other Input Types] ===================   -->
+        <record id="deduction_other_input" model="hr.payslip.input.type">
+            <field name="name">Other Input Allowance</field>
+            <field name="code">OALLW</field>
+        </record>
+
+        <record id="allowance_other_input" model="hr.payslip.input.type">
+            <field name="name">Other Input Deduction</field>
+            <field name="code">ODED</field>
+        </record>
+
+        <record id="salary_rule_other_input_allw" model="hr.salary.rule">
+            <field name="name">Other Input Allowance</field>
+            <field name="sequence" eval="100"/>
+            <field name="code">OIALLW</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = inputs.OALLW and inputs.OALLW.amount</field>
+        </record>
+
+        <record id="salary_rule_other_input_ded" model="hr.salary.rule">
+            <field name="name">Other Input Deduction</field>
+            <field name="sequence" eval="100"/>
+            <field name="code">OIDED</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = inputs.ODED and -inputs.ODED.amount</field>
+        </record>
+
+    </data>
+</odoo>

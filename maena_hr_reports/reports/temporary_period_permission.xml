@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="temporary_period_permission_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <style>
+                            td, th {vertical-align:middle;padding-left:5px;padding-right:5px;}
+                            * { font-family: 'Noto Naskh Arabic', sans-serif; }
+                            tr { height:30px; }
+                            .cell_bordered th, td { border:1px solid gray; }
+                        </style>
+
+                        <center>
+                            <h2>طلــب استئــذان لفتــرة مؤقتــة</h2>
+                        </center>
+
+                        <div class="page">
+                            <br/>
+                            <p style="margin-bottom:10px;" class="text-right" dir="rtl">
+                                <span>التاريخ :</span>
+                                <span t-if="o.date_from" t-field="o.date_from" t-options="{'widget': 'date'}"/>
+                                <span t-else="">........................................</span>
+                                <span class="mr-4">اليوم :</span>
+                                <span t-if="o.date_from" t-esc="o.compute_ar_day_name(o.date_from)"/>
+                                <span t-else="">........................................</span>
+                            </p>
+                            <table style="border-spacing:0;margin-bottom:0; width 100%; border: 1px solid gray;width:100%;">
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Employee Name</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-if="o.employee_id" t-field="o.employee_id.name"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">اســم الموظــف</td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Job Title</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-if="o.job_id" t-field="o.job_id.name"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">الوظيفــة</td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Division</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-if="o.department_id" t-field="o.department_id.name"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">الإدارة</td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Date of Authorization</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-if="o.date_from" t-field="o.date_from"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">تاريخ الاستئذان</td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Period of Authorization</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-if="o.period_type" t-field="o.period_type"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">فترة الاستئذان</td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Time of Authorization</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        From: <span t-if="o.date_from" t-field="o.date_from"/>
+                                        <br/>
+                                        To: <span t-if="o.date_to" t-field="o.date_to"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">وقـت الاستئذان</td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">The Actual Time to return</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-if="o.date_actual_return" t-field="o.date_actual_return"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">الوقت الفعلي للعودة</td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff">Cause Authorization</td>
+                                    <td class="text-center" style="border:1px solid gray;width:40%">
+                                        <span t-raw="o.note"/>
+                                    </td>
+                                    <td style="border:1px solid gray;width:30%;background-color:#e6e6ff;text-align:right;">سبب الاستئذان</td>
+                                </tr>
+                            </table>
+
+                            <br/>
+
+                            <h5 class="text-right" dir="rtl">إلى مدير الموارد البشرية</h5>
+                            <hr style="height:.25px;background-color:grey;margin-top:5px;"/>
+                            <center dir="rtl">بعد التحية ،،،</center>
+                            <h6 class="text-right" dir="rtl">
+                                نرجو إعفاء الموظف المذكورة بياناته أعلاه من خصم التأخير لليوم المحدد أعلاه
+                                حيث تواجد بمهمة خاصة خارج الشركة لمصلحة العمل.
+                            </h6>
+                            <center dir="rtl">وتقبلوا تحياتنا ،،،</center>
+
+                            <table style="width:100%;" class="text-center cell_bordered">
+                                <tr>
+                                    <td style="width:11%;border:0;"></td>
+                                    <td style="width:26%;background:#e6e6ff;" dir="rtl">مديــر الإدارة Division</td>
+                                    <td style="width:26%;background:#e6e6ff;" dir="rtl">رئيس القســم Supervisor</td>
+                                    <td style="width:26%;background:#e6e6ff;" dir="rtl">الموظــف Employee</td>
+                                    <td style="width:11%;border:0;"></td>
+                                </tr>
+                                <tr style="height:30px;">
+                                    <td style="background:#e6e6ff;">Name</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="background:#e6e6ff;">الاسم</td>
+                                </tr>
+                                <tr style="height:30px;">
+                                    <td style="background:#e6e6ff;">Sign</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="background:#e6e6ff;">التوقيع</td>
+                                </tr>
+                                <tr style="height:30px;">
+                                    <td style="background:#e6e6ff;">Date</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="background:#e6e6ff;">التاريخ</td>
+                                </tr>
+                            </table>
+
+                            <br/>
+
+                            <h5 class="text-right" dir="rtl">إلى محاسب الأجور والرواتب</h5>
+                            <hr style="height:.25px;background-color:grey;margin-top:5px;"/>
+                            <h6 class="text-right" dir="rtl">
+                                <span>(</span>
+                                <t t-if="o.deduction_exempt">
+                                    <span class="fa fa-check ml-2 mr-2"/>
+                                    <span>)</span>
+                                </t>
+                                <t t-else="">
+                                    <span style="margin-right:35px">)</span>
+                                </t>
+                                <span>يعفى المذكور من الخصم</span>
+                            </h6>
+                            <h6 class="text-right" dir="rtl">
+                                <span>(</span>
+                                <t t-if="not o.deduction_exempt">
+                                    <span class="fa fa-check ml-2 mr-2"/>
+                                    <span>)</span>
+                                </t>
+                                <span style="margin-right:35px">)</span>
+                                <span>لا يعفى المذكور من الخصم للأسباب التالية :</span>
+                            </h6>
+                            <br/>
+                            <br/>
+                            <h5 class="text-left" dir="rtl">الشئــون الإداريــة</h5>
+
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+        <record id="temporary_period_permission_report" model="ir.actions.report">
+            <field name="name">Temporary Period Permission</field>
+            <field name="model">hr.leave</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">maena_hr_reports.temporary_period_permission_template</field>
+            <field name="report_file">maena_hr_reports.temporary_period_permission_template</field>
+            <field name="print_report_name">'Temporary period permission - %s' %(object.name)</field>
+            <field name="binding_model_id" ref="hr_holidays.model_hr_leave"/>
+            <field name="paperformat_id" ref="base.paperformat_euro"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

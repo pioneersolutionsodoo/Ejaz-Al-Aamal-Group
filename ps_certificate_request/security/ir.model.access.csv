@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+cert_req_all,certificate.request.all,model_certificate_request,base.group_user,1,1,1,1
+cert_purpose_all,certificate.purpose.all,model_certificate_purpose,base.group_user,1,1,1,1

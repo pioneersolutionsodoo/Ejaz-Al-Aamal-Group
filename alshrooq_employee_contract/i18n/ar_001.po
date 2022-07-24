@@ -1,0 +1,197 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* alshrooq_employee_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-01 19:52+0000\n"
+"PO-Revision-Date: 2020-07-01 19:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Allowance Details"
+msgstr "تفاصيل البدل"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Basic"
+msgstr "الأساسى"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__contract_period
+msgid "Contract Period"
+msgstr "مدة  العقد"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Contract Period [Days]"
+msgstr "عدد أيام مدة العقد"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_coordination_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__coordination_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Coordination Allowance"
+msgstr "بدل تنسيق"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__developement_allowance
+msgid "Developement Allowance"
+msgstr "بدل تطوير"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_developement_allowance_request
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Development Allowance"
+msgstr "بدل تطوير"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model,name:alshrooq_employee_contract.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_employee_medical_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__employee_medical_insurance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Employee Medical Insurance"
+msgstr "تأمين صحى على الموظف"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_family_medical_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__family_medical_insurance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Family Medical Insurance"
+msgstr "تأمين صحى على العائلة"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_gosi_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__gosi_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Gosi Allowance"
+msgstr "بدل تأمينات إجتماعية"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__total
+msgid "Gross"
+msgstr "إجمالي"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_housing_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__housing_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Housing Allowance"
+msgstr "بدل سكن"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_iqama_per_month_request
+msgid "Iqama Allowance"
+msgstr "بدل إقامة"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__iqama_expense
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Iqama Expense"
+msgstr "مصاريف إقامة"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_iqama_expense_request
+msgid "Iqama Expense Allowance"
+msgstr "تجديد إقامة"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__iqama_per_month
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Iqama Per Month"
+msgstr "رخصة العمل"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__iqama_transfer
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Iqama Transfer"
+msgstr "نقل الكفالة"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_iqama_transfer_request
+msgid "Iqama Transfer Allowance"
+msgstr " بدل نقل الإقامة"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_mobile_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__mobile_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Mobile Allowance"
+msgstr "بدل الهاتف"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Number Of Tickets Per Year"
+msgstr "عدد التذاكر في السنة"
+
+#. module: alshrooq_employee_contract
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__number_of_tickets_per_year
+msgid "Number of tickets per year"
+msgstr "عدد التذاكر في السنة"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_project_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__project_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Project Allowance"
+msgstr "بدل المشروع"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_recruitment_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__recruitment_allowance
+msgid "Recruitment Allowance"
+msgstr "بدل توظيف"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Recruitment Allownace"
+msgstr "بدل توظيف"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_rentry_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__rentry_allowance
+msgid "Rentry Allowance"
+msgstr "بدل دخول"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_supervisory_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__supervisory_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Supervisory Allowance"
+msgstr "بدل إشرافي"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Total"
+msgstr "إجمالى"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_transportation_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__transportation_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Transportation Allowance"
+msgstr "بدل المواصلات"
+
+#. module: alshrooq_employee_contract
+#: model:hr.salary.rule,name:alshrooq_employee_contract.hr_rule_travel_allowance_request
+#: model:ir.model.fields,field_description:alshrooq_employee_contract.field_hr_contract__travel_allowance
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "Travel Allowance"
+msgstr "بدل السفر"
+
+#. module: alshrooq_employee_contract
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_contract.hr_contract_view_form_inherit_alshrooq_contract
+msgid "VISA allowance (Reentry)"
+msgstr "بدل فيزا (إعادة الدخول)"

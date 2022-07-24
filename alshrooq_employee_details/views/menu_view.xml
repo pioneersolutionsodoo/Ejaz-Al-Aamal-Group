@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!--  Employee Self Service -->
+        <menuitem name="Employee Self Service" id="menu_hr_employee_self_service"
+                  sequence="5"
+                  parent="hr.menu_hr_root"/>
+    </data>
+</odoo>

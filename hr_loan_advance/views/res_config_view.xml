@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_config_settings_loan_advance" model="ir.ui.view">
+            <field name="name">HR Config Settings Loan Advance</field>
+            <field name="model">hr.config.settings</field>
+            <field name="arch" type="xml">
+                <form string="HR Common Settings" class="oe_form_configuration">
+                    <header>
+                        <button string="Apply" type="object" name="execute" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" type="object" name="cancel" class="oe_link"/>
+                    </header>
+                    <separator name='hr_common_config_settings' string="HR Common Settings"/>
+                    <group>
+                        <div>
+                            <label for="limit_of_loan"/>
+                            <field name="limit_of_loan" class="oe_inline"/>
+                            <field name="loan_amount" class="oe_inline"
+                                   attrs="{'required': [('limit_of_loan', '=', 'amount')], 'invisible': [('limit_of_loan', '!=', 'amount')]}"/>
+                            <field name="loan_months" class="oe_inline"
+                                   attrs="{'required': [('limit_of_loan', '=', 'basic')], 'invisible': [('limit_of_loan', '!=', 'basic')]}"/>
+                            <label for="loan_months" string="Months" class="oe_inline"
+                                   attrs="{'invisible': [('limit_of_loan', '!=', 'basic')]}"/>
+                        </div>
+                        <div>
+                            <label for="limit_of_advance"/>
+                            <field name="limit_of_advance" class="oe_inline"/>
+                            <field name="advance_amount" class="oe_inline"
+                                   attrs="{'required': [('limit_of_advance', '=', 'amount')], 'invisible': [('limit_of_advance', '!=', 'amount')]}"/>
+                            <field name="advance_months" class="oe_inline"
+                                   attrs="{'required': [('limit_of_advance', '=', 'basic')], 'invisible': [('limit_of_advance', '!=', 'basic')]}"/>
+                            <label for="loan_months" string="Months" class="oe_inline"
+                                   attrs="{'invisible': [('limit_of_advance', '!=', 'basic')]}"/>
+                        </div>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_hr_loan_config_settings" model="ir.actions.act_window">
+            <field name="name">Loan Settings</field>
+            <field name="res_model">hr.config.settings</field>
+            <field name="view_id" ref="view_hr_config_settings_loan_advance"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+
+
+
+
+    </data>
+</odoo>

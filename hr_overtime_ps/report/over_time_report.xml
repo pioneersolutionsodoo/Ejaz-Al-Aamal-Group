@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <template id="hr_overtime_ps_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Overtime Request Form</strong>
+                        </h4>
+                        <div class="page">
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Contract
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.contract_id.name"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Job Title
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.job_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date From
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.date_from"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date To
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.date_to"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Request Hours
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.request_hours"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Approved Hours
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.approved_hours"/>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">HR Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Confirmed By
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.d_manager.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Approved By
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.hr_manager_id.name"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Refused By
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.refused_by.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Overtime Per
+                                        Hour
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.ot_per_hour"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                    <th class="text-center" style="width:1050px" colspan="8">Work Summary
+                                    </th>
+                                </tr>
+                                <t t-foreach="o.overtime_summary" t-as="r">
+                                    <tr style="border:1px solid gray;">
+
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:12.5%;background-color:#e6e6ff">Name
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:12.5%">
+                                            <span t-esc="r.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:12.5%;background-color:#e6e6ff">Date
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:12.5%">
+                                            <span t-esc="r.date"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:12.5%;background-color:#e6e6ff">Request
+                                            Hours
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:12.5%">
+                                            <span t-esc="r.request_hours"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:12.5%;background-color:#e6e6ff">Approved
+                                            Hours
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:12.5%">
+                                            <span t-esc="r.approved_hours"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </table>
+
+                            <!--===================================================================-->
+                            <br></br>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br></br>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.d_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Direct Manager</strong>
+                                            <br/>
+                                            <span t-field="o.d_manager"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.hr_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">HR Manager</strong>
+                                            <br/>
+                                            <span t-field="o.hr_manager_id"/>
+                                        </th>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+
+        <record id="hr_overtime_ps_report" model="ir.actions.report">
+            <field name="name">Overtime Request</field>
+            <field name="model">hr.overtime.ps</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_overtime_ps.hr_overtime_ps_template</field>
+            <field name="report_file">hr_overtime_ps.hr_overtime_ps_template</field>
+            <field name="binding_model_id" ref="model_hr_overtime_ps"/>
+            <field name="binding_type">report</field>
+             <field name="print_report_name">'%s Overtime Request' % (object.employee_id.name)</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="hr_overtime_main_menu" name="OverTime" sequence="3"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"/>
+<!--                  parent="pioneer_HR_Employee.ps_menu_employee_self_services"/>-->
+
+    </data>
+</odoo>

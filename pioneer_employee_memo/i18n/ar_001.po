@@ -1,0 +1,340 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pioneer_employee_memo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-06 10:20+0000\n"
+"PO-Revision-Date: 2020-09-06 12:24+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: pioneer_employee_memo
+#: model:ir.actions.report,print_report_name:pioneer_employee_memo.english_employee_memo_report
+msgid "'%s Employee Memo' % (object.employee_id.name)"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">HR Manager</strong>\n"
+"                                            <br/>"
+msgstr "/nمدير الموارد البشرية"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "<strong>Approval From Responsibles</strong>"
+msgstr "موافقة المسئولين"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "<strong>Employee Memo Form</strong>"
+msgstr "نموذج مذكرة موظف"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "<strong>Responsible</strong>"
+msgstr "المسئول"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "<strong>Responsibles Notes</strong>"
+msgstr "ملاحظات المسئول"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Add Reason ..."
+msgstr "إضافة تعليق"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields.selection,name:pioneer_employee_memo.selection__employee_memo__state__approved
+msgid "Approved"
+msgstr "موافق علية"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__company_id
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "Company"
+msgstr "الشركة"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__create_uid
+msgid "Created by"
+msgstr "انشأ بواسطة"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__create_date
+msgid "Created on"
+msgstr "انشأ بتاريخ"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__date
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__department_id
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Department"
+msgstr "القسم"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__display_name
+msgid "Display Name"
+msgstr "اسم"
+
+#. module: pioneer_employee_memo
+#: code:addons/assrooh-addons/pioneer_employee_memo/models/employee_memo.py:0
+#: code:addons/pioneer_employee_memo/models/employee_memo.py:0
+#: model:ir.model.fields.selection,name:pioneer_employee_memo.selection__employee_memo__state__draft
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__employee_id
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__employee_no
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Employee Info"
+msgstr "معلومات عن الموظف"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.english_employee_memo_template
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: pioneer_employee_memo
+#: model:ir.actions.act_window,name:pioneer_employee_memo.view_employee_memo_action
+#: model:ir.actions.report,name:pioneer_employee_memo.english_employee_memo_report
+#: model:ir.model,name:pioneer_employee_memo.model_employee_memo
+#: model:ir.ui.menu,name:pioneer_employee_memo.view_employee_memo_menu
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_tree
+msgid "Employee Memo"
+msgstr "مذكرة عن الموظف"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Employee Memo PDF"
+msgstr "مذكرة الموظف PDF"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_tree
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__hr_manager_id
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "HR Manager Approve"
+msgstr "مدير الموارد البشرية"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__hr_manager_note
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "HR Manager Note"
+msgstr "ملاحظة مدير الموارد البشرية"
+
+#. module: pioneer_employee_memo
+#: code:addons/assrooh-addons/pioneer_employee_memo/models/employee_memo.py:0
+#: code:addons/pioneer_employee_memo/models/employee_memo.py:0
+#: model:ir.model.fields.selection,name:pioneer_employee_memo.selection__employee_memo__state__hr_manager
+#, python-format
+msgid "HR Manger"
+msgstr "مدير الموارد البشرية"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__id
+msgid "ID"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_needaction
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_has_error
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__job_title
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Job Title"
+msgstr "مسمى وظفي"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__name
+msgid "Number"
+msgstr "رقم"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__reason
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Reason"
+msgstr "السبب"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_form
+msgid "Send Request"
+msgstr "إرسال طلب"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__state
+msgid "State"
+msgstr "حالة"
+
+#. module: pioneer_employee_memo
+#: model_terms:ir.ui.view,arch_db:pioneer_employee_memo.view_employee_memo_tree
+msgid "Status"
+msgstr "الحالة"
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,field_description:pioneer_employee_memo.field_employee_memo__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: pioneer_employee_memo
+#: model:ir.model.fields,help:pioneer_employee_memo.field_employee_memo__website_message_ids
+msgid "Website communication history"
+msgstr ""

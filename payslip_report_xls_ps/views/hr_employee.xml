@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- HR Employee Inherite -->
+        <record model="ir.ui.view" id="view_hr_employee_payroll_ps">
+            <field name="name">hr.employee.common.ps.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="bank_account_id" position="after">
+                    <field name="gosi_number" invisible="False"/>
+                    <field name="work_locations_id" invisible="0"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

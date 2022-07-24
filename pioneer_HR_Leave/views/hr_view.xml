@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- HR Employee Inherite -->
+        <record model="ir.ui.view" id="view_hr_employee_hr_holidays_saudi_form">
+            <field name="name">hr.employee.hr.leave.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[position()=7]" position="before">
+                    <page string="Leave" groups="hr.group_hr_user">
+                        <group>
+                            <group>
+                                <field name="basic_contract_type"/>
+                                <field name="type_id"/>
+                                <field name="joined_date" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="last_vacation_date" readonly="1"/>
+                                <field name="availed_leave" invisible="1"/>
+                                <field name="accumlate_days"/>
+                                <field name="used_leave"/>
+                                <field name="balance_leave"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

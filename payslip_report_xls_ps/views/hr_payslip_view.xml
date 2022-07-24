@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="view_inherit_hr_payslip_form_000" model="ir.ui.view">
+            <field name="name">view.inherit.hr.payslip.form</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='contract_id']" position="after">
+                    <field name="analytic_account_id" />
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

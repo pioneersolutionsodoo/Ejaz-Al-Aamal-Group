@@ -1,0 +1,649 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pioneer_Business_Trip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-26 11:23+0000\n"
+"PO-Revision-Date: 2020-08-26 14:35+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"(1)\n"
+"                                            General Information"
+msgstr ""
+"(1)\n"
+"                                             المعلومات العامة"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"(2)\n"
+"                                            Travel Details"
+msgstr ""
+"(2)\n"
+"                                             تفاصيل السفر"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"(3)\n"
+"                                            After Business Trip Details"
+msgstr ""
+"(3)\n"
+"                                             تفاصيل ما بعد رحلة العمل"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ") From:"
+msgstr ") من :"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "-To:"
+msgstr "-إلى:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__account_manager_id
+msgid "Account Manager"
+msgstr "مدير الحساب"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Account Settings"
+msgstr "إعدادت الحساب"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Accreditation"
+msgstr "الاعتماد"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__actual_travel_days
+msgid "Actual Days"
+msgstr "الأيام الفعلية"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"Actual Number of Travel\n"
+"                                            Days:("
+msgstr ""
+"العدد الفعلي للسفر\n"
+"                                             أيام:("
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Actual Travel Date"
+msgstr "تاريخ السفر الفعلي"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__actual_travel_date_from
+msgid "Actual Travel Date From"
+msgstr "تاريخ السفر الفعلي من"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__actual_travel_date_to
+msgid "Actual Travel Date To"
+msgstr "تاريخ السفر الفعلي إلى"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__approve
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Approve"
+msgstr "يوافق"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"Business\n"
+"                                            Trip"
+msgstr ""
+"اعمال\n"
+"                                             رحلة قصيرة "
+
+#. module: pioneer_Business_Trip
+#: model:ir.actions.act_window,name:pioneer_Business_Trip.action_hr_business_trip
+#: model:ir.actions.report,name:pioneer_Business_Trip.report_business_trip
+#: model:ir.ui.menu,name:pioneer_Business_Trip.menu_hr_business_trip
+msgid "Business Trip"
+msgstr "رحلة عمل"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_res_company__business_trip_journal_id
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.ps_bt_view_company_form_fig
+msgid "Business Trip Journal"
+msgstr "دفتر يوميات رحلة العمل"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__city
+msgid "City"
+msgstr "المدينة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__close
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Close"
+msgstr "مغلق"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Closing Details"
+msgstr "تفاصيل الإغلاق"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__account_manager_note
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__direct_manager_note
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__hr_manager_note
+msgid "Comments"
+msgstr "التعليقات"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model,name:pioneer_Business_Trip.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__confirm
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Confirm"
+msgstr "يؤكد"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__account_manager_date
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__direct_manager_date
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__hr_manager_date
+msgid "Confirmed Date"
+msgstr "تاريخ التأكيد"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__country_id
+msgid "Country"
+msgstr "البلد"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Country:"
+msgstr "البلد:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__create_date
+msgid "Created on"
+msgstr "انشأ في"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__current_user
+msgid "Current User"
+msgstr "المستخدم الحالي"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Date:"
+msgstr "التاريخ:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__resource_calendar_id
+msgid "Define the schedule of resource"
+msgstr "تحديد الجدول الزمني للموارد"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Department:"
+msgstr "القسم:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__note
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"Direct\n"
+"                                            Manager"
+msgstr ""
+"مباشر\n"
+"                                             مدير "
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__direct_manager_id
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__employee_id
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_tree
+msgid "Employee Business Trip"
+msgstr "رحلة عمل الموظف"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Employee Signature:"
+msgstr "توقيع الموظف:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__expense_amount
+msgid "Expense Amount"
+msgstr "مبلغ المصاريف"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__fm_approve
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Financial Manager Approve"
+msgstr "موافقة المدير المالي"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_filter
+msgid "Group By"
+msgstr "مجمعة حسب"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__hr_manager_id
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__id
+msgid "ID"
+msgstr "رقم الهوية"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_needaction
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_has_error
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__is_direct_manager
+msgid "Is Direct Manager"
+msgstr "مدير مباشر"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__job_id
+msgid "Job Title"
+msgstr "مسمى الوظيفة"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Job:"
+msgstr "الوظيفة:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__move_id
+msgid "Journal Entry"
+msgstr "قيد دفتر اليومية"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "Journal is not configured. Select Journal from Company"
+msgstr "لم يتم تكوين دفتر اليومية. حدد دفتر اليومية من الشركة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Manager Signature:"
+msgstr "Manager Signature:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid ""
+"Missing credit or debit account for journal.Please set credit and debit account "
+"for journal."
+msgstr ""
+"حساب دائن أو مدين مفقود للدفتر اليومية. يُرجى تعيين حساب دائن أو مدين للدفتر "
+"اليومية."
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Name:"
+msgstr "الاسم:"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__employee_recruited
+msgid "No. of Employees Recruited"
+msgstr "عدد الموظفين المعينين"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, fuzzy, python-format
+msgid "Only direct manager \"%s\" of employee \"%s\" can create this business trip"
+msgstr "فقط المدير المباشر \"s٪\" للموظف \"s٪\" يمكنه إنشاء رحلة العمل هذه"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "Please choose actual travel from and to Date."
+msgstr "الرجاء اختيار السفر الفعلي من وإلى التاريخ."
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "Please set the home address for employee"
+msgstr "الرجاء إضافة عنوان الموظف"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__recruitment
+msgid "Recruitment"
+msgstr "ترشيح"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__refuse
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__date
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__request_travel_days
+msgid "Request Days"
+msgstr "أيام الطلب"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid ""
+"Request Number\n"
+"                                            of Travel Days:("
+msgstr ""
+"رقم الطلب\n"
+"                                             عدد أيام السفر :( "
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__resource_id
+msgid "Resource"
+msgstr "الموارد"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_filter
+msgid "Search Employee Business Trip"
+msgstr "ابحث عن رحلة عمل للموظف"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Send Request"
+msgstr "ارسل طلب"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields.selection,name:pioneer_Business_Trip.selection__hr_business_trip__state__request
+msgid "Sent Request"
+msgstr "ارسل طلب"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__name
+msgid "Serial"
+msgstr "مسلسل"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "Signature:"
+msgstr "التوقيع:"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_filter
+msgid "State"
+msgstr "الحالة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__state
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_res_company__business_trip_journal_id
+msgid "The journal used when the Business Trip is done."
+msgstr "دفتر اليومية المستخدم عند انتهاء رحلة العمل."
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "The user is not an employee."
+msgstr "مستعمل النظام ليس موظف."
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__tz
+msgid ""
+"This field is used in order to define in which timezone the resources will work."
+msgstr "يتم استخدام هذا الحقل لتحديد المنطقة الزمنية التي ستعمل فيها الموارد."
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__tz
+msgid "Timezone"
+msgstr "الوحدة زمنية"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Travel Date"
+msgstr "تاريخ السفر"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__travel_date_from
+msgid "Travel Date From"
+msgstr "تاريخ السفر من"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__travel_date_to
+msgid "Travel Date To"
+msgstr "تاريخ السفر إلى"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.view_hr_business_trip_form
+msgid "Travel Details"
+msgstr "تفاصيل السفر"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__visa_required
+msgid "VISA Required"
+msgstr "بطاقة السحب الالي مطلوبة"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "VISA Required:"
+msgstr "بطاقة السحب الالي مطلوبة:"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,help:pioneer_Business_Trip.field_hr_business_trip__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model.fields,field_description:pioneer_Business_Trip.field_hr_business_trip__resource_calendar_id
+msgid "Working Hours"
+msgstr "ساعات العمل"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "You cannot delete record which is not in Draft."
+msgstr "لا يمكن حذف طلب ان لم يكن مسودة"
+
+#. module: pioneer_Business_Trip
+#: model_terms:ir.ui.view,arch_db:pioneer_Business_Trip.report_business_trip_document
+msgid "city:"
+msgstr "المدينة:"
+
+#. module: pioneer_Business_Trip
+#: code:addons/pioneer_Business_Trip/models/ps_bt_business_trip.py:0
+#, python-format
+msgid "false"
+msgstr "خاطئ"
+
+#. module: pioneer_Business_Trip
+#: model:ir.model,name:pioneer_Business_Trip.model_hr_business_trip
+msgid "hr.business.trip"
+msgstr ""

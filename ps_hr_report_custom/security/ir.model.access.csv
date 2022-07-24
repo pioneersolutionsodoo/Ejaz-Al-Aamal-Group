@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+job_offer_access,job.offer,model_job_offer,,1,1,1,1
+resignation_acceptance_access,resignation.acceptance,model_resignation_acceptance,,1,1,1,1
+employee_statement_access,employee.statement,model_employee_statement,,1,1,1,1

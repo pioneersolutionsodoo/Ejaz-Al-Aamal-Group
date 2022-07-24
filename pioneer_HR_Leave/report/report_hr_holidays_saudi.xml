@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="report_hr_holidays_saudi_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Leave Request</strong>
+                        </h4>
+                        <div class="page">
+                            <table style="border-spacing:0;margin-bottom:0; width 100%; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width 100%" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tr style="border:1px solid gray;width:15%;background-color:#e6e6ff">
+                                    <td class="text-center" style="width 100%" colspan="4">
+                                        <span t-esc="o.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Employee
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Contract
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.contract_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Job
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.job_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Department
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Request Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.request_date"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Company
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.company_id.name"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="border-spacing:0;margin-bottom:0; width 100%; border: 1px solid gray;">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width 100%" colspan="4">Leave Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Leave Duration
+                                    </td>
+                                    <td class="text-center"
+                                        style="border:1px solid gray;width:25%;">
+                                        <span t-esc="o.date_from"/>
+                                        <span t-esc="o.date_to"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Leave Type
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.leave_type_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Official Leave
+                                        Days
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.official_leave_days"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Request Days
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.request_leave_days"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Weekend Leave
+                                        Days
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.weekend_leave_days"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Actual Leave
+                                        Days
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.actual_leave_days"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff">Request Hours
+                                    </td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.request_leave_hours"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:15%;background-color:#e6e6ff"></td>
+                                    <td class="text-center" style="border:1px solid gray;width:25%"></td>
+                                </tr>
+
+                            </table>
+                            <!--====================================================================================-->
+                            <!--===================================================================-->
+                            <br></br>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br></br>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.direct_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Financial Manager</strong>
+                                            <br/>
+                                            <span t-field="o.direct_manager_id"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br></br>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.hr_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Financial Manager</strong>
+                                            <br/>
+                                            <span t-field="o.hr_manager_id"/>
+                                        </th>
+                                    </tr>
+
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br></br>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.account_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Financial Manager</strong>
+                                            <br/>
+                                            <span t-field="o.account_manager_id"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.admin_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Chief Financial Officer</strong>
+                                            <br/>
+                                            <span t-field="o.admin_manager_id"/>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_hr_holidays_saudi_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <table border="1" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center"
+                                            style="width:100%;border:1px solid black;background-color:#c0c0c0"
+                                            colspan="4">Leave Request
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid black">
+                                        <td style="width:100%;">Description :
+                                            <span t-field="o.name"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="border:1px solid black;width:100%">
+                                <thead>
+                                    <tr style="background-color:#c0c0c0;border:1px solid black">
+                                        <th class="text-center" style="width:100%" colspan="4">Employee Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Employee</td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.employee_id"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Employee Code
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.employee_id.emp_code"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Work Location
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.employee_id.work_location"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Job</td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.job_id"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Request Date
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.request_date"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Company</td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.company_id"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Project Name
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.employee_id.project_name.name"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff"></td>
+                                        <td class="text-left" style="width:25%"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table style="border:1px solid black;width:100%">
+                                <thead>
+                                    <tr style="background-color:#c0c0c0;border:1px solid black">
+                                        <th class="text-center" style="width:100%" colspan="4">Leave Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Leave
+                                            Duration
+                                        </td>
+                                        <td class="text-left" style="width:25%">(<span t-field="o.date_from"/>)-(<span
+                                                t-field="o.date_to"/>)
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Leave Type</td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.leave_type_id"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Official Leave
+                                            Days
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.official_leave_days"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Request Days
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.request_leave_days"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Weekend Leave
+                                            Days
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.weekend_leave_days"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Request Hours
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.request_leave_hours"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black">
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">Actual Leave
+                                            Days
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                            <span t-field="o.actual_leave_days"/>
+                                        </td>
+                                        <td class="text-left" style="width:25%;background-color:#e6e6ff">
+                                        </td>
+                                        <td class="text-left" style="width:25%">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table style="border:1px solid black;width:100%">
+                                <thead>
+                                    <tr style="border:1px solid black;width:100%;background-color:#c0c0c0;">
+                                        <th class="text-center" style="border-right:1px solid black;width:100%">Employee
+                                            Comments
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid black;width:100%">
+                                        <td class="text-left" style="border-right:1px solid black;width:100%;">
+                                            <span t-field="o.note"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table style="border:1px solid black;width:100%">
+                                <thead>
+                                    <tr style="border:1px solid black;width:100%;background-color:#e6e6ff">
+                                        <th class="text-center" style="width:10%;border-right:1px solid black"></th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;">Name
+                                        </th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                            Signature
+                                        </th>
+                                        <th class="text-center" style="width:30%;">Date</th>
+                                    </tr>
+                                    <tr style="border:1px solid black;width:100%">
+                                        <th class="text-center"
+                                            style="width:10%;border-right:1px solid black;background-color:#e6e6ff">
+                                            Employee
+                                        </th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                            <span t-field="o.employee_id.user_id"/>
+                                        </th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;"></th>
+                                        <th class="text-center" style="width:30%;">
+                                            <span t-field="o.request_date"/>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <table style="border:1px solid black;width:100%">
+                                <thead>
+                                    <tr style="border:1px solid black;width:100%;background-color:#c0c0c0;">
+                                        <th class="text-center" style="border-right:1px solid black;width:100%">Direct
+                                            Manager Comments
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid black;width:100%">
+                                        <td class="text-left" style="border-right:1px solid black;width:100%;">
+                                            <span t-field="o.direct_manager_note"/>
+                                            <br/>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table style="border:1px solid black;width:100%">
+                                <thead>
+                                    <tr style="border:1px solid black;width:100%;background-color:#e6e6ff">
+                                        <th class="text-center" style="width:10%;border-right:1px solid black"></th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;">Name
+                                        </th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                            Signature
+                                        </th>
+                                        <th class="text-center" style="width:30%;">Date</th>
+                                    </tr>
+                                    <tr style="border:1px solid black;width:100%">
+                                        <th class="text-center"
+                                            style="width:10%;border-right:1px solid black;background-color:#e6e6ff">
+                                            Direct Manager
+                                        </th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                            <span t-field="o.direct_manager_id"/>
+                                        </th>
+                                        <th class="text-center" style="border-right:1px solid black;width:30%;"></th>
+                                        <th class="text-center" style="width:30%;">
+                                            <span t-field="o.direct_manager_date"/>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <t t-if="o.direct_manager_id.id != o.hr_manager_id.id">
+                                <table style="border:1px solid black;width:100%">
+                                    <thead>
+                                        <tr style="border:1px solid black;width:100%;background-color:#c0c0c0;">
+                                            <th class="text-center" style="border-right:1px solid black;width:100%">HR
+                                                Manager Comments
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border:1px solid black;width:100%">
+                                            <td class="text-left" style="border-right:1px solid black;width:100%;">
+                                                <span t-field="o.hr_manager_note"/>
+                                                <br/>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <table style="border:1px solid black;width:100%">
+                                    <thead>
+                                        <tr style="border:1px solid black;width:100%;background-color:#e6e6ff">
+                                            <th class="text-center" style="width:10%;border-right:1px solid black"></th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">Name
+                                            </th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                                Signature
+                                            </th>
+                                            <th class="text-center" style="width:30%;">Date</th>
+                                        </tr>
+                                        <tr style="border:1px solid black;width:100%">
+                                            <th class="text-center"
+                                                style="width:10%;border-right:1px solid black;background-color:#e6e6ff">
+                                                HR Manager
+                                            </th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                                <span t-field="o.hr_manager_id"/>
+                                            </th>
+                                            <th class="text-center"
+                                                style="border-right:1px solid black;width:30%;"></th>
+                                            <th class="text-center" style="width:30%;">
+                                                <span t-field="o.hr_manager_date"/>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </t>
+
+                            <t t-if="o.hr_manager_id.id != o.account_manager_id.id">
+                                <table style="border:1px solid black;width:100%">
+                                    <thead>
+                                        <tr style="border:1px solid black;width:100%;background-color:#c0c0c0;">
+                                            <th class="text-center" style="border-right:1px solid black;width:100%">
+                                                Account
+                                                Manager Comments
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border:1px solid black;width:100%">
+                                            <td class="text-left" style="border-right:1px solid black;width:100%;">
+                                                <span t-field="o.account_manager_note"/>
+                                                <br/>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <table style="border:1px solid black;width:100%">
+                                    <thead>
+                                        <tr style="border:1px solid black;width:100%;background-color:#e6e6ff">
+                                            <th class="text-center" style="width:10%;border-right:1px solid black"></th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">Name
+                                            </th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                                Signature
+                                            </th>
+                                            <th class="text-center" style="width:30%;">Date</th>
+                                        </tr>
+                                        <tr style="border:1px solid black;width:100%">
+                                            <th class="text-center"
+                                                style="width:10%;border-right:1px solid black;background-color:#e6e6ff">
+                                                Account Manager
+                                            </th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                                <span t-field="o.account_manager_id"/>
+                                            </th>
+                                            <th class="text-center"
+                                                style="border-right:1px solid black;width:30%;"></th>
+                                            <th class="text-center" style="width:30%;">
+                                                <span t-field="o.account_manager_date"/>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </t>
+
+                            <t t-if="o.account_manager_id.id != o.admin_manager_id.id">
+                                <table style="border:1px solid black;width:100%">
+                                    <thead>
+                                        <tr style="border:1px solid black;width:100%;background-color:#c0c0c0;">
+                                            <th class="text-center" style="border-right:1px solid black;width:100%">
+                                                Admin &amp; Financial Director Comments
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border:1px solid black;width:100%">
+                                            <td class="text-left" style="border-right:1px solid black;width:100%;">
+                                                <span t-field="o.admin_manager_note"/>
+                                                <br/>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <table style="border:1px solid black;width:100%">
+                                    <thead>
+                                        <tr style="border:1px solid black;width:100%;background-color:#e6e6ff">
+                                            <th class="text-center" style="width:10%;border-right:1px solid black"></th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">Name
+                                            </th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                                Signature
+                                            </th>
+                                            <th class="text-center" style="width:30%;">Date</th>
+                                        </tr>
+                                        <tr style="border:1px solid black;width:100%">
+                                            <th class="text-center"
+                                                style="width:10%;border-right:1px solid black;background-color:#e6e6ff">
+                                                Admin &amp; FD
+                                            </th>
+                                            <th class="text-center" style="border-right:1px solid black;width:30%;">
+                                                <span t-field="o.admin_manager_id"/>
+                                            </th>
+                                            <th class="text-center"
+                                                style="border-right:1px solid black;width:30%;"></th>
+                                            <th class="text-center" style="width:30%;">
+                                                <span t-field="o.admin_manager_date"/>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </t>
+                        </div>
+                    </t>
+                </t>
+            </t>
+
+        </template>
+
+
+    </data>
+</odoo>
+-->

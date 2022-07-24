@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_hr_overtime_ps_form_inherit">
+            <field name="name">hr overtime</field>
+            <field name="model">hr.overtime.ps</field>
+            <field name="inherit_id" ref="hr_overtime_ps.view_hr_overtime_ps_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='d_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_overtime_ps.action_hr_overtime_ps_direct" model="ir.actions.act_window">
+            <field name="name">Line MGR Approval</field>
+        </record>
+
+        <record id="hr_overtime_ps.hr_overtime_ps_menu_direct" model="ir.ui.menu">
+            <field name="name">Line-Mgr Approval</field>
+        </record>
+
+
+    </data>
+</odoo>

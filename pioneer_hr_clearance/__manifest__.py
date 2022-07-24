@@ -1,0 +1,21 @@
+{
+    'name': 'Clearance',
+    'version': '15.0.0.1',
+    'summary': 'Clearance',
+    'description': 'Clearance',
+    'category': 'hr',
+    'author': 'Mostafa Mahmoud',
+    'website': 'ps-sa.net',
+    'depends': ['base', 'hr', 'account','hr_loan_advance','pioneer_HR_Leave','alshrooq_employee_details'],
+    'data': [
+        'views/hr_clearance_view.xml',
+        'views/hr_leave_view.xml',
+        # 'views/stock_location_view.xml',
+        'security/ir.model.access.csv',
+        'data/data.xml',
+        'report/employee_clearance_report.xml',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

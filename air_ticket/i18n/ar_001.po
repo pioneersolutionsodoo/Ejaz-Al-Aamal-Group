@@ -1,0 +1,682 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* air_ticket
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-20 09:05+0000\n"
+"PO-Revision-Date: 2020-09-20 09:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: air_ticket
+#: model:ir.actions.report,print_report_name:air_ticket.air_ticket_report
+msgid "'%s Air Ticket' % (object.employee_id.name)"
+msgstr ""
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Accounting Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">مدير الحسابات</strong>\n"
+"                                            <br/>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Admin Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">المدير العام</strong>\n"
+"                                            <br/>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">Direct Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">المدير المباشر</strong>\n"
+"                                            <br/>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"<strong style=\"color:#A0A0A0;\">HR Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong style=\"color:#A0A0A0;\">مدير الموارد البشرية</strong>\n"
+"                                            <br/>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "<strong>Air Ticket Form</strong>"
+msgstr "<strong>نموذج تذكرة طيران</strong>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "<strong>Approval From Responsibles</strong>"
+msgstr "<strong>موافقة المسئولين</strong>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "<strong>Responsible</strong>"
+msgstr "<strong>المسئول</strong>"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "<strong>Responsibles Notes</strong>"
+msgstr "<strong>ملاحظات المسئول</strong>"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__account_manager_id
+msgid "Accounting Manager"
+msgstr "مدير الحسابات"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__account_manager_note
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Accounting Manager Note"
+msgstr "ملاحظة مدير الحسابات"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Add notes ..."
+msgstr "إضافة ملاحظات"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Admin & Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__admin_manager_id
+msgid "Admin & Finance Manager"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__admin_manager_note
+msgid "Admin & Finance Manager Note"
+msgstr "ملاحظة مدير الشؤون الإدارية والمالية"
+
+#. module: air_ticket
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__state__admin_fd
+msgid "Admin Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Admin Manager Note"
+msgstr "ملاحظة المدير العام"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__adults
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Adults"
+msgstr "البالغين"
+
+#. module: air_ticket
+#: model:ir.actions.act_window,name:air_ticket.view_air_ticket_action
+#: model:ir.actions.report,name:air_ticket.air_ticket_report
+#: model:ir.model,name:air_ticket.model_air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_hr_employee__air_ticket_ids
+#: model:ir.model.fields,field_description:air_ticket.field_hr_leave__air_ticket_id
+#: model:ir.ui.menu,name:air_ticket.view_air_ticket_menu
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_tree
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_hr_holidays_saudi_form_inherit_002
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_inherit_hr_employee_form_inherit_001
+msgid "Air Ticket"
+msgstr "تذاكر طيران"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__allocated_air_ticket_allowance
+#: model:ir.model.fields,field_description:air_ticket.field_hr_contract__air_ticket_allowance
+msgid "Air Ticket Allowance"
+msgstr "بدل تذكرة طيران"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_hr_holidays_saudi_form_inherit_002
+msgid "Air Ticket Count"
+msgstr "عدد تذاكر الطيران"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "Air Ticket Details"
+msgstr "تفاصيل تذاكر الطيران"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__air_ticket_difference
+msgid "Air Ticket Difference"
+msgstr "عدد تذاكر الطيران"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Air Ticket Info"
+msgstr "معلومات تذكرة طيران"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"Air ticket\n"
+"                                        Difference"
+msgstr ""
+"تذكرة طيران\n"
+"                                         فرق"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Air ticket Difference"
+msgstr "فرق تذاكر الطيران"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__airline
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Airline"
+msgstr "شركة طيران"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"Allocated Air\n"
+"                                        ticket Allowance"
+msgstr "بدل تذاكر طيران مخصصة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Allocated Air ticket Allowance"
+msgstr "بدل تذاكر طيران مخصصة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: air_ticket
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__state__approved
+msgid "Approved"
+msgstr "موافق علية"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_hr_leave__check_air_ticket
+msgid "Check Air Ticket"
+msgstr "تحقق تذكرة طيران"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__children
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Children"
+msgstr "أطفال"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__city_from
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "City From"
+msgstr "من مدينة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__city_to
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "City To"
+msgstr "إلى مدينة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__company_id
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "Company"
+msgstr "شركة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__country_from_id
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Country From"
+msgstr "من بلد"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__country_to_id
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Country To"
+msgstr "إلى بلد"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_hr_holidays_saudi_form_inherit_002
+msgid "Create Air Ticket"
+msgstr "إنشاء تذكرة طيران"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها بتاريخ"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__date
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"Deduct Ticket\n"
+"                                        Difference in Salary"
+msgstr "خصم تذكرة الخصم في الراتب"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__deduct_ticket_difference_in_salary
+msgid "Deduct Ticket Difference In Salary"
+msgstr "خصم تذكرة الخصم في الراتب"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Deduct Ticket Difference in Salary"
+msgstr "خصم فرق التذكرة على الراتب"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__department_id
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Department"
+msgstr "قسم"
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__d_manager
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__state__direct_manager
+#, python-format
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Direct Manager Approve"
+msgstr " موافقة المدير المباشر"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__d_manager_note
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Direct Manager Note"
+msgstr "ملاحظة المدير المباشر"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__display_name
+msgid "Display Name"
+msgstr "اسم"
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__state__draft
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: air_ticket
+#: model:ir.model,name:air_ticket.model_hr_employee
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__employee_id
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#, python-format
+msgid "Employee %s has already Air Ticket in this year %s"
+msgstr "الموظف٪ s لديه تذكرة طيران بالفعل في هذا العام٪ s"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__employee_no
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: air_ticket
+#: model:ir.model,name:air_ticket.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Employee Info"
+msgstr "معلومات الموظف"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_tree
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: air_ticket
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__state__finance_manager
+msgid "Finance Manager"
+msgstr "المدير المالى"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Finance Manager Approve"
+msgstr "موافقة المدير المالى"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__hr_manager_id
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__state__hr_manager
+#, python-format
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "HR Manager Approve"
+msgstr "موافقة مدير الموارد البشرية"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__hr_manager_note
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "HR Manager Note"
+msgstr "ملاحظة مدير الموارد البشرية"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__id
+msgid "ID"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_needaction
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_has_error
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__is_direct_manager
+msgid "Is Direct Manager"
+msgstr "هل هو المدير المباشر"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__job_id
+msgid "Job Position"
+msgstr "وظيفه"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Job Title"
+msgstr "عنوان وظيفي"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__note
+msgid "Note"
+msgstr "ملحوظة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__name
+msgid "Number"
+msgstr "رقم"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__type__others
+#, python-format
+msgid "Others"
+msgstr "آخرون"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid "Request Date"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Send Request"
+msgstr "إرسال طلب"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__show_direct_manager_button
+msgid "Show Direct Manager Button"
+msgstr "إظهار زر المدير المباشر"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__state
+msgid "State"
+msgstr "حالة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_tree
+msgid "Status"
+msgstr "الحالة"
+
+#. module: air_ticket
+#: model:ir.model,name:air_ticket.model_hr_leave
+msgid "Time Off"
+msgstr "أجازة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__total_airfare
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Total Airfare"
+msgstr "إجمالي ثمن تذاكر الطيران"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"Travel Date\n"
+"                                        From"
+msgstr "تاريخ السفر من"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__travel_date_from
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Travel Date From"
+msgstr "تاريخ السفر من"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__travel_date_to
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Travel Date To"
+msgstr "تاريخ السفر إلى"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__type
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+msgid "Type"
+msgstr "النوع"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#: model:ir.model.fields.selection,name:air_ticket.selection__air_ticket__type__vacation
+#, python-format
+msgid "Vacation"
+msgstr "أجازة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"Vacation End\n"
+"                                        Date"
+msgstr "تاريخ إنتهاء الأجازة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__vacation_end_date
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_tree
+msgid "Vacation End Date"
+msgstr "تاريخ إنتهاء الأجازة"
+
+#. module: air_ticket
+#: model_terms:ir.ui.view,arch_db:air_ticket.air_ticket_template
+msgid ""
+"Vacation Start\n"
+"                                        Date"
+msgstr "تاريخ بداية الأجازة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__vacation_start_date
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_form
+#: model_terms:ir.ui.view,arch_db:air_ticket.view_air_ticket_tree
+msgid "Vacation Start Date"
+msgstr "تاريخ بداية الأجازة"
+
+#. module: air_ticket
+#: code:addons/air_ticket/models/air_ticket.py:0 code:addons/assrooh-addons
+#: code:addons/air_ticket/models/air_ticket.py:0
+#, python-format
+msgid "Vacation Start Date Should be less than Vacation End Date"
+msgstr "يجب أن يكون تاريخ بدء الإجازة أقل من تاريخ انتهاء الإجازة"
+
+#. module: air_ticket
+#: model:ir.model.fields,field_description:air_ticket.field_air_ticket__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: air_ticket
+#: model:ir.model.fields,help:air_ticket.field_air_ticket__website_message_ids
+msgid "Website communication history"
+msgstr ""

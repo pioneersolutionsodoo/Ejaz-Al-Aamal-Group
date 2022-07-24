@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <template id="english_embassy_letter_template">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <t t-foreach="docs" t-as="o">
+                            <div style="float:left">
+                                <strong>Date</strong>
+                                <span t-esc="o.date" style="color:#333"/>
+                            </div>
+                            <br/>
+                            <div style="float:left">
+                                <strong>To</strong>
+                                <span t-esc="o.letter_to" style="color:#333"/>
+                            </div>
+                            <br/>
+                            <div style="float:left">
+                                <strong>Subject</strong>
+                                <span t-esc="o.letter_subject" style="color:#333"/>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div style="color:#333;line-height: 1.6;">
+                                Assrooh certifies that
+                                <strong>
+                                    <span t-esc="o.employee_id.name"/>
+                                </strong>
+                                ,
+                                South African Citizen her Iqama number is
+                                <strong>(<span t-esc="o.iqama"/>)
+                                </strong>
+                                and Passport number is (
+                                <strong>
+                                    <span t-esc="o.passport_id"/>
+                                </strong>
+                                )
+                                is an
+                                <strong>
+                                    <span t-esc="o.job_title"/>
+                                </strong>
+                                at
+                                <strong>
+                                    <span t-esc="o.address_id.street"/>
+                                </strong>
+                                of Saudi Electronic University
+                                Since 01-Sep.2013 up to the end of May 2020.
+                                His/Her current gross salary is SR
+                                <strong>
+                                    <span t-esc="o.gross"/>
+                                </strong>
+                                per Month,
+                                his/her accommodation, transportation and medical insurance are provided by the company.
+                            </div>
+                            <br/>
+                            <div style="color:#333">
+                                If you have any questions regarding
+                                <strong><span t-esc="o.employee_id.name"/>’s
+                                </strong>
+                                employment, please contact our office at [0546800401]
+                            </div>
+                            <br/>
+                            <div style="color:#333">
+                                This letter has been issued upon
+                                <strong><span t-esc="o.employee_id.name"/>’s
+                                </strong>
+                                request for the purpose of his visa issuance.
+                            </div>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <template id="arabic_embassy_letter_template">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <t t-foreach="docs" t-as="o">
+                            <div style="float:right">
+                                <span t-esc="o.date" style="color:#333;display:inline-block;float:left"/>
+                                <strong style="display:inline-block;float:right">التاريخ</strong>
+                            </div>
+                            <br/>
+                            <div style="float:right">
+                                <span t-esc="o.letter_to" style="color:#333;display:inline-block;float:left"/>
+                                <strong style="display:inline-block;float:right">إلى</strong>
+                            </div>
+                            <br/>
+                            <div style="float:right">
+                                <span t-esc="o.letter_subject" style="color:#333;display:inline-block;float:left"/>
+                                <strong style="display:inline-block;float:right">الموضوع</strong>
+                            </div>
+                            <br/>
+                            <br/>
+                            <h3 style="text-align:center">السادة/الموقرون</h3>
+                            <br/>
+                            <h4 style="text-align:center">السلام عليكم ورحمة اللة وبركاتة</h4>
+                            <br/>
+                            <div style="width:100%;">
+                                <table style="width:100%;">
+                                    <tbody style="width:100%;direction:ltr !important">
+                                        <tr>
+                                            <td>
+                                                <span>صادرة من</span>
+                                            </td>
+                                            <td>
+                                                <strong>
+                                                    <span t-esc="o.country_id.name"/>
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                <strong>(<span t-esc="o.iqama"/>)
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                <span>يحمل اقامة رقم</span>
+                                            </td>
+                                            <td>
+                                                <strong>
+                                                    <span t-esc="o.employee_id.name"/>
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                <span>بأن السيد/السيدة</span>
+                                            </td>
+                                            <td>
+                                                <strong>
+                                                    <span t-esc="o.company_id.name"/>
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                <span>نفيدكم نحن</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width:100%;">
+                                    <tbody style="width:100%;direction:ltr !important">
+                                        <tr>
+                                            <td><strong>(<span t-esc="o.gross"/>) </strong></td>
+                                            <td><span>ويتقاضى راتب شهري قدره</span></td>
+                                            <td>
+                                                <strong>
+                                                    <span t-esc="o.job_title"/>
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                <span>حتى تاريخه بمهنة ،</span>
+                                            </td>
+                                            <td>
+                                                <strong>
+                                                    <span t-esc="o.iqama_date_of_issue"/>
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                <span>جوازات الرياض ,يعمل لدينا وتحت كفالتنا من تاريخ</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width:100%;">
+                                    <tbody style="width:100%;direction:ltr !important">
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <span>   وقد اصدر هذا الخطاب بناءاً على رغبة الموظف دون أدني مسؤلية للشركة عن أي التزامات مالية وخلافه على الموظف</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                            <br/>
+                            <h3 style="color:#333;text-align:center">
+                                وتفضّلوا بقبول فائق الاحترام والتقدير
+                            </h3>
+                            <br/>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <record id="english_embassy_letter_report" model="ir.actions.report">
+            <field name="name">Embassy Letter</field>
+            <field name="model">embassy.letter</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">pioneer_embassy_letter.english_embassy_letter_template</field>
+            <field name="report_file">pioneer_embassy_letter.english_embassy_letter_template</field>
+            <field name="binding_model_id" ref="model_embassy_letter"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="arabic_embassy_letter_report" model="ir.actions.report">
+            <field name="name">Embassy Letter</field>
+            <field name="model">embassy.letter</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">pioneer_embassy_letter.arabic_embassy_letter_template</field>
+            <field name="report_file">pioneer_embassy_letter.arabic_embassy_letter_template</field>
+            <field name="binding_model_id" ref="model_embassy_letter"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

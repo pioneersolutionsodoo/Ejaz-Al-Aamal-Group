@@ -1,0 +1,267 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ps_expiry_reminder
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-18 12:15+0000\n"
+"PO-Revision-Date: 2022-04-18 12:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "<span style=\"color:white\">___</span>"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "Code"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__company_id
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Company"
+msgstr "الشركة"
+
+#. module: ps_expiry_reminder
+#: model:ir.model,name:ps_expiry_reminder.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__date_from
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: ps_expiry_reminder
+#: code:addons/ps_expiry_reminder/wizard/expiry_reminder_wizard.py:0
+#, python-format
+msgid "Date From Can not be Greater than Date To"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__date_to
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Date To"
+msgstr "الي تاريخ"
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model,name:ps_expiry_reminder.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: ps_expiry_reminder
+#: model:ir.model,name:ps_expiry_reminder.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "Employee name"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "Expiry Date"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.actions.report,name:ps_expiry_reminder.expiry_reminder_action_report
+#: model:ir.ui.menu,name:ps_expiry_reminder.expiry_reminder_wizard_view_menu
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Expiry Reminder"
+msgstr "تذكير انتهاء الصلاحية"
+
+#. module: ps_expiry_reminder
+#: model:ir.actions.act_window,name:ps_expiry_reminder.expiry_reminder_wizard_action_view
+msgid "Expiry Reminder Report"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model,name:ps_expiry_reminder.model_expiry_reminder_wizard
+msgid "Expiry Reminder Wizard"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "Expiry Report"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__expiry_type
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Expiry Type"
+msgstr "نوع الانتهاء"
+
+#. module: ps_expiry_reminder
+#: code:addons/ps_expiry_reminder/models/hr_employee.py:0
+#, python-format
+msgid "Hello,<br><br>There are employees about to end their Iqama<br> \"%s\""
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: code:addons/ps_expiry_reminder/models/hr_employee.py:0
+#, python-format
+msgid ""
+"Hello,<br><br>There are employees about to end their Passport numbers<br> "
+"\"%s\""
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: code:addons/ps_expiry_reminder/models/hr_employee.py:0
+#, python-format
+msgid ""
+"Hello,<br><br>There are employees called \"%s\" about to end their Contract "
+"in<br> \"%s\""
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_hr_config_settings__hr_remind_user_id
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_res_config_settings__hr_remind_user_id
+msgid "Hr Remind User"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: code:addons/ps_expiry_reminder/wizard/expiry_reminder_wizard.py:0
+#: model:ir.model.fields.selection,name:ps_expiry_reminder.selection__expiry_reminder_wizard__expiry_type__iqama
+#, python-format
+msgid "Iqama"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_hr_config_settings__iqama_expiry_limit
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_res_config_settings__iqama_expiry_limit
+msgid "Iqama Expiry Limit"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "Iqama Number"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.view_inherit_res_config_settings_form
+msgid "Iqama expiry limit"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.view_inherit_res_config_settings_form
+msgid "Iqama expiry limit."
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_expiry_reminder_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: code:addons/ps_expiry_reminder/wizard/expiry_reminder_wizard.py:0
+#: model:ir.model.fields.selection,name:ps_expiry_reminder.selection__expiry_reminder_wizard__expiry_type__passport
+#, python-format
+msgid "Passport"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_hr_config_settings__passport_expiry_limit
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_res_config_settings__passport_expiry_limit
+msgid "Passport Expiry Limit"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_template
+msgid "Passport Number"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.view_inherit_res_config_settings_form
+msgid "Passport expiry limit"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.expiry_reminder_wizard_form_view
+msgid "Print PDF"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_hr_config_settings__remind_user_id
+#: model:ir.model.fields,field_description:ps_expiry_reminder.field_res_config_settings__remind_user_id
+msgid "Remind User"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.view_inherit_res_config_settings_form
+msgid "Reminder Period Limit"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.actions.server,name:ps_expiry_reminder.ps_ir_cron_employee_id_contract_expiry11_ir_actions_server
+#: model:ir.cron,cron_name:ps_expiry_reminder.ps_ir_cron_employee_id_contract_expiry11
+#: model:ir.cron,name:ps_expiry_reminder.ps_ir_cron_employee_id_contract_expiry11
+msgid "Reminder Scheduler To Employee About Contract Expiry"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.actions.server,name:ps_expiry_reminder.ps_ir_cron_employee_id_expiry_ir_actions_server
+#: model:ir.cron,cron_name:ps_expiry_reminder.ps_ir_cron_employee_id_expiry
+#: model:ir.cron,name:ps_expiry_reminder.ps_ir_cron_employee_id_expiry
+msgid "Reminder Scheduler To Employee About ID Expiry"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.view_inherit_res_config_settings_form
+msgid "Users that will receive emails"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model_terms:ir.ui.view,arch_db:ps_expiry_reminder.view_inherit_res_config_settings_form
+msgid "Users will receive expiry details emails"
+msgstr ""
+
+#. module: ps_expiry_reminder
+#: model:ir.model,name:ps_expiry_reminder.model_report_ps_expiry_reminder_expiry_reminder_template
+msgid "report.ps_expiry_reminder.expiry_reminder_template"
+msgstr ""

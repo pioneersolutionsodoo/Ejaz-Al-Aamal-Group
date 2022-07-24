@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Form view-->
+        <record id="expiry_reminder_wizard_form_view" model="ir.ui.view">
+            <field name="name">expiry.reminder.wizard</field>
+            <field name="model">expiry.reminder.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Expiry Reminder">
+                    <group>
+                        <group>
+                            <field name="date_from" string="Date From" required="1" />
+                            <field name="expiry_type" string="Expiry Type" required="1" />
+                        </group>
+                        <group>
+                            <field name="date_to" string="Date To" required="1" />
+                            <field name="company_id" string="Company" readonly="1"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="generate_report" string="Print PDF" type="object" class="btn-primary"/>
+<!--                        <button name="generate_report_xlsx" string="Print Excel" type="object" class="btn-primary"/>-->
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!--Action Window-->
+        <record id="expiry_reminder_wizard_action_view" model="ir.actions.act_window">
+            <field name="name">Expiry Reminder Report</field>
+            <field name="res_model">expiry.reminder.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Menu Item  -->
+        <menuitem id="expiry_reminder_wizard_view_menu"
+                  name="Expiry Reminder"
+                  parent="hr.hr_menu_hr_reports"
+                  sequence="10"
+                  action="expiry_reminder_wizard_action_view"/>
+
+    </data>
+</odoo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

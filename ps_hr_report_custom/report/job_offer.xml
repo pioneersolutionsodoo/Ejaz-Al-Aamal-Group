@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="job_offer_view_form" model="ir.ui.view">
+            <field name="name">job_offer_view_form</field>
+            <field name="model">job.offer</field>
+            <field name="arch" type="xml">
+                <form string="job_offer_form">
+                    <sheet>
+                        <group col="4">
+                            <field name="name" required="1"/>
+                            <field name="date" required="1"/>
+                            <field name="job_id" required="1"/>
+                            <field name="degree" required="1"/>
+                            <field name="contract_duration" required="1"/>
+                        </group>
+                        <group col="4" string="Salary Details">
+                            <field name="bias_salary"/>
+                            <field name="housing_allowance"/>
+                            <field name="transportation_allowance"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="job_offer_view_tree" model="ir.ui.view">
+            <field name="name">job_offer_view_tree</field>
+            <field name="model">job.offer</field>
+            <field name="arch" type="xml">
+                <tree string="job_offer_tree">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="job_id"/>
+                    <field name="degree"/>
+                    <field name="contract_duration"/>
+                </tree>
+            </field>
+        </record>
+        <record id="emp_job_offer_action" model="ir.actions.act_window">
+            <field name="name">Job Offer</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">job.offer</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="emp_job_offer" name="Job Offer" parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="emp_job_offer_action" sequence="99"/>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+        <record id="resignation_acceptance_view_form" model="ir.ui.view">
+            <field name="name">resignation_acceptance_view_form</field>
+            <field name="model">resignation.acceptance</field>
+            <field name="arch" type="xml">
+                <form string="job_offer_form">
+                    <header>
+                        <button name="confirm" string="Confirm" class="oe_highlight" states="Draft" type="object"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <field name="employee_id" required="1" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="date" required="1" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="department_id"/>
+                            <field name="job_title"/>
+                            <field name="emp_code"/>
+                            <field name="job_code"/>
+                            <field name="total"/>
+                            <field name="aj_date"/>
+                            <field name="leave_date" required="1" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="qualification" required="1" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="qualification_institution"
+                                  attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="qualification_date"
+                                  attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="last_evaluation" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="evaluation_rate" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                        </group>
+                        <group col="2" string="Other Info">
+                            <field name="reason" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="committee_note" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="recommendations" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="resignation_acceptance_view_tree" model="ir.ui.view">
+            <field name="name">resignation_acceptance_view_tree</field>
+            <field name="model">resignation.acceptance</field>
+            <field name="arch" type="xml">
+                <tree string="job_offer_tree">
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="department_id"/>
+                    <field name="job_title"/>
+                    <field name="emp_code"/>
+                    <field name="job_code"/>
+                    <field name="total"/>
+                    <field name="aj_date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="emp_resignation_acceptance_action" model="ir.actions.act_window">
+            <field name="name">Resignation acceptance</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">resignation.acceptance</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="emp_resignation_acceptance" name="Resignation acceptance"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="emp_resignation_acceptance_action" sequence="99"/>
+
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <record id="employee_statement_view_form" model="ir.ui.view">
+            <field name="name">employee_statement_view_form</field>
+            <field name="model">employee.statement</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                        <button name="confirm" string="Confirm" class="oe_highlight" states="Draft" type="object"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <field name="employee_id" required="1" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="date" required="1" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="department_id"/>
+                            <field name="job_code"/>
+                            <field name="department" attrs="{'readonly':[('state','!=','Draft')]}"/>
+
+                        </group>
+                        <group col="2" string="Other Info">
+                            <field name="report" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="emp_report" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                            <field name="dir_manager_report" attrs="{'readonly':[('state','!=','Draft')]}"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="employee_statement_view_tree" model="ir.ui.view">
+            <field name="name">employee_statement_view_tree</field>
+            <field name="model">employee.statement</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="department_id"/>
+                    <field name="job_code"/>
+                </tree>
+            </field>
+        </record>
+        <record id="emp_employee_statement_action" model="ir.actions.act_window">
+            <field name="name">Employee Statement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.statement</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="emp_employee_statement" name="Employee Statement"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="emp_employee_statement_action" sequence="99"/>
+    </data>
+</odoo>

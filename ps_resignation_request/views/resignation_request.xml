@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="resignation_request_tree_view">
+            <field name="name">Resignation Request List View</field>
+            <field name="model">resignation.request</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="department_id" optional="hide"/>
+                    <field name="contract_id" optional="show"/>
+                    <field name="join_date" optional="show"/>
+                    <field name="last_working_date" optional="hide"/>
+                    <field name="state" widget="badge" decoration-info="state in ('draft', 'wait_4_hr_mgr')"
+                           decoration-success="state == 'approve'" decoration-danger="state == 'refuse'" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="resignation_request_form_view">
+            <field name="name">Resignation Request Form View</field>
+            <field name="model">resignation.request</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_send_request" type="object" states="draft" string="Request From HRM" class="oe_highlight"/>
+                        <button name="action_approve" type="object" states="wait_4_hr_mgr" string="Approve" class="oe_highlight"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_refuse" type="object" states="wait_4_hr_mgr" string="Refuse"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_cancel" type="object" states="wait_4_hr_mgr" string="Cancel"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_draft" type="object" states="cancel" string="Set to Draft"
+                                groups="hr.group_hr_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="department_id"/>
+                                <field name="contract_id"/>
+                            </group>
+                            <group >
+                                <field name="join_date"/>
+                                <field name="last_working_date"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Reason">
+                                <group>
+                                    <field name="reason" nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+
+         <record model="ir.ui.view" id="resignation_request_search_view">
+            <field name="name">Resignation Request Search View</field>
+            <field name="model">resignation.request</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="department_id"/>
+                    <field name="contract_id"/>
+
+                    <filter name="my_requests" string='My Requests' domain="[('employee_id.user_id', '=', uid)]"/>
+                    <filter name="to_be_approved" string='To Be Approved' domain="[('state', '=', 'wait_4_hr_mgr')]"/>
+
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_resignation_request">
+            <field name="name">Resignation Request</field>
+            <field name="res_model">resignation.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_my_requests': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a new Resignation Request</p>
+            </field>
+        </record>
+
+
+        <menuitem id="resignation_request_menu" name="Resignation Request" action="action_resignation_request"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service" sequence="1"/>
+
+    </data>
+</odoo>

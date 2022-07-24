@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--       Embassy Letter [form] view -->
+        <record id="view_embassy_letter_form" model="ir.ui.view">
+            <field name="name">Embassy Letter Form</field>
+            <field name="model">embassy.letter</field>
+            <field name="arch" type="xml">
+                <form string="Embassy Letter">
+                    <header>
+                        <button name="send_request" string="Send Request" class="oe_highlight" states="draft"
+                                type="object"/>
+
+                        <button name="hr_manager" string="HR Manager Approve"
+                                class="oe_highlight"  groups="hr.group_hr_manager"
+                                states="hr_manager"
+                                type="object"/>
+
+                         <button name="%(pioneer_embassy_letter.english_embassy_letter_report)d"  states="approved"
+                                 string="English Embassy Letter" type="action"/>
+
+                         <button name="%(pioneer_embassy_letter.arabic_embassy_letter_report)d"  states="approved"
+                                 string="Arabic Embassy Letter" type="action"/>
+
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" nolabel="1" readonly="1"/>
+                        </group>
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Employee Name" required="1"/>
+                                <field name="employee_no" string="Employee Code"/>
+                                <field name="department_id" string="Department"/>
+                                <field name="job_title" string="Job Title"/>
+                                <field name="country_id" string="Nationality"/>
+                            </group>
+                            <group>
+                                <field name="address_id" string="Work Address"/>
+                                <field name="passport_id" string="Passport"/>
+                                <field name="iqama_date_of_issue" string="Iqama Date Of Issue"/>
+                                <field name="iqama" string="Iqama"/>
+                                <field name="gross" string="Gross Salary"/>
+                                <field name="company_id" string="Company Name" readonly="1"/>
+                            </group>
+                        </group>
+                        <group string="Letter Info">
+                            <group>
+                                <field name="letter_to" string="To" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="letter_subject" string="Subject" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="date" string="Date" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}" />
+                            </group>
+                        </group>
+
+                        <group string="Notes">
+                            <field name="note" string="Notes" nolabel="1" placeholder="Add notes ..."/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!--       Embassy Letter [tree] view-->
+        <record id="view_embassy_letter_tree" model="ir.ui.view">
+            <field name="name">Embassy Letter Tree</field>
+            <field name="model">embassy.letter</field>
+            <field name="arch" type="xml">
+                <tree string="Embassy Letter">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Embassy Letter [action] view-->
+        <record id="view_embassy_letter_action" model="ir.actions.act_window">
+            <field name="name">Embassy Letter</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">embassy.letter</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+        <!--        Embassy Letter [menu] view-->
+        <menuitem id="view_embassy_letter_menu"
+                  name="Embassy Letter"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="view_embassy_letter_action" sequence="3"/>
+    </data>
+</odoo>

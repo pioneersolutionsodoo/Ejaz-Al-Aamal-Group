@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+    
+        <!-- HR OverTime -->
+        <record id="seq_hr_overtime_ps" model="ir.sequence">
+            <field name="name">HR OverTime</field>
+            <field name="code">hr.overtime.ps</field>
+    	    <field name="prefix">OT/</field> 
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_hr_overtime_batch_ps" model="ir.sequence">
+            <field name="name">HR OverTime Batch</field>
+            <field name="code">batch.overtime</field>
+    	    <field name="prefix">BTO/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

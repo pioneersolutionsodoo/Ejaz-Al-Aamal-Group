@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+         <record id="report_eosb_eosb" model="ir.actions.report">
+            <field name="name">EOSB Report</field>
+            <field name="model">eosb.eosb</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_eosb.report_eosb_eosb_document</field>
+            <field name="report_file">hr_eosb.report_eosb_eosb</field>
+            <field name="binding_model_id" ref="hr_eosb.model_eosb_eosb"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

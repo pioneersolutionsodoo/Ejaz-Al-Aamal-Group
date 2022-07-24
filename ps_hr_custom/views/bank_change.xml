@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="bank_change_tree_view">
+            <field name="name">Bank Change List View</field>
+            <field name="model">bank.change</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="department_id" optional="hide"/>
+                    <field name="job_id" optional="hide"/>
+                    <field name="bank_account_id" />
+                    <field name="bank_id"/>
+                    <field name="acc_number" />
+                    <field name="new_acc_number" />
+                    <field name="state" widget="badge" decoration-info="state in ('draft', 'wait_4_hr_mgr')"
+                           decoration-success="state == 'approve'" decoration-danger="state == 'refuse'" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="bank_change_form_view">
+            <field name="name">Bank Change Form View</field>
+            <field name="model">bank.change</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_send_request" type="object" states="draft" string="Request From HRM" class="oe_highlight"/>
+                        <button name="action_approve" type="object" states="wait_4_hr_mgr" string="Approve" class="oe_highlight"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_refuse" type="object" states="wait_4_hr_mgr" string="Refuse"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_cancel" type="object" states="wait_4_hr_mgr" string="Cancel"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_draft" type="object" states="cancel" string="Set to Draft"
+                                groups="hr.group_hr_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
+                    </header>
+
+                    <div class="alert alert-warning mb-0" role="alert" attrs="{'invisible': ['|', ('bank_account_id', '!=', False), ('employee_id', '=', False)]}">
+                        There is no current Bank Account for the selected Employee!
+                    </div>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="employee_code"/>
+                            </group>
+                            <group>
+                                <field name="work_location_id"/>
+                                <field name="department_id"/>
+                                <field name="job_id"/>
+                            </group>
+                            <group string="Current Bank Account Data">
+                                <field name="bank_account_id" options="{'no_create': True, 'no_open': True}" force_save="1"/>
+                                <field name="bank_id" options="{'no_create': True, 'no_open': True}" force_save="1"/>
+                                <field name="acc_number" force_save="1"/>
+                            </group>
+                            <group string="New Bank Account Data">
+                                <field name="new_acc_number" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Notes">
+                                <group>
+                                    <field name="note" nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+
+         <record model="ir.ui.view" id="bank_change_search_view">
+            <field name="name">Bank Change Search View</field>
+            <field name="model">bank.change</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="department_id"/>
+                    <field name="job_id"/>
+                    <field name="bank_account_id" />
+                    <field name="bank_id"/>
+                    <field name="acc_number" />
+                    <field name="new_acc_number" />
+
+                    <filter name="my_requests" string='My Requests' domain="[( 'employee_id.user_id', '=', uid )]"/>
+                    <filter name="to_be_approved" string='To Be Approved' domain="[('state', '=', 'wait_4_hr_mgr')]"/>
+
+                    <group string="Group By">
+                        <filter name="by_employee" string="Employee" context="{'group_by': 'employee_id'}"/>
+                    </group>
+                    <group string="Group By">
+                        <filter name="by_bank" string="Bank" context="{'group_by': 'bank_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_bank_change">
+            <field name="name">Bank Change</field>
+            <field name="res_model">bank.change</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_my_requests': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a new Bank Change Request</p>
+            </field>
+        </record>
+
+
+        <menuitem id="bank_change_menu" name="Bank Change" action="action_bank_change"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service" sequence="0"/>
+
+    </data>
+</odoo>

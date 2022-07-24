@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="print_employee_badge_inherit" inherit_id="hr.print_employee_badge">
+            <xpath expr="//div[hasclass('col-md-6')]/table/td[@style='width:67%']/table/tr"
+                   position="after">
+                <tr>
+                    <th>
+                        <div style="font-size:15pt; margin-bottom:0pt;margin-top:0pt;" align="center">
+                            <t t-esc="employee.emp_code"/>
+                        </div>
+                    </th>
+                </tr>
+            </xpath>
+        </template>
+    </data>
+</odoo>

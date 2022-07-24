@@ -1,0 +1,30 @@
+{
+    'name': 'Maena HR Customization',
+    'version': '15.0.1',
+    'summary': 'HR Customizations For Maena Project',
+    'description': 'HR Customizations For Maena Project',
+    'category': 'hr',
+    'author': 'Hossam Zaki | Pioneer Solutions',
+    'depends': ['base',
+                'alshrooq_employee_details',
+                'ps_mail_bot',
+                'hr_payroll',
+                'hr_attendance',
+                ],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/data.xml',
+
+        'views/bank_change.xml',
+        'views/hr_payslip.xml',
+        'views/hr_contract.xml',
+        'views/hr_attendance.xml',
+
+        'reports/payslip_report.xml',
+        'reports/job_offer.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

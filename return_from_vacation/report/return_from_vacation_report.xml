@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <template id="return_from_vacation_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Return From Vacation Form</strong>
+                        </h4>
+                        <div class="page">
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.employee_id.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                            Code
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.employee_no"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid gray;border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Company
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.company_id.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.department_id.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid gray;">
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff">Job Title
+                                        </td>
+                                        <td class="text-left" style="border:1px solid gray;width:25%">
+                                            <span t-field="o.job_id.name"/>
+                                        </td>
+                                        <td class="text-left"
+                                            style="border:1px solid gray;width:25%;background-color:#e6e6ff"/>
+                                        <td class="text-left" style="border:1px solid gray;width:25%"/>
+                                    </tr>
+                                </tbody>
+
+                                <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                    <th class="text-center" style="border:1px solid gray;width:1050px" colspan="4">
+                                        Return From Vacation Info
+                                    </th>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-field="o.date"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Return From
+                                        leave
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-field="o.return_from_leave"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Vacation Type
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-field="o.vacation_type"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">No.of Days to
+                                        be deducted
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-field="o.number_of_delay_days"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Leave Type
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-field="o.hr_leave"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Project
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-field="o.project_id"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--===================================================================-->
+                            <br/>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <!--                            <table style="border:1px solid gray;width:100%">-->
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.d_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Direct Manager</strong>
+                                            <br/>
+                                            <span t-field="o.d_manager"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.hr_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">HR Manager</strong>
+                                            <br/>
+                                            <span t-field="o.hr_manager_id"/>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+
+
+        <record id="return_from_report" model="ir.actions.report">
+            <field name="name">Return From Vacation</field>
+            <field name="model">return.from.vacation</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">return_from_vacation.return_from_vacation_template</field>
+            <field name="report_file">return_from_vacation.return_from_vacation_template</field>
+            <field name="binding_model_id" ref="model_return_from_vacation"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">'%s Return From Vacation' % (object.employee_id.name)</field>
+        </record>
+    </data>
+</odoo>

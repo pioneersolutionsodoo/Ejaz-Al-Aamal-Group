@@ -1,0 +1,573 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* visa_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-03 10:49+0000\n"
+"PO-Revision-Date: 2020-09-03 12:55+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: visa_request
+#: model:ir.actions.report,print_report_name:visa_request.visa_request_report
+msgid "'%s Visa Request' % (object.employee_id.name)"
+msgstr ""
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "<strong>Approval From Responsibles</strong>"
+msgstr "<strong>موافقة المسئولين</strong>"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid ""
+"<strong>Direct Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong>المدير المباشر</strong>\n"
+"                                            <br/>"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid ""
+"<strong>HR Manager</strong>\n"
+"                                            <br/>"
+msgstr ""
+"<strong>مدير الموارد البشرية</strong>\n"
+"                                            <br/>"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "<strong>Responsible</strong>"
+msgstr "<strong>المسئول</strong>"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "<strong>Responsibles Notes</strong>"
+msgstr "<strong>ملاحظة المسئول</strong>"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "<strong>Visa Request Form</strong>"
+msgstr "<strong> نموذج طلب التأشيرة </strong>"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Add notes ..."
+msgstr "إضافة ملاحظات"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__amount_to_deduct
+msgid "Amount To Deduct"
+msgstr "المبلغ الذى سيخصم"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid ""
+"Amount to be\n"
+"                                        deducted"
+msgstr "المبلغ الذى سيخصم"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Amount to be deducted"
+msgstr "المبلغ الذى سيخصم"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: visa_request
+#: model:ir.model.fields.selection,name:visa_request.selection__visa_request__state__approved
+msgid "Approved"
+msgstr "موافق علية"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__beneficiary
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Beneficiary"
+msgstr "المستفيد"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_hr_leave__check_visa_request
+msgid "Check Visa Request"
+msgstr "تحقق من طلب التأشيرة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__company_id
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Company"
+msgstr "الشركة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_hr_holidays_saudi_form_inherit_004
+msgid "Create Visa Request"
+msgstr "إنشاء طلب تأشيرة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__create_uid
+msgid "Created by"
+msgstr "أنشاء بواسطة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__create_date
+msgid "Created on"
+msgstr "أنشاء بتاريخ"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__date
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__department_id
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Department"
+msgstr "القسم"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__difference
+msgid "Difference"
+msgstr "الفرق"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__d_manager
+#: model:ir.model.fields.selection,name:visa_request.selection__visa_request__state__direct_manager
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Direct Manager Approve"
+msgstr "موافقة المدير المباشر"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__d_manager_note
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Direct Manager Note"
+msgstr "المدير المباشر"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__display_name
+msgid "Display Name"
+msgstr "اسم"
+
+#. module: visa_request
+#: code:addons/assrooh-addons/visa_request/models/visa_request.py:0
+#: code:addons/visa_request/models/visa_request.py:0
+#: model:ir.model.fields.selection,name:visa_request.selection__visa_request__state__draft
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: visa_request
+#: model:ir.model,name:visa_request.model_hr_employee
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__employee_id
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__employee_no
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Employee Info"
+msgstr "معلومات عن الموظف"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_tree
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: visa_request
+#: code:addons/assrooh-addons/visa_request/models/visa_request.py:0
+#: code:addons/visa_request/models/visa_request.py:0
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__hr_manager_id
+#: model:ir.model.fields.selection,name:visa_request.selection__visa_request__state__hr_manager
+#, python-format
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "HR Manager Approve"
+msgstr "موافقة مدير الموارد البشرية"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__hr_manager_note
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "HR Manager Note"
+msgstr "ملاحظة مدير الموارد البشرية"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__id
+msgid "ID"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_needaction
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_has_error
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__is_direct_manager
+msgid "Is Direct Manager"
+msgstr "هل هو المدير المباشر"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__job_id
+msgid "Job Position"
+msgstr "الوظيفة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Job Title"
+msgstr "المسمى الوظيفى"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: visa_request
+#: code:addons/assrooh-addons/visa_request/models/visa_request.py:0
+#: code:addons/visa_request/models/visa_request.py:0
+#: model:ir.model.fields.selection,name:visa_request.selection__visa_request__type__multiple
+#, python-format
+msgid "Multiple"
+msgstr "متعدد"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__note
+msgid "Note"
+msgstr "ملحوظة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__name
+msgid "Number"
+msgstr "رقم"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,help:visa_request.field_visa_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_hr_leave__out_side_saudi_arabia
+msgid "Out Side Saudi Arabia"
+msgstr "خارج السعودية"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_hr_holidays_saudi_form_inherit_004
+msgid "Out Side Saudi Arabia?"
+msgstr "هل خارج السعودية"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__project_id
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Project"
+msgstr "المشروع"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Project Name"
+msgstr "اسم المشروع"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__quantity
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__visa_allowed_allowance
+msgid "Rentry Allowance"
+msgstr ""
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Send Request"
+msgstr "إرسال طلب"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__show_direct_manager_button
+msgid "Show Direct Manager Button"
+msgstr "إظهار زر المدير المباشر"
+
+#. module: visa_request
+#: code:addons/assrooh-addons/visa_request/models/visa_request.py:0
+#: code:addons/visa_request/models/visa_request.py:0
+#: model:ir.model.fields.selection,name:visa_request.selection__visa_request__type__single
+#, python-format
+msgid "Single"
+msgstr "أعزب"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_tree
+msgid "Status"
+msgstr "الحالة"
+
+#. module: visa_request
+#: model:ir.model,name:visa_request.model_hr_leave
+msgid "Time Off"
+msgstr "أجازة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__total_amount
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Total Amount"
+msgstr "إجمالى المبلغ"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__type
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Type"
+msgstr "النوع"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid ""
+"Vacation End\n"
+"                                        Date"
+msgstr "تاريخ نهاية الأجازة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__vacation_end_date
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_tree
+msgid "Vacation End Date"
+msgstr "تاريخ نهاية الأجازة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid ""
+"Vacation Start\n"
+"                                        Date"
+msgstr "تاريخ بداية الأجازة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__vacation_start_date
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_tree
+msgid "Vacation Start Date"
+msgstr "تاريخ بداية الأجازة"
+
+#. module: visa_request
+#: code:addons/assrooh-addons/visa_request/models/visa_request.py:0
+#: code:addons/visa_request/models/visa_request.py:0
+#, python-format
+msgid "Vacation Start Date Should be less than Vacation End Date"
+msgstr "يجب أن يكون تاريخ بدء الإجازة أقل من تاريخ انتهاء الإجازة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid ""
+"Visa Allowed\n"
+"                                        Allowance"
+msgstr "بدل التأشيرة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Visa Allowed Allowance"
+msgstr "بدل التأشيرة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__visa_already_taken
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Visa Already Taken"
+msgstr "تم الحصول على التأشيرة بالفعل"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__visa_duration
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Visa Duration"
+msgstr "مدة التأشيرة"
+
+#. module: visa_request
+#: model:hr.salary.rule,name:visa_request.hr_rule_visa_request
+#: model:ir.actions.act_window,name:visa_request.view_visa_request_action
+#: model:ir.actions.report,name:visa_request.visa_request_report
+#: model:ir.model,name:visa_request.model_visa_request
+#: model:ir.model.fields,field_description:visa_request.field_hr_leave__visa_request_id
+#: model:ir.ui.menu,name:visa_request.view_visa_request_menu
+#: model_terms:ir.ui.view,arch_db:visa_request.view_hr_holidays_saudi_form_inherit_004
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_tree
+msgid "Visa Request"
+msgstr "طلب تأشيرة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_hr_holidays_saudi_form_inherit_004
+msgid "Visa Request Count"
+msgstr "عدد طلبات التأشيرة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Visa Request Details"
+msgstr "معلومات طلب التأشيرة"
+
+#. module: visa_request
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+msgid "Visa Request Info"
+msgstr "معلومات طلب التأشيرة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__visa_start_date
+#: model_terms:ir.ui.view,arch_db:visa_request.view_visa_request_form
+#: model_terms:ir.ui.view,arch_db:visa_request.visa_request_template
+msgid "Visa Start Date"
+msgstr "تاريخ بدء التأشيرة"
+
+#. module: visa_request
+#: model:ir.model.fields,field_description:visa_request.field_visa_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: visa_request
+#: model:ir.model.fields,help:visa_request.field_visa_request__website_message_ids
+msgid "Website communication history"
+msgstr ""

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Purpose: Renaming 'Employee Tags' into 'Tags' in Tags form view. -->
+        <record id="view_employee_form_inherit_alshrooq_employee_details" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherited.alshrooq_employee_details</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//field[@name='country_id']" position="after">
+                    <field name="is_saudi"/>
+                </xpath>
+                <xpath expr="//field[@name='work_email']" position="replace">
+                </xpath>
+                <xpath expr="//field[@name='job_id']" position="replace">
+                </xpath>
+                <xpath expr="//field[@name='work_location_id']" position="replace">
+                </xpath>
+                <xpath expr="//field[@name='mobile_phone']" position="replace">
+                </xpath>
+                <xpath expr="//field[@name='work_phone']" position="replace">
+                </xpath>
+<!--                <xpath expr="//field[@name='name']" position="before">-->
+<!--                    -->
+<!--                </xpath>-->
+
+                <xpath expr="//div[hasclass('oe_title')]/h1" position="after">
+                    <group>
+                        <field name="emp_code" string="Job Number"/>
+                        <field name="arabic_name" string="Arabic Name"/>
+                    </group>
+                </xpath>
+                <xpath expr="//page[@name='personal_information']" position="replace">
+                    <page string="Documents Information" name='personal_information'>
+                        <group>
+                            <group string="ID Details">
+                                <field name="expiration_type"/>
+                                <field name="identification_id" groups="hr.group_hr_user" string="Identification ID"/>
+                                <field name="iqama_national_id" groups="hr.group_hr_user" string="Iqama Number"/>
+                                <field name="iqama_date_of_issue" string="Iqama Issuing Date"/>
+                                <field name="iqama_expiry_date" string="Iqama Expiry Date"/>
+                            </group>
+                            <group string="Passport Details">
+                                <field name="passport_id" groups="hr.group_hr_user" string="Passport"/>
+                                <field name="expiration_date_of_issue" string="Passport Issuing Date"/>
+                                <field name="expiration_date_of_expiry" string="Passport Expiry Date"/>
+                                <field name="place_of_issue" string="Place Of issue"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//page[@name='public']" position="after">
+                    <page string="Basic Information">
+                        <group>
+                            <group>
+                                <field name="is_saudi" string="سعودي؟"/>
+
+                                <field name="is_deduct"  attrs="{'invisible':[('is_saudi','=',False)]}"
+                                       string=" خصم اشتراك التأمينات الاجتماعية؟"  widget="radio" />
+
+                                <field name="gender" string="Gender"/>
+                                <field name="country_id" options='{"no_open": True, "no_create": True}' string="Country"/>
+                                <field name="work_phone" string="Work Phone"/>
+                                <field name="mobile" string="Mobile"/>
+                                <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Bank Account" readonly="0"/>
+                                <field name="religion" string="Religion"/>
+                                <field name="marital" string="Marital State"/>
+                                <field name="driving_license" string="Driving License"/>
+                                 <field name="sponsor_name" string="Sponsor Name" attrs="{'invisible':[('is_saudi','=',True)]}"/>
+                                <field name="sponsor_name" string="Sponsor Name"/>
+                                <field name="mother_tongue" string="Mother tongue"/>
+                                <field name="work_email" widget="email" string="Work Email"/>
+                            </group>
+                            <group string="Birth">
+                                <field name="birthday" string="Birthday"/>
+                                <field name="place_of_birth" groups="hr.group_hr_user" string="Place Of Birth"/>
+                                <field name="country_of_birth" groups="hr.group_hr_user" string="Country Of Birth"/>
+                            </group>
+<!--                            <group>-->
+<!--                                <field name="spouse_complete_name"-->
+<!--                                       attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"-->
+<!--                                       groups="hr.group_hr_user"/>-->
+<!--                                <field name="spouse_birthdate"-->
+<!--                                       attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"-->
+<!--                                       groups="hr.group_hr_user"/>-->
+<!--                            </group>-->
+                        </group>
+
+                    </page>
+                    <page string="Contract Details">
+                        <group>
+                            <group>
+                                <field name="project_name" string="Project Name"/>
+                                <field name="work_location_id" string="Work Location"/>
+                                <field name="job_id" string="Job"/>
+                                <field name="contract_type" string="Contract Type"/>
+                            </group>
+                            <group>
+                                <field name="contract_status" string="Contract Status"/>
+                                <field name="aj_date" string="Date Of Join"/>
+                                <field name="start_date" string="Start Date" invisible="1"/>
+                                <field name="end_date" string="End Date" invisible="1"/>
+                                <field name="duration" string="Duration" invisible="1"/>
+                            </group>
+                        </group>
+                    </page>
+                    <page string="Family Details">
+                        <field name="family_ids" nolabel="1">
+                            <tree string="Family Details" editable="top">
+                                  <field name="is_saudi" invisible="1" />
+                                <field name="name" string="Name"/>
+                                <field name="name_arabic" string="Arabic name"/>
+                                <field name="iqama_no" string="رقم الهوية" attrs="{'invisible':[('is_saudi','=',True)]}"/>
+                                <field name="iqama_no" string="رقم البطاقة" invisible="1"/>
+<!--                                <field name="iqama_no" string="Iqama Number"/>-->
+                                <field name="dob" string="Date Of Birth"/>
+                                <field name="gender" string="Gender"/>
+                                <field name="marital" string="Marital State"/>
+                                <field name="relation_type" string="Relation Type"/>
+                                <field name="country_id" string="Country"/>
+                                <field name="sponsor_name" string="Sponsor Name"/>
+                                <field name="sponsor_no" string="Sponsor Number"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+                <xpath expr="//field[@name='user_id']" position="after">
+                    <field name="address_home_id" string="Address Home"
+                                       context="{
+                                                'show_address': 1,
+                                                'default_type': 'private',
+                                                'form_view_ref': 'base.res_partner_view_form_private'}"
+                                       options='{"always_reload": True, "highlight_first_line": True}'/>
+                </xpath>
+            </field>
+        </record>
+
+        <!--   Inherit Employee Directory Menu     -->
+        <menuitem
+            id="hr.menu_hr_employee"
+            name="Employee Directory"
+            action=""
+            active="False"
+            parent="hr.menu_hr_root"
+            sequence="4"/>
+
+        <!--   Inherit Employee Tree View     -->
+        <record id="view_hr_employee_inherit_tree_011" model="ir.ui.view">
+            <field name="name">view.hr.employee.inherit.tree</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="emp_code" string="Job Number"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!--    Inherit Employee Kanban View     -->
+        <record id="view_inherit__form" model="ir.ui.view">
+            <field name="name">view.inherit.hr.employee.kanban</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <div>
+                        <field name="emp_code" string="Job Number"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="hr_employee_form_view_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.form.view.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="groups_id" eval="[(6,0, [ref('alshrooq_employee_details.allow_change_employee_bank_account')])]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='bank_account_id']" position="attributes">
+                    <attribute name="readonly">0</attribute>
+                </xpath>
+
+            </field>
+        </record>
+
+
+
+         <!-- HR Employee Type -->
+        <record id="view_hr_employee_type_form" model="ir.ui.view">
+            <field name="name">hr.employee.type.form</field>
+            <field name="model">hr.employee.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Employee Type">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="leave_start_month"/>
+                                <field name="leave_start_month_type"
+                                       attrs="{'required': [('leave_start_month', '&gt;', 0)],'invisible': [('leave_start_month', '&lt;=', 0)]}"/>
+
+                            </group>
+                            <group>
+                                <field name="annual_leave_type"/>
+                                <field name="annual_leave"/>
+                                <field name="leave_carryover_year"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+
+        <record id="hr_employee_type_tree" model="ir.ui.view">
+            <field name="name">hr.employee.type.tree</field>
+            <field name="model">hr.employee.type</field>
+            <field name="arch" type="xml">
+                <tree string="Employee Type" editable="top">
+                    <field name="name"/>
+                    <field name="annual_leave"/>
+                    <field name="annual_leave_type"/>
+                    <field name="leave_carryover_year"/>
+                    <field name="leave_start_month"/>
+                    <field name="leave_start_month_type"
+                           attrs="{'required': [('leave_start_month', '&gt;', 0)],'invisible': [('leave_start_month', '&lt;=', 0)]}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_hr_employee_type" model="ir.actions.act_window">
+            <field name="name">Employee Type</field>
+            <field name="res_model">hr.employee.type</field>
+
+            <field name="view_id" ref="hr_employee_type_tree"/>
+        </record>
+
+        <menuitem action="action_hr_employee_type" id="menu_hr_employee_type" parent="hr.menu_human_resources_configuration_employee"
+                  sequence="2"/>
+
+
+    </data>
+</odoo>

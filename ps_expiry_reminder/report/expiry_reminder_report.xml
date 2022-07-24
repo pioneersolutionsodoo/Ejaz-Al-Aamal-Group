@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="expiry_reminder_template">
+
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+
+                    <div class="page">
+                        <h3 style="text-align:center;width:100%">
+                            <span t-esc="expiry_type"/> Expiry Report
+                        </h3>
+                        <h3 style="text-align:center;width:100%">
+                            <span style="color:white">___</span>
+                        </h3>
+                        <t t-set="i" t-value="1"/>
+                        <table style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th style="color:white;background:#236e9e;width:12%;border:1px solid white;padding:2px">
+                                        Code
+                                    </th>
+                                    <th style="color:white;background:#236e9e;width:12%;border:1px solid white;padding:2px">
+                                        Employee name
+                                    </th>
+                                    <t t-if="expiry_type == 'iqama'">
+                                        <th style="color:white;background:#236e9e;width:11%;border:1px solid white;padding:2px">
+                                            Iqama Number
+                                        </th>
+                                    </t>
+                                    <t t-if="expiry_type == 'passport'">
+                                        <th style="color:white;background:#236e9e;width:11%;border:1px solid white;padding:2px">
+                                            Passport Number
+                                        </th>
+                                    </t>
+                                    <th style="color:white;background:#236e9e;width:11%;border:1px solid white;padding:2px">
+                                        Expiry Date
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="docs" t-as="o">
+                                    <t t-if="i%2 == 0">
+                                        <t t-set="i" t-value="i+1"/>
+                                        <td style="color:#444;border:1px solid white;padding:2px">
+                                            <span t-esc="o['employee_code']"/>
+                                        </td>
+                                        <td style="color:#444;border:1px solid white;padding:2px">
+                                            <span t-esc="o['employee_name']"/>
+                                        </td>
+                                        <td style="color:#444;border:1px solid white;padding:2px">
+                                            <span t-esc="o['number']"/>
+                                        </td>
+                                        <td style="color:#444;border:1px solid white;padding:2px">
+                                            <span t-esc="o['expiry_date']"/>
+                                        </td>
+                                    </t>
+                                    <t t-else="">
+                                        <t t-set="i" t-value="i+1"/>
+                                        <td style="color:#444;background:#ecf0f1;border:1px solid white;padding:2px">
+                                            <span t-esc="o['employee_code']"/>
+                                        </td>
+                                        <td style="color:#444;background:#ecf0f1;border:1px solid white;padding:2px">
+                                            <span t-esc="o['employee_name']"/>
+                                        </td>
+                                        <td style="color:#444;background:#ecf0f1;border:1px solid white;padding:2px">
+                                            <span t-esc="o['number']"/>
+                                        </td>
+                                        <td style="color:#444;background:#ecf0f1;border:1px solid white;padding:2px">
+                                            <span t-esc="o['expiry_date']"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </t>
+            </t>
+
+        </template>
+
+        <record id="paperformat_fhs_contrato_encomienda"
+                model="report.paperformat">
+            <field name="name">European A4 Landscape</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">3</field>
+            <field name="margin_bottom">13</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">45</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <record id="expiry_reminder_action_report" model="ir.actions.report">
+            <field name="name">Expiry Reminder</field>
+            <field name="model">expiry.reminder.wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_expiry_reminder.expiry_reminder_template</field>
+            <field name="report_file">ps_expiry_reminder.expiry_reminder_template</field>
+            <field name="binding_model_id" ref="model_expiry_reminder_wizard"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="ps_expiry_reminder.paperformat_fhs_contrato_encomienda"/>
+        </record>
+
+    </data>
+</odoo>

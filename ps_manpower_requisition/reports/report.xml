@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template inherit_id="web.minimal_layout" id="minimal_layout_inherit">
+            <xpath expr="//head" position="inside">
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&amp;display=swap" rel="stylesheet"/>
+            </xpath>
+        </template>
+
+        <template id="manpower_request_report_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+
+                        <h2 style="text-align:center;margin-top:0px;background-color:#e6e6ff;">
+                            <strong>MANPOWER REQUISITION</strong>
+                            <strong style="font-size:16px;" t-field="o.name"/>
+                        </h2>
+                        <style >
+                            td, th {vertical-align:top;padding-left:5px;padding-right:5px;}
+                            * { font-family: 'Almarai', sans-serif; }
+                            td { font-size:13px; }
+                            tr { height:40px; }
+                        </style>
+
+                        <div class="page" >
+
+                            <table style="width:100%;margin-top:20px;border:1px solid gray;">
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="12" class="text-center"
+                                        style="border:1px solid gray;width:100%;background-color:#e6e6ff;color:#555555;vertical-align:middle;">
+                                        <h5><strong>To Be Completed by Hiring Department</strong></h5>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Position Title:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.position_id.name"/>
+                                    </td>
+
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Position Number:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.position_number"/>
+                                    </td>
+
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Date:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.date"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table style="width:100%;margin-top:-1px;border:1px solid gray;">
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="3" class="text-left" style="border:1px solid gray;width:25%;">
+                                        <span>Section:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.section"/>
+                                    </td>
+
+                                    <td colspan="3" class="text-left" style="border:1px solid gray;width:25%;">
+                                        <span>Division/Department:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.dept_id.name"/>
+                                    </td>
+
+                                    <td colspan="3" class="text-left" style="border:1px solid gray;width:25%;">
+                                        <span>Within Budget:</span>
+                                        <div class="text-center font-weight-bold" t-field="o.within_budget"/>
+                                    </td>
+
+                                    <td colspan="3" class="text-left" style="border:1px solid gray;width:25%;">
+                                        <span>Cost Center:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.analytic_account_id.name"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                            <table style="width:100%;margin-top:-1px;border:1px solid gray;">
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Reporting To:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.reporting_to.name"/>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Total Required:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.total_required"/>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Work Location:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.work_location"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Replacement:</span>
+                                        <div class="text-center font-weight-bold" t-field="o.replacement"/>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Employee Name:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Employee Number:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.employee_code"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="6" class="text-left" style="border:1px solid gray;width:50%;">
+                                        <span>Date Required By:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.date_required_by"/>
+                                    </td>
+                                    <td colspan="6" class="text-left" style="border:1px solid gray;width:50%;">
+                                        <span>Years Of Experience:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.years_of_experience"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="12" class="text-left" style="border:1px solid gray;width:100%;">
+                                        <span>Degree Diploma:</span>
+                                        <t t-if="o.qualification_line_ids">
+                                            <table style="width:96%;margin-left:2%;border:0;">
+                                                <tr style="width:100%;height:25px;">
+                                                    <th style="background-color:#e6e6ff;">Title</th>
+                                                    <th style="background-color:#e6e6ff;">Type</th>
+                                                    <th style="background-color:#e6e6ff;">Description</th>
+                                                </tr>
+                                                <t t-foreach="o.qualification_line_ids" t-as="ql">
+                                                    <tr style="width:100%;border-top:1px solid gray;height:25px;">
+                                                        <td t-esc="ql.name"/>
+                                                        <td  style="background-color:#e6e6ff;" t-esc="ql.type"/>
+                                                        <td t-esc="ql.description"/>
+                                                    </tr>
+                                                </t>
+                                            </table>
+                                        </t>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="12" class="text-left" style="border:1px solid gray;width:100%;">
+                                        <span>Justification if not within budget:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.justification_if_not_in_budget"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="12" class="text-left" style="border:1px solid gray;width:100%;">
+                                        <span>Comments / Additional Requirements:</span>
+                                        <div class="text-center font-weight-bold" t-esc="o.comments_additional_requirements"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Requested By:</span>
+                                        <br/>
+                                        <br/>
+                                        <div class="text-center font-weight-bold" t-esc="o.create_uid.name"/>
+                                        <div class="text-center">Department Manager</div>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <div class="text-center">Signature</div>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <br/>
+                                        <br/>
+                                        <div class="text-center font-weight-bold" t-esc="o.create_date" t-options="{'widget': 'date'}"/>
+                                        <div class="text-center">Date</div>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;width:100%;">
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <span>Approved By:</span>
+                                        <br/>
+                                        <br/>
+                                        <t t-if="o.approved_by">
+                                            <div class="text-center font-weight-bold" t-esc="o.approved_by.name"/>
+                                        </t>
+                                        <t t-else="">
+                                            <br/>
+                                        </t>
+                                        <div class="text-center">HR Manager</div>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <div class="text-center">Signature</div>
+                                    </td>
+                                    <td colspan="4" class="text-left" style="border:1px solid gray;width:33.33%;">
+                                        <br/>
+                                        <br/>
+                                        <t t-if="o.approve_date">
+                                            <div class="text-center font-weight-bold" t-esc="o.approve_date" t-options="{'widget': 'date'}"/>
+                                        </t>
+                                        <t t-else="">
+                                            <br/>
+                                        </t>
+                                        <div class="text-center">Date</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+        <record id="manpower_request_report" model="ir.actions.report">
+            <field name="name">Manpower Request</field>
+            <field name="model">manpower.request</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ps_manpower_requisition.manpower_request_report_template</field>
+            <!--            <field name="report_file">ps_manpower_requisition.manpower_request_report_template</field>-->
+            <field name="print_report_name">'Manpower Request - %s' %(object.name)</field>
+            <field name="binding_model_id" ref="ps_manpower_requisition.model_manpower_request"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

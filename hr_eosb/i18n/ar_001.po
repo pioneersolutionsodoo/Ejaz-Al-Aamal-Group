@@ -1,0 +1,1089 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_eosb
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-13 23:21+0000\n"
+"PO-Revision-Date: 2020-10-13 23:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Availed Leave</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Balance Leave</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Base Payslip Rule</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Date Of Joined</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Department</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>EOSB Amount</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>EOSB Based</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Employee Type</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Employee</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Generate Current month Payslip</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Gross Amount</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Job</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Last Worked Date</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Leave Salary Amount</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Leave Type</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Net Amount</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>No of Days Worked</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>No of Months Worked</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>No of Years Worked</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Other Allowance</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Other Deduction</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Provide Balance Leave Salary</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Salary</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Total Deduction Amount</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Type</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Used Leave</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "<b>Worked Period:</b>"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Accounting"
+msgstr "الحسابات"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__state__active
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Active"
+msgstr "نشط"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__calculation_consider__actual_year
+msgid "Actual Year"
+msgstr "السنة الفعلية"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Admin & Finance Director Approve"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Admin &amp; FD"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Admin &amp; Financial Director Comments"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__state__admin_fd
+msgid "Admin And Finance Director"
+msgstr "مدير الشؤون الإدارية والمالية"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__admin_manager_id
+msgid "Admin Manager"
+msgstr "مدير مجلس الإدارة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__admin_manager_note
+msgid "Admin Manager Note"
+msgstr "ملاحظة مدير مجلس الإدارة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Approval Notes"
+msgstr "ملاحظات الموافقة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__availed_leave
+msgid "Availed Leave"
+msgstr "الإجازة المنتفعة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__balance_leave
+msgid "Balance Leave"
+msgstr "رصيد الإجازات"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__salary_rules_ids
+msgid "Base Payslip Rule"
+msgstr "قاعدة قسيمة الراتب الأساسية"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__eosb_based__custom
+msgid "By Custom"
+msgstr "حسب الطلب"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__eosb_based__net
+msgid "By Net"
+msgstr "حسب المبلغ الكلى"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__eosb_based__wage
+msgid "By Wage"
+msgstr "حسب الأجر"
+
+#. module: hr_eosb
+#: model:ir.actions.server,name:hr_eosb.hr_eosb_cron_ir_actions_server
+#: model:ir.cron,cron_name:hr_eosb.hr_eosb_cron
+#: model:ir.cron,name:hr_eosb.hr_eosb_cron
+msgid "Calculate Total EOSB Every month"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__calculation_consider
+msgid "Calculation Consider"
+msgstr "إعادة النظر"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__calculate_based
+msgid "Calculation Consider By Bulk of Year"
+msgstr "احتساب إجمالي السنة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__calculation_type
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__calculation_type
+msgid "Calculation Type"
+msgstr "نوع الحساب"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Choose custom rules"
+msgstr "اختر القواعد المخصصة"
+
+#. module: hr_eosb
+#: model_terms:ir.actions.act_window,help:hr_eosb.action_eosb_emp_type_tree
+msgid "Click to create EOSB Category."
+msgstr "انقر لإنشاء فئة EOSB."
+
+#. module: hr_eosb
+#: model_terms:ir.actions.act_window,help:hr_eosb.action_eosb_eosb_tree
+msgid "Click to create End of service benefits."
+msgstr "انقر لإنشاء مكافأة نهاية الخدمة."
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__company_id
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Company"
+msgstr "الشركة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Compute Sheet"
+msgstr "ورقة حساب"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__state__confirm
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__admin_manager_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__hr_manager_date
+msgid "Confirmed Date"
+msgstr "تاريخ مؤكد"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__contract_id
+msgid "Contract"
+msgstr "العقد"
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_hr_contract_employee_report
+msgid "Contract and Employee Analysis Report"
+msgstr "العقود وتقارير تحليل الموظفين"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__create_uid
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__create_uid
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__create_uid
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__create_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__create_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__create_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__current_month_payslip_id
+msgid "Current Month Payslip"
+msgstr "قسيمة الراتب الخاصة بالشهر الحالي"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__current_month_payslip_line_ids
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Current Month Payslip Lines"
+msgstr "أوامر قسيمة الراتب الخاصة بالشهر الحالي"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Date"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__joined_date
+msgid "Date of Joined"
+msgstr "تاريخ الالتحاق"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__payslip_days
+msgid "Days"
+msgstr "الايام"
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__resource_calendar_id
+msgid "Define the schedule of resource"
+msgstr "تحديد الجدول الزمني للموارد"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__display_name
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__display_name
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__display_name
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__state__draft
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: hr_eosb
+#: model:hr.salary.rule,name:hr_eosb.hr_rule_eosb
+#: model:ir.actions.act_window,name:hr_eosb.action_eosb_eosb_tree
+#: model:ir.model.fields,field_description:hr_eosb.field_hr_payslip__eosb
+#: model:ir.ui.menu,name:hr_eosb.menu_eosb_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.ps_eosb_view_company_form_fig
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_tree
+msgid "EOSB"
+msgstr "نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__eosb_amount
+msgid "EOSB Amount"
+msgstr "مبلغ نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__eosb_based
+msgid "EOSB Based"
+msgstr "مبدأ نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.actions.act_window,name:hr_eosb.action_eosb_emp_type_tree
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__eosb_emp_type_resignation_id
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__eosb_emp_type_termination_id
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__eosb_emp_type_id
+#: model:ir.model.fields,field_description:hr_eosb.field_hr_employee__eosb_emp_type_id
+#: model:ir.ui.menu,name:hr_eosb.menu_eosb_emp_type
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_tree
+msgid "EOSB Category"
+msgstr "فئة نهاية الخدمة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "EOSB Category Resignation"
+msgstr "فئة الإستقالة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "EOSB Category Termination"
+msgstr "فئة الفصل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_hr_payslip__eosb_days
+msgid "EOSB Days"
+msgstr "أيام نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_res_company__eosb_eosb_journal_id
+msgid "EOSB Journal"
+msgstr "دفتر يومية نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.actions.report,name:hr_eosb.report_eosb_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "EOSB Report"
+msgstr "تقرير نهاية الخدمة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "EOSB Setiings"
+msgstr "إعدادات نهاية الخدمة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "EOSB Settings"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_hr_employee
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__employee_id
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Employee Code"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Employee Details"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__eosb_emp_type_resignation
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Employee Resignation Type"
+msgstr "نوع استقالة الموظف"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__eosb_emp_type_termination
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Employee Termination Type"
+msgstr "نوع إقالة الموظف"
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_eosb_eosb
+msgid "End Of Service"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "End of service benefits"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__calculation_consider__even_day
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__period_consider__year_month_day
+msgid "Even Days"
+msgstr "حتى أيام"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__calculation_consider__even_month
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__period_consider__year_month
+msgid "Even Months"
+msgstr "حتى شهور"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type_resignation__calculation_type__fixed
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type_termination__calculation_type__fixed
+msgid "Fixed"
+msgstr "ثابت"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__journal_id
+msgid "Force Journal"
+msgstr "دفتر يومية"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type_resignation__calculation_type__fraction
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type_termination__calculation_type__fraction
+msgid "Fraction"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__gen_cur_payslip
+msgid "Generate Current month Payslip"
+msgstr "إنشاء قسيمة الشهر الحالي"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__gross_amount
+msgid "Gross Amount"
+msgstr "المبلغ الإجمالي"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__hr_manager_id
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "HR Manager Comments"
+msgstr "ملاحظت مدير الموارد البشرية"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "HRM"
+msgstr "مدير الموارد البشرية"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__hr_manager_note
+msgid "Hr Manager Note"
+msgstr "ملاحظة مدير الموارد البشرية"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__id
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__id
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__id
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_needaction
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_has_error
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__state__inactive
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Inactive"
+msgstr "غير نشط"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__calculate_info
+msgid "Info"
+msgstr "معلومات"
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid "Invalid Days"
+msgstr "ايام غير مسموح بها"
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid "Invalid Value !"
+msgstr "قيمة خاطئة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__job_id
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Job"
+msgstr "وظيفة "
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__move_id
+msgid "Journal Entry"
+msgstr "افتتاح دفتر يومية"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type____last_update
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation____last_update
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination____last_update
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__write_uid
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__write_uid
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__write_uid
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__write_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__write_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__write_date
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__date
+msgid "Last Worked Date"
+msgstr "تاريخ آخر عمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__leave_salary_amount
+msgid "Leave Salary Amount"
+msgstr "مبلغ راتب الاجازة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__leave_type_id
+msgid "Leave Type"
+msgstr "نوع الإجازة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__name
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Name"
+msgstr "االاسم"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__net_amount
+msgid "Net Amount"
+msgstr "صافى المبلغ"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__no_days
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__worked_days
+msgid "No of Days Worked"
+msgstr "عدد أيام العمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__no_months
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__worked_months
+msgid "No of Months Worked"
+msgstr "عدد شهور العمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__no_years
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__worked_years
+msgid "No of Years Worked"
+msgstr "عدد أعوام العمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__other_allowance
+msgid "Other Allowance"
+msgstr "بدلات أخرى"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__other_deduction
+msgid "Other Deduction"
+msgstr "خصومات آخر"
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_hr_payslip
+msgid "Pay Slip"
+msgstr "قسيمة الدفع"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__payslip_id
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__payslip_line_ids
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Payslip Lines"
+msgstr "اوامر قسيمة الدفع"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__rules_ids
+msgid "Payslip Rule"
+msgstr "قاعدة قسيمة الدفع"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_hr_payslip__eosb_rules_ids
+msgid "Payslip Rule EOSB"
+msgstr "قاعدة قسيمة الدفع لنهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type_resignation__calculation_type__percentage
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type_termination__calculation_type__percentage
+msgid "Percentage"
+msgstr "النسبة"
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid "Percentage value should be less than or equal 100"
+msgstr "يجب أن تكون قيمة النسبة المئوية أقل من أو تساوي 100"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__calculation_consider__period_year
+msgid "Period Consider Year"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__period_consider
+msgid "Period Consider for Case Selection"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Personal Data"
+msgstr "بيانات شخصية"
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/hr_payroll.py:0
+#, python-format
+msgid "Please Fill account debit and credit in EOSB rule"
+msgstr ""
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid "Please assign 'EOSB Category' for this employee"
+msgstr "الرجاء تعيين \"فئة EOSB\" لهذا الموظف"
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid "Please set the home address for employee"
+msgstr "يرجى تحديد عنوان المنزل للموظف"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Project Name"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__provide_leave_salary
+msgid "Provide Balance Leave Salary"
+msgstr "تقديم رصيد إجازة راتب"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Re-Active"
+msgstr "إعادة تنشيط"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Recompute Sheet"
+msgstr "إعادة الحساب"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__state__refuse
+msgid "Refused"
+msgstr "رُفض"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__refused_by
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Refused By"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__note
+msgid "Remarks"
+msgstr "ملاحظات"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Remarks."
+msgstr "ملاحظات"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Reset to Draft"
+msgstr "إعادة التعيين إلى المسودة"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__eosb_type__resignation
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Resignation"
+msgstr "استقالة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__resource_id
+msgid "Resource"
+msgstr "مصادر"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__salary
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Salary"
+msgstr "الراتب"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__name
+msgid "Serial"
+msgstr "مسلسل"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Serial No:"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Signature"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__payslip_days
+msgid "Specify if want generate payslip for corresponding days"
+msgstr "حدد ما إذا كنت تريد إنشاء إيصال دفع للأيام المقابلة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type__state
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__eosb_type__termination
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_emp_type_form
+msgid "Termination"
+msgstr "إقالة"
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid ""
+"The cancelled payslip will be create automaticaly for EOSB calculation.Don't"
+" delete that manually.."
+msgstr ""
+"سيتم إنشاء قسيمة الدفع الملغاة تلقائيًا لحساب EOSB. لا تحذف ذلك يدويًا .."
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid ""
+"The employee must be have a Home Address and Home Address must be have a "
+"Account Payable."
+msgstr ""
+"يجب أن يكون للموظف عنوان منزل ويجب أن يكون لعنوان المنزل حساب مستحق الدفع."
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_res_company__eosb_eosb_journal_id
+msgid "The journal used when the EOSB is done."
+msgstr "دفتر اليومية المستخدم عند الانتهاء من EOSB."
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__tz
+msgid ""
+"This field is used in order to define in which timezone the resources will "
+"work."
+msgstr "يتم استخدام هذا الحقل لتحديد المنطقة الزمنية التي ستعمل فيها الموارد."
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__tz
+msgid "Timezone"
+msgstr "المنطقة الزمنية"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__deduction_amount
+msgid "Total Deduction Amount"
+msgstr "إجمالي مبلغ الخصم"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_hr_contract_employee_report__eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.hr_hr_employee_view_form2_00
+msgid "Total EOSB"
+msgstr "إجمالى نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_hr_employee__total_eosb
+msgid "Total Eosb"
+msgstr "إجمالى نهاية الخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__eosb_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__used_leave
+msgid "Used Leave"
+msgstr "الاجازات المستخدمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_eosb__state__validate
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Validate"
+msgstr "تحقق"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__value
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__value
+msgid "Value"
+msgstr "قيمة"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model.fields,help:hr_eosb.field_eosb_eosb__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+msgid "Work Location"
+msgstr ""
+
+#. module: hr_eosb
+#: model_terms:ir.ui.view,arch_db:hr_eosb.report_eosb_eosb_document
+#: model_terms:ir.ui.view,arch_db:hr_eosb.view_eosb_eosb_form
+msgid "Worked Duration Details"
+msgstr "تفاصيل مدة العمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__worked_period
+msgid "Worked Period"
+msgstr "فترة العمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_eosb__resource_calendar_id
+msgid "Working Hours"
+msgstr "ساعات العمل"
+
+#. module: hr_eosb
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_resignation__year
+#: model:ir.model.fields,field_description:hr_eosb.field_eosb_emp_type_termination__year
+msgid "Year"
+msgstr "السنة"
+
+#. module: hr_eosb
+#: model:ir.model.fields.selection,name:hr_eosb.selection__eosb_emp_type__period_consider__year_only
+msgid "Years Only"
+msgstr "الاعوام فقط"
+
+#. module: hr_eosb
+#: model:ir.model.constraint,message:hr_eosb.constraint_eosb_eosb_employee_id_uniq
+msgid "You cannot create EOSB more than once for each Employee!"
+msgstr "لا يمكنك إنشاء EOSB أكثر من مرة لكل موظف!"
+
+#. module: hr_eosb
+#: code:addons/hr_eosb/models/model.py:0
+#: code:addons/hr_eosb/models/model.py:0
+#, python-format
+msgid "You cannot delete record which is not in Draft."
+msgstr "لا يمكنك حذف سجل غير موجود في المسودة."
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_eosb_emp_type
+msgid "eosb.emp.type"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_eosb_emp_type_resignation
+msgid "eosb.emp.type.resignation"
+msgstr ""
+
+#. module: hr_eosb
+#: model:ir.model,name:hr_eosb.model_eosb_emp_type_termination
+msgid "eosb.emp.type.termination"
+msgstr ""

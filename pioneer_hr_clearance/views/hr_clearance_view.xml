@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Hr clearance [form] view-->
+        <record id="view_hr_employee_clearance_form" model="ir.ui.view">
+            <field name="name">hr employee clearance form</field>
+            <field name="model">hr.employee.clearance</field>
+            <field name="arch" type="xml">
+                <form string="Clearance">
+                    <header>
+                        <button name="send_request" string="Send Request" class="oe_highlight" states="draft"
+                                type="object"/>
+
+                        <!--<button name="make_draft" string="Draft"
+                                class="oe_highlight" states="approve" type="object"/>
+-->
+
+
+                        <button name="direct_manager" string="Direct Manager"
+                                class="oe_highlight" states="direct_manager"
+                                attrs="{'invisible':[('show_direct_manager_button','=',False)]}"
+                                type="object"/>
+
+                        <button name="hr_manager" string="Hr Manager"
+                                class="oe_highlight" states="hr_manager" groups="hr.group_hr_manager"
+                                type="object"/>
+
+                        <!--                        <button name="equipment_manager" string="Equipment Manager Approve"-->
+                        <!--                                groups="maintenance.group_equipment_manager"-->
+                        <!--                                class="oe_highlight" states="equipment" type="object"/>-->
+
+                        <!--                        <button name="fleet_manager" string="Fleet Manager Approve"-->
+                        <!--                                attrs="{'invisible':[('fleet_manager_group','=', 0)]}"-->
+                        <!--                                class="oe_highlight"-->
+                        <!--                                type="object"/>-->
+
+                        <button name="account_depart" string="Accounting Depart"
+                                class="oe_highlight" states="account" groups="account.group_account_manager"
+                                type="object"/>
+
+                        <button name="admin_approve" string="Admin &amp; Finance Director" states="admin_fd"
+                                class="oe_highlight" groups="hr_loan_advance.group_admin_fd_user"
+                                type="object"/>
+
+                        <field name="state" widget="statusbar"/>
+                        <field name="is_direct_manager" invisible="1"/>
+                        <field name="show_direct_manager_button" invisible="1"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <!--  All Equipments __________-->
+                            <!--                            <button class="oe_stat_button" name="maintenance_equipment_records" type="object"-->
+                            <!--                                    groups="maintenance.group_equipment_manager"-->
+                            <!--                                    attrs="{'invisible':[('equipment_number','=', 0)]}" icon="fa-bars">-->
+                            <!--                                <div class="o_form_field o_stat_info">-->
+                            <!--                                    <span class="o_stat_value">-->
+                            <!--                                        <field name="equipment_number" widget="statinfo" nolabel="1" class="mr4"/>-->
+                            <!--                                        Equipment-->
+                            <!--                                    </span>-->
+                            <!--                                </div>-->
+                            <!--                            </button>-->
+                            <!--                            <field name="fleet_manager_group" invisible="1"/>-->
+
+                            <!--  All Fleet __________-->
+                            <!--                            <button class="oe_stat_button" name="fleet_records" type="object"-->
+                            <!--                                    attrs="{'invisible':[('fleet_number','=', 0),('fleet_manager_group','=',0)]}"-->
+                            <!--                                    icon="fa-car">-->
+                            <!--                                <div class="o_form_field o_stat_info">-->
+                            <!--                                    <span class="o_stat_value">-->
+                            <!--                                        <field name="fleet_number" widget="statinfo" nolabel="1" class="mr4"/>-->
+                            <!--                                        Fleet-->
+                            <!--                                    </span>-->
+                            <!--                                </div>-->
+                            <!--                            </button>-->
+
+                            <!--  All Loans __________-->
+                            <button class="oe_stat_button" name="loan_records" type="object"
+                                    attrs="{'invisible':[('loan_number','=', 0)]}"
+                                    icon="fa-money">
+                                <div class="o_form_field o_stat_info">
+                                    <span class="o_stat_value">
+                                        <field name="loan_number" widget="statinfo" nolabel="1" class="mr4"/>
+                                        Loans
+                                    </span>
+                                </div>
+                            </button>
+
+                            <!--  All Locations __________-->
+                            <!--                            <button class="oe_stat_button" name="stock_records" type="object"-->
+                            <!--                                    attrs="{'invisible':[('stock_number','=', 0)]}"-->
+                            <!--                                    icon="fa-money">-->
+                            <!--                                <div class="o_form_field o_stat_info">-->
+                            <!--                                    <span class="o_stat_value">-->
+                            <!--                                        <field name="stock_number" widget="statinfo" nolabel="1" class="mr4"/>-->
+                            <!--                                        Stock-->
+                            <!--                                    </span>-->
+                            <!--                                </div>-->
+                            <!--                            </button>-->
+                        </div>
+
+                        <group>
+                            <group>
+                                <field name="employee_id" string="Employee Name"
+                                       attrs="{'readonly':[('state','!=','draft')]}"
+                                       required="1"/>
+                                <field name="job_id" string="Job Title" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="department_id" string="Department"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="company_id" string="Company Name"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="project_id" string="Project"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="type" string="Type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="employee_no" string="Employee Code"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="last_working_date" string="Last working date"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="date" string="Date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Approval Notes">
+                                <group>
+                                    <field name="d_manager_date" invisible="1"/>
+                                    <field name="hr_manager_date" invisible="1"/>
+                                    <field name="account_manager_date" invisible="1"/>
+                                    <field name="admin_manager_date" invisible="1"/>
+                                    <group>
+                                        <field name="d_manager"/>
+                                        <field name="d_manager_note" nolabel="1" placeholder="Direct Manager Note"
+                                               attrs="{'readonly':[('state','!=','direct_manager')]}"/>
+                                        <field name="hr_manager_id"/>
+                                        <field name="hr_manager_note" nolabel="1" placeholder="HR Manager Note"
+                                               attrs="{'readonly':[('state','!=','hr_manager')]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="account_manager_id"/>
+                                        <field name="account_manager_note" nolabel="1" placeholder='Account Manager Note'
+                                               attrs="{'readonly':[('state','!=','account')]}"/>
+                                        <field name="admin_manager_id"/>
+                                        <field name="admin_manager_note" nolabel="1"
+                                               placeholder="Admin Manager Note"
+                                               attrs="{'readonly':[('state','!=','admin_fd')]}"/>
+                                    </group>
+                                </group>
+
+                            </page>
+                            <page string="Other Notes">
+                                <group string="Notes">
+                                    <field name="note" string="Notes" nolabel="1" eholder="Add notes ..."
+                                           attrs="{'readonly':[('state','!=','draft')]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!--        Hr clearance [tree] view-->
+        <record id="view_hr_employee_clearance_tree" model="ir.ui.view">
+            <field name="name">hr employee clearance tree</field>
+            <field name="model">hr.employee.clearance</field>
+            <field name="arch" type="xml">
+                <tree string="Clearance">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="job_id" string="Job Title"/>
+                    <field name="department_id" string="Department"/>
+                    <field name="type" string="Type"/>
+                    <field name="employee_no" string="Employee Code"/>
+                    <field name="last_working_date" string="Last working date"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Hr clearance [action] view-->
+        <record id="view_hr_employee_clearance_action" model="ir.actions.act_window">
+            <field name="name">Clearance</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.employee.clearance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <!--  Hr clearance [menu] view -->
+        <menuitem id="view_hr_employee_clearance_menu"
+                  name="Clearance"
+                  parent="hr.menu_hr_root"
+                  action="view_hr_employee_clearance_action" sequence="4"/>
+    </data>
+</odoo>

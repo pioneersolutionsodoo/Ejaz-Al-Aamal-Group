@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- HR Business Trip -->
+        <record id="seq_hr_business_trip" model="ir.sequence">
+            <field name="name">HR Business Trip</field>
+            <field name="code">hr.business.trip</field>
+            <field name="prefix">BT/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

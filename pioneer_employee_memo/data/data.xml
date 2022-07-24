@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="employee_memo_sequence" model="ir.sequence">
+            <field name="name">Employee Memo</field>
+            <field name="code">employee.memo</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">EM</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record model="ir.rule" id="employee_memo_rule">
+            <field name="name">Employee Memo multi-company</field>
+            <field name="model_id" ref="model_employee_memo"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+
+        <record id="employee_memo_view_tree_create" model="ir.ui.view">
+            <field name="model">employee.memo</field>
+            <field name="inherit_id" ref="pioneer_employee_memo.view_employee_memo_tree"/>
+            <field name="groups_id" eval="[(4, ref('hr.group_hr_user'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="create">false</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="employee_memo_view_tree_form_create" model="ir.ui.view">
+            <field name="model">employee.memo</field>
+            <field name="inherit_id" ref="pioneer_employee_memo.view_employee_memo_form"/>
+            <field name="groups_id" eval="[(4, ref('hr.group_hr_user'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="attributes">
+                    <attribute name="create">false</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="employee_memo_view_form_create_00" model="ir.ui.view">
+            <field name="model">employee.memo</field>
+            <field name="inherit_id" ref="pioneer_employee_memo.view_employee_memo_form"/>
+            <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="attributes">
+                    <attribute name="create">true</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="employee_memo_view_form_edit_00" model="ir.ui.view">
+            <field name="model">employee.memo</field>
+            <field name="inherit_id" ref="pioneer_employee_memo.view_employee_memo_form"/>
+            <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="attributes">
+                    <attribute name="edit">true</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="employee_memo_view_tree_create_00" model="ir.ui.view">
+            <field name="model">employee.memo</field>
+            <field name="inherit_id" ref="pioneer_employee_memo.view_employee_memo_tree"/>
+            <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="create">true</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

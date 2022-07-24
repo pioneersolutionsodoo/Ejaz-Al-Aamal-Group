@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+medic_ins_mgr,medical.insurance.mgr,model_medical_insurance,hr.group_hr_manager,1,1,1,1
+medic_ins_all,medical.insurance.all,model_medical_insurance,base.group_user,1,0,0,0
+
+
+medic_ins_prov_mgr,medical.insurance.provider.mgr,model_medical_insurance_provider,hr.group_hr_manager,1,1,1,1
+medic_ins_prov_all,medical.insurance.provider.all,model_medical_insurance_provider,base.group_user,1,0,0,0
+
+
+medic_ins_class_mgr,medical.insurance.class.mgr,model_medical_insurance_class,hr.group_hr_manager,1,1,1,1
+medic_ins_class_all,medical.insurance.class.all,model_medical_insurance_class,base.group_user,1,0,0,0
+
+
+medic_ins_upgrade_all,medical.insurance.upgrade.all,model_medical_insurance_upgrade,base.group_user,1,1,1,1

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_hr_employee_loan_form_ps_inherit">
+            <field name="name">HR loan advance</field>
+            <field name="model">hr.employee.loan.ps</field>
+            <field name="inherit_id" ref="hr_loan_advance.view_hr_employee_loan_form_ps"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_request']" position="attributes">
+                    <attribute name="string">Request For LM Approval</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_progress']" position="attributes">
+                    <attribute name="string">LM Approve</attribute>
+                </xpath>
+                <xpath expr="//field[@name='d_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_loan_advance.open_hr_employee_loan_ps_direct" model="ir.actions.act_window">
+            <field name="name">Line MGR Approval</field>
+        </record>
+
+        <record id="hr_loan_advance.menu_open_hr_employee_loan_ps_direct" model="ir.ui.menu">
+            <field name="name">Line MGR Approval</field>
+        </record>
+
+
+
+        <record model="ir.ui.view" id="view_hr_employee_advance_form_ps_inherit">
+            <field name="name">HR loan advance</field>
+            <field name="model">hr.employee.advance.ps</field>
+            <field name="inherit_id" ref="hr_loan_advance.view_hr_employee_advance_form_ps"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_request']" position="attributes">
+                    <attribute name="string">Request For LM Approval</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_progress']" position="attributes">
+                    <attribute name="string">LM Approve</attribute>
+                </xpath>
+                <xpath expr="//field[@name='d_manager_note']" position="attributes">
+                    <attribute name="placeholder">Line Manager Note</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_loan_advance.open_hr_employee_advance_ps_direct" model="ir.actions.act_window">
+            <field name="name">Line MGR Approval</field>
+        </record>
+
+        <record id="hr_loan_advance.menu_open_hr_employee_advance_ps_direct" model="ir.ui.menu">
+            <field name="name">Line MGR Approval</field>
+        </record>
+
+
+
+    </data>
+</odoo>

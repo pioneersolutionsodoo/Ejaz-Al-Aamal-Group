@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <template id="report_business_trip_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h4 style="text-align:center;">
+                            <strong>Business Trip</strong>
+                        </h4>
+                        <div class="page">
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Employee Information
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Employee
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Request Date
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.date"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Company
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.company_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Department
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.department_id.name"/>
+                                    </td>
+                                </tr>
+
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Job Title
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.job_id.name"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff"></td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%"></td>
+                                </tr>
+                            </table>
+                            <table style="border-spacing:0;margin-bottom:0;height: 187px; width: 1050px; border: 1px solid gray;"
+                                   class="table">
+                                <thead>
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <th class="text-center" style="width:1050px" colspan="4">Travel Details</th>
+                                    </tr>
+                                </thead>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Country
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.country_id"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">City
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.city"/>
+                                    </td>
+                                </tr>
+                                <tr style="border:1px solid gray;">
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date From
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.travel_date_from"/>
+                                    </td>
+                                    <td class="text-left"
+                                        style="border:1px solid gray;width:25%;background-color:#e6e6ff">Date To
+                                    </td>
+                                    <td class="text-left" style="border:1px solid gray;width:25%">
+                                        <span t-esc="o.travel_date_to"/>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!--===================================================================-->
+                            <br></br>
+                            <h4 style="text-align:center;">
+                                <strong>Approval From Responsibles</strong>
+                            </h4>
+                            <table style="width:100%;margin:0px auto;background:white;border:1px solid gray;">
+                                <thead style="font-size:20px;border:1px solid gray;">
+                                    <tr style="background-color:#006495;border:1px solid gray;color:white">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;">
+                                            <strong>Signature</strong>
+                                        </th>-->
+                                        <th class="text-center" style="width:65%;border:1px solid gray;">
+                                            <strong>Responsibles Notes</strong>
+                                        </th>
+                                        <th class="text-center" style="border:1px solid gray;width:35%;">
+                                            <strong>Responsible</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br></br>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.direct_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Direct Manager</strong>
+                                            <br/>
+                                            <span t-field="o.direct_manager_id"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.hr_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">HR Manager</strong>
+                                            <br/>
+                                            <span t-field="o.hr_manager_id"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="border:1px solid gray;width:100%">
+                                        <!--<th class="text-center" style="border:1px solid gray;width:20%;"></th>-->
+                                        <th class="text-center" style="border:1px solid gray;width:65%;">
+                                            <br/>
+                                            <p style="text-align:center;">
+                                                <strong>
+                                                    <span t-esc="o.account_manager_note"/>
+                                                </strong>
+                                            </p>
+                                        </th>
+                                        <th class="text-center"
+                                            style="width:35%;border:1px solid gray;background-color:#e6e6ff">
+                                            <strong style="color:#A0A0A0;">Accounting Manager</strong>
+                                            <br/>
+                                            <span t-field="o.account_manager_id"/>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+        <!--<template id="report_business_trip_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <table border="1" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="width:30%"></th>
+                                        <th class="text-center"
+                                            style="width:40%;border:3px solid black;background-color:#c0c0c0">Business
+                                            Trip
+                                        </th>
+                                        <th class="text-center" style="width:30%"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <br/>
+
+                            &lt;!&ndash; Employee &ndash;&gt;
+                            <table border="1" style="width:100%;border:3px solid black">
+                                <thead>
+                                    <tr style="border:1px solid black;background-color:#c0c0c0">
+                                        <th class="text-center" style="border-right:1px solid black" colspan="4">(1)
+                                            General Information
+                                        </th>
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:50%;border-right:1px solid black">Name:
+                                            <span t-field="o.employee_id"/>
+                                        </td>
+                                        <td style="width:50%;border-right:3px solid black" colspan="2">Job:
+                                            <span t-field="o.employee_id.job_id"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:50%;border-right:1px solid black">Department:
+                                            <span t-field="o.employee_id.department_id"/>
+                                        </td>
+                                        <td style="width:50%;border-right:3px solid black" colspan="2">Date:
+                                            <span t-field="o.date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            &lt;!&ndash; Travel Details &ndash;&gt;
+                            <table border="1"
+                                   style="width:100%;border-left:3px solid black;border-right:3px solid black;border-bottom:3px solid black">
+                                <thead>
+                                    <tr style="border:1px solid black;background-color:#c0c0c0">
+                                        <th class="text-center" style="border-right:1px solid black" colspan="4">(2)
+                                            Travel Details
+                                        </th>
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:50%;border-right:1px solid black" colspan="2">Country:
+                                            <span t-field="o.country_id"/>
+                                        </td>
+                                        <td style="width:50%;border-right:1px solid black" colspan="2">city:
+                                            <span t-field="o.city"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:100%;border-right:1px solid black" colspan="4">VISA Required:
+                                            <span t-field="o.visa_required"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:100%;border-right:1px solid black" colspan="4">Request Number
+                                            of Travel Days:(<span t-field="o.request_travel_days"/>) From:<span
+                                                    t-field="o.travel_date_from"/>-To:
+                                            <span t-field="o.travel_date_to"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td class="text-center" style="width:25%;border-right:1px solid black">
+                                            Employee
+                                        </td>
+                                        <td class="text-center" style="width:25%;border-right:1px solid black">Direct
+                                            Manager
+                                        </td>
+                                        <td class="text-center" style="width:25%;border-right:3px solid black">
+                                            Accreditation
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:25%;border-right:1px solid black">Name:</td>
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td style="width:25%;border-right:3px solid black"></td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:25%;border-right:1px solid black">Signature:</td>
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td style="width:25%;border-right:3px solid black"></td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:25%;border-right:1px solid black">Date:</td>
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td style="width:25%;border-right:1px solid black"></td>
+                                        <td style="width:25%;border-right:3px solid black"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            &lt;!&ndash; After Business Trip Details &ndash;&gt;
+                            <table border="1"
+                                   style="width:100%;border-left:3px solid black;border-right:3px solid black;border-bottom:3px solid black">
+                                <thead>
+                                    <tr style="border:1px solid black;background-color:#c0c0c0">
+                                        <th class="text-center" style="border-right:3px solid black" colspan="4">(3)
+                                            After Business Trip Details
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:100%;border-right:3px solid black">Actual Number of Travel
+                                            Days:(<span t-field="o.actual_travel_days"/>) From:<span
+                                                    t-field="o.actual_travel_date_from"/>-To:
+                                            <span t-field="o.actual_travel_date_to"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            &lt;!&ndash; Notes &ndash;&gt;
+                            <table border="1"
+                                   style="width:100%;border-left:3px solid black;border-right:3px solid black;border-bottom:3px solid black">
+                                <thead>
+                                    <tr style="border:1px solid black;background-color:#c0c0c0">
+                                        <th class="text-center" style="border-right:1px solid black" colspan="2">Notes
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:100%;border-right:1px solid black" colspan="2">
+                                            <span t-field="o.note"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:25%;border-right:1px solid black">Employee Signature:</td>
+                                        <td style="width:75%;border-right:1px solid black">Date:</td>
+                                    </tr>
+                                    <tr style="border:1px solid black;">
+                                        <td style="width:25%;border-right:1px solid black">Manager Signature:</td>
+                                        <td style="width:75%;border-right:1px solid black">Date:</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+
+        </template>-->
+
+
+    </data>
+</odoo>

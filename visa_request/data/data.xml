@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--   Sequence Of Visa Request     -->
+        <record id="visa_request_sequence" model="ir.sequence">
+            <field name="name">Visa Request</field>
+            <field name="code">visa.request</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">VISA</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <!--   Record rule for multi company      -->
+        <record model="ir.rule" id="air_ticket_rule">
+            <field name="name">Visa Request multi-company</field>
+            <field name="model_id" ref="model_visa_request"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+
+        <!--    Visa Salary rule   -->
+        <record id="hr_rule_visa_request" model="hr.salary.rule">
+            <field name="name">Visa Request</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Visa</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -(employee.get_amount_to_deduct(payslip.employee_id,payslip.date_from,payslip.date_to))
+            </field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+    </data>
+</odoo>

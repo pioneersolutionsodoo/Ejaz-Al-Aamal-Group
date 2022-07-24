@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="qualification_line_view">
+            <field name="name">Qualifications List View</field>
+            <field name="model">qualification.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="Title" required="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="type" required="1"/>
+                            </group>
+                        </group>
+                        <field name="manpower_request_id" invisible="1"/>
+                        <field name="description" placeholder="Description"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="manpower_request_tree_view">
+            <field name="name">Manpower Request List View</field>
+            <field name="model">manpower.request</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="position_id"/>
+                    <field name="dept_id" optional="hide"/>
+                    <field name="position_number" optional="show"/>
+                    <field name="date" optional="hide"/>
+                    <field name="analytic_account_id" optional="hide"/>
+                    <field name="reporting_to" optional="show"/>
+                    <field name="total_required" optional="show"/>
+                    <field name="date_required_by" optional="hide"/>
+                    <field name="state" widget="badge" decoration-info="state in ('draft', 'wait_4_hr_mgr')"
+                           decoration-success="state == 'approve'" decoration-danger="state == 'refuse'" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="manpower_request_form_view">
+            <field name="name">Manpower Request Form View</field>
+            <field name="model">manpower.request</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_send_request" type="object" states="draft" string="Request From HRM" class="oe_highlight"/>
+                        <button name="action_approve" type="object" states="wait_4_hr_mgr" string="Approve" class="oe_highlight"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_refuse" type="object" states="wait_4_hr_mgr" string="Refuse"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_cancel" type="object" states="wait_4_hr_mgr" string="Cancel"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_draft" type="object" states="cancel" string="Set to Draft"
+                                groups="hr.group_hr_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="position_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="dept_id" options="{'no_create': True}" readonly="1"/>
+                                <field name="position_number" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="date" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="section" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="within_budget" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="analytic_account_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                            </group>
+                            <group>
+                                <field name="reporting_to" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="total_required" widget="integer" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="work_location" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="replacement" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+
+                                <label for="employee_id" attrs="{'invisible': [('replacement', '!=', 'y')]}"/>
+                                <div class="o_row" name="insurance_coverage" attrs="{'invisible': [('replacement', '!=', 'y')]}">
+                                    <field name="employee_id" nolabel="1" options="{'no_create': True}"
+                                           attrs="{'readonly':[('state', 'not in', ('draft'))], 'required':[('replacement', '=', 'y')]}"/>
+                                    <span>
+                                        <span class="oe_grey p-2"> Code: </span>
+                                        <field name="employee_code" nolabel="1" readonly="1"/>
+                                    </span>
+
+                                </div>
+                                <field name="date_required_by" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="years_of_experience" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page name="public" string="Degree / Diploma">
+                                <div class="row">
+                                    <field mode="tree" nolabel="1" name="qualification_line_ids" attrs="{'readonly':[('state', 'not in', ('draft'))]}">
+                                        <tree>
+                                            <field name="name"  width="20%"/>
+                                            <field name="type"  width="10%"/>
+                                            <field name="description"  width="70%"/>
+                                            <field name="manpower_request_id" invisible="1"/>
+                                        </tree>
+                                    </field>
+                                </div>
+                            </page>
+
+                            <page string="Justification if not in budget">
+                                <group>
+                                    <field name="justification_if_not_in_budget" nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                </group>
+                            </page>
+                            <page string="Comments / Additional Requirements">
+                                <group>
+                                    <field name="comments_additional_requirements" nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+
+        <record model="ir.ui.view" id="manpower_request_search_view">
+            <field name="name">Manpower Request Search View</field>
+            <field name="model">manpower.request</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="position_id"/>
+                    <field name="section"/>
+                    <field name="dept_id"/>
+                    <field name="analytic_account_id"/>
+                    <field name="reporting_to"/>
+                    <field name="work_location"/>
+
+                    <filter name="to_be_approved" string='To Be Approved' domain="[('state', '=', 'wait_4_hr_mgr')]"/>
+
+                    <group string="Group By">
+                        <filter name="by_position" string="Position" context="{'group_by': 'position_id'}"/>
+                    </group>
+                    <group string="Group By">
+                        <filter name="by_department" string="Department" context="{'group_by': 'dept_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+<!--        <record model="ir.actions.act_window" id="action_manpower_request">-->
+<!--            <field name="name">Manpower Request</field>-->
+<!--            <field name="res_model">manpower.request</field>-->
+<!--            <field name="view_mode">tree,form</field>-->
+<!--            <field name="help" type="html">-->
+<!--                <p class="o_view_nocontent_smiling_face">Create a new Manpower Request</p>-->
+<!--            </field>-->
+<!--        </record>-->
+
+        <record model="ir.actions.server" id="action_server_manpower_request">
+            <field name="name">Manpower Request</field>
+            <field name="model_id" ref="model_manpower_request"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.open_views()
+            </field>
+        </record>
+
+
+        <menuitem id="manpower_request_menu" name="Manpower Request"
+                  parent="hr.menu_hr_root" action="action_server_manpower_request"
+                  sequence="10"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="medical_insurance_tree_view">
+            <field name="name">Medical Insurance List View</field>
+            <field name="model">medical.insurance</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="department_id" optional="hide"/>
+                    <field name="job_id" optional="hide"/>
+                    <field name="insurance_provider_id"/>
+                    <field name="insurance_class_id"/>
+                    <field name="insurance_expiry_date"/>
+                    <field name="insurance_amount"/>
+                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-warning="state == 'expired'" decoration-success="state == 'active'"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="medical_insurance_form_view">
+            <field name="name">Medical Insurance Form View</field>
+            <field name="model">medical.insurance</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_activate" type="object" states="draft" string="Activate" class="oe_highlight"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_cancel" type="object" states="active" string="Cancel" groups="hr.group_hr_manager"/>
+                        <button name="action_draft" type="object" states="cancel" string="Set to Draft" groups="hr.group_hr_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,active"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="department_id" options="{'no_create': True}"/>
+                                <field name="job_id" options="{'no_create': True}"/>
+                            </group>
+                            <group>
+                                <field name="insurance_provider_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="insurance_class_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+
+                                <label for="adult_number" string="Insurance Coverage"/>
+                                <div class="o_row" name="insurance_coverage">
+                                    <field name="adult_number" nolabel="1" style="text-align:center;" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                    <span> Adults,</span>
+                                    <field name="child_number" nolabel="1" style="text-align:center;" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                    <span> Child</span>
+                                </div>
+
+                                <field name="insurance_expiry_date" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="insurance_amount" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Notes">
+                                <group>
+                                    <field name="note" nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                </group>
+                            </page>
+
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+         <record model="ir.ui.view" id="medical_insurance_search_view">
+            <field name="name">Medical Insurance Search View</field>
+            <field name="model">medical.insurance</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="insurance_provider_id"/>
+                    <field name="insurance_class_id"/>
+                    <filter name="active" string='Active' domain="[('state', '=', 'active')]"/>
+
+                    <group string="Group By">
+                        <filter name="by_employee" string="Employee" context="{'group_by': 'employee_id'}"/>
+                    </group>
+                    <group string="Group By">
+                        <filter name="by_provider" string="Insurance Provider" context="{'group_by': 'insurance_provider_id'}"/>
+                    </group>
+                    <group string="Group By">
+                        <filter name="by_class" string="Insurance Class" context="{'group_by': 'insurance_class_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+
+        <record model="ir.actions.act_window" id="action_medical_insurance">
+            <field name="name">Medical Insurance</field>
+            <field name="res_model">medical.insurance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_active': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a new Medical Insurance</p>
+            </field>
+        </record>
+
+        <menuitem id="medical_insurance_root" name="Medical Insurance"
+                  parent="hr.menu_hr_root"
+                  sequence="10"/>
+
+        <menuitem id="medical_insurance_menu" name="Medical Insurance"
+                  parent="ps_medical_insurance.medical_insurance_root" action="action_medical_insurance"
+                  sequence="1" groups="hr.group_hr_manager"/>
+
+    </data>
+</odoo>

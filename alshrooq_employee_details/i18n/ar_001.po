@@ -1,0 +1,627 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* alshrooq_employee_details
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-27 09:58+0000\n"
+"PO-Revision-Date: 2020-06-27 09:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__name
+msgid " iqama Expiration Type"
+msgstr "نوع إنتهاء الإقامة"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Address Home"
+msgstr "عنوان السكن"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__arabic_name
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Arabic Name"
+msgstr "الاسم بالعربى"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Arabic name"
+msgstr "الاسم بالعربى"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Bank Account"
+msgstr "حساب بنكى"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__contract_type
+msgid "Basic Contract Type"
+msgstr "نوع العقد"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Basic Information"
+msgstr "معلومات أساسية"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Birth"
+msgstr "الميلاد"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Birthday"
+msgstr "تاريخ الميلاد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__brother
+msgid "Brother"
+msgstr "اخوة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__contact_number
+msgid "Contact Number"
+msgstr "رقم التواصل"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Contract Details"
+msgstr "تفاصيل العقد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__contract_status
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Contract Status"
+msgstr "حالة العقد"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Contract Type"
+msgstr "نوع العقد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__country_id
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Country"
+msgstr "البلد"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Country Of Birth"
+msgstr "مكان الميلاد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__create_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__create_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__create_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__create_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__create_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__create_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__create_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__create_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__create_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__create_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__create_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__create_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Date Of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__expiration_date_of_expiry
+msgid "Date Of Expiry"
+msgstr "تاريخ الانتهاء"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__expiration_date_of_issue
+msgid "Date Of Issue"
+msgstr "تاريخ الإصدار"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Date Of Join"
+msgstr "تاريخ الإنضمام"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__date_of_birth
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__dob
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__aj_date
+msgid "Date of Joined"
+msgstr "تاريخ الإنضمام"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__daughter
+msgid "Daughter"
+msgstr "ابنة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__degree_course
+msgid "Degree Course"
+msgstr "درجه الدورة التدريبة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__display_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__display_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__display_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__display_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__display_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__display_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__display_name
+msgid "Display Name"
+msgstr "اسم"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__marital__divorced
+msgid "Divorced"
+msgstr "مطلق"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Documents Information"
+msgstr "بيانات الوثقة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__driving_license
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Driving License"
+msgstr "رخصة قيادة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__duration
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Duration"
+msgstr "المدة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_hr_employee
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__employee_id
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__contract_type__employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__emp_code
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_hr_employee_inherit_tree_011
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_inherit__form
+msgid "Employee Code"
+msgstr "كود الموظف"
+
+#. module: alshrooq_employee_details
+#: model:ir.ui.menu,name:alshrooq_employee_details.menu_hr_employee_self_service
+msgid "Employee Self Service"
+msgstr "الخدمة الذاتية للموظف"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__end_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_project_project__end_date
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Expiration Date of Expiry"
+msgstr "تاريخ انتهاء الصلاحية"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Expiration Date of Issue"
+msgstr "تاريخ انتهاء الإصدار"
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_hr_family_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__family_ids
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Family Details"
+msgstr "تفاصيل العائلة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__father
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__father
+msgid "Father"
+msgstr "الوالد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__gender__female
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__gender__female
+msgid "Female"
+msgstr "أنثى"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__file
+msgid "File"
+msgstr "ملف"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__gender
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__gender
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__id
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__id
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__id
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__id
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__id
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__id
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__id
+msgid "ID"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "ID Details"
+msgstr "تفاصيل الهوية"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__id_expiration_details
+msgid "Id Expiration Details"
+msgstr "تفاصيل انتهاء الصلاحية"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__iqama_no
+msgid "Iqama / National ID"
+msgstr "الإقامة / الهوية الوطنية"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Iqama Date Of Expiry"
+msgstr "تاريخ الإقامة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__iqama_date_of_issue
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Iqama Date Of Issue"
+msgstr "تاريخ إصدار الإقامة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__iqama_expiry_date
+msgid "Iqama Expiry Date"
+msgstr "تاريخ انتهاء الإقامة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__iqama_national_id
+msgid "Iqama ID"
+msgstr "هوية الإقامة"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Iqama Number"
+msgstr "رقم الإقامة"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Job"
+msgstr "وظيفة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__name
+msgid "Language"
+msgstr "اللغة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration____last_update
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status____last_update
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type____last_update
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type____last_update
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details____last_update
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue____last_update
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__write_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__write_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__write_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__write_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__write_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__write_uid
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__write_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__write_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__write_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_expiration_type__write_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__write_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_mother_tongue__write_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__gender__male
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Marital State"
+msgstr " الحالة الإجتماعية"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__marital__married
+msgid "Married"
+msgstr "متزوع"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__marital
+msgid "Martial status"
+msgstr "الحالة الإجتماعية"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__mother
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__mother
+msgid "Mother"
+msgstr "الأم"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__mother_tongue
+msgid "Mother Tongue"
+msgstr "اللغة الأم"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Mother tongue"
+msgstr "اللغة الأم"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_duration__name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_status__name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_contract_type__name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__family_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__name
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Name"
+msgstr "اسم"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__name_arabic
+msgid "Name in Arabic"
+msgstr "الاسم باللغة العربية"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__driving_license__no
+msgid "No"
+msgstr "لا يوجد"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__note
+msgid "Note"
+msgstr "ملحوظه"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Number"
+msgstr "رقم"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__other
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__other
+msgid "Other"
+msgstr "أخرى"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Passport"
+msgstr "جواز السفر"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Passport Details"
+msgstr "تفاصيل جواز السفر"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Place Of Birth"
+msgstr "مكان الميلاد"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Place Of issue"
+msgstr "مكان الإصدار"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__place_of_issue
+msgid "Place of Issue"
+msgstr "مكان الإصدار"
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_project_project
+msgid "Project"
+msgstr "المشروع"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__project_name
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Project Name"
+msgstr "اسم المشروع"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__relation_type
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__relation_type
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Relation Type"
+msgstr "صلة القرابة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__religion
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Religion"
+msgstr "الديانة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_religion__name
+msgid "Religion Name"
+msgstr "اسم الديانة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__marital__single
+msgid "Single"
+msgstr "أعزب"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__sister
+msgid "Sister"
+msgstr "أخت"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__son
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__son
+msgid "Son"
+msgstr "أبن"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__sponsor
+msgid "Sponsor"
+msgstr "الكفيل"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__sponsor_name
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__sponsor_name
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Sponsor Name"
+msgstr "اسم الكفيل"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__sponsor_number
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_family_details__sponsor_no
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Sponsor Number"
+msgstr "رقم الكفيل"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__start_date
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_project_project__start_date
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Start Date"
+msgstr "بداية التاريخ"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__status
+msgid "Status"
+msgstr "الحالة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,help:alshrooq_employee_details.field_hr_employee__family_ids
+msgid "This includeds IQAMA details"
+msgstr "هذا يشتمل تفاصسل الإقامة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__expiration_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__institution_name
+msgid "University Name"
+msgstr "اسم الجامعة"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__marital__widower
+msgid "Widower"
+msgstr "أرمل"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__wife
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_family_details__relation_type__wife
+msgid "Wife"
+msgstr "الزوجة"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Work Email"
+msgstr "البريد إلكتروني للعمل"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Work Location"
+msgstr "مكان العمل"
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "Work Phone"
+msgstr "هاتف العمل"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__contract_type__worker
+msgid "Worker"
+msgstr "عامل"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields,field_description:alshrooq_employee_details.field_hr_employee__date_course
+msgid "Year Of Course"
+msgstr "سنة الدورة التدريبية"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__driving_license__yes
+msgid "Yes"
+msgstr "نعم"
+
+#. module: alshrooq_employee_details
+#: model:ir.model.fields.selection,name:alshrooq_employee_details.selection__hr_employee__relation_type__brother
+msgid "brother"
+msgstr "أخ"
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_contract_duration
+msgid "contract.duration"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_contract_status
+msgid "contract.status"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_contract_type
+msgid "contract.type"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_expiration_type
+msgid "expiration.type"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_mother_tongue
+msgid "mother.tongue"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model:ir.model,name:alshrooq_employee_details.model_religion
+msgid "religion"
+msgstr ""
+
+#. module: alshrooq_employee_details
+#: model_terms:ir.ui.view,arch_db:alshrooq_employee_details.view_employee_form_inherit_alshrooq_employee_details
+msgid "ُEmployee code"
+msgstr "كود الموظف"

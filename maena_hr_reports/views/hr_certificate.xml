@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="hr_certificate_tree_view">
+            <field name="name">Employment Certificate List View</field>
+            <field name="model">hr.certificate</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_code" optional="show"/>
+                    <field name="employee_id"/>
+                    <field name="department_id" optional="hide"/>
+                    <field name="job_id" optional="show"/>
+                    <field name="join_date" optional="hide"/>
+                    <field name="date_start" optional="show"/>
+                    <field name="date_end" optional="show"/>
+                    <field name="state" widget="badge" decoration-info="state in ('draft', 'wait_4_hr_mgr')"
+                           decoration-success="state == 'approve'" decoration-danger="state == 'refuse'" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="hr_certificate_form_view">
+            <field name="name">Employment Certificate Form View</field>
+            <field name="model">hr.certificate</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_send_request" type="object" states="draft" string="Request From HRM" class="oe_highlight"/>
+                        <button name="action_approve" type="object" states="wait_4_hr_mgr" string="Approve" class="oe_highlight"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_refuse" type="object" states="wait_4_hr_mgr" string="Refuse"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_cancel" type="object" states="wait_4_hr_mgr" string="Cancel"
+                                groups="hr.group_hr_manager"/>
+                        <button name="action_draft" type="object" states="cancel" string="Set to Draft"
+                                groups="hr.group_hr_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" options="{'no_create': True}" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="employee_code"/>
+                                <field name="job_id"/>
+                                <field name="department_id"/>
+                                <field name="join_date"/>
+                            </group>
+                            <group >
+                                <field name="date" attrs="{'readonly':[('state', 'not in', ('draft'))]}"/>
+                                <field name="date_start" force_save="1" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                                <field name="date_end" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Notes">
+                                <group>
+                                    <field name="note" nolabel="1" attrs="{'readonly':[('state', 'not in', ('draft','wait_4_hr_mgr'))]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+         <record model="ir.ui.view" id="hr_certificate_search_view">
+            <field name="name">Employment Certificate Search View</field>
+            <field name="model">hr.certificate</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="employee_code"/>
+                    <field name="employee_id"/>
+                    <field name="department_id"/>
+                    <field name="job_id"/>
+
+                    <filter name="my_requests" string='My Requests' domain="[('employee_id.user_id', '=', uid)]"/>
+                    <filter name="to_be_approved" string='To Be Approved' domain="[('state', '=', 'wait_4_hr_mgr')]"/>
+
+                    <group string="Group By">
+                        <filter name="by_employee" string="Employee" context="{'group_by': 'employee_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="action_hr_certificate">
+            <field name="name">Employment Certificate</field>
+            <field name="res_model">hr.certificate</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_my_requests': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create a new Employment Certificate</p>
+            </field>
+        </record>
+
+
+        <menuitem id="hr_certificate_menu" name="Employment Certificate" action="action_hr_certificate"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service" sequence="1"/>
+
+    </data>
+</odoo>

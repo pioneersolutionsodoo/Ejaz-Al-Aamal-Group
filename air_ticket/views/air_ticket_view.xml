@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!--        <record id="hr_attendance_view_attendance_tree_inherit" model="ir.ui.view">-->
+<!--            <field name="name">hr_attendance.view_attendance_tree.inherit</field>-->
+<!--            <field name="model">hr.attendance</field>-->
+<!--            <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>-->
+<!--            <field name="arch" type="xml">-->
+
+<!--                <xpath expr="//field[@name='employee_id']" position="before">-->
+<!--                    <field name="emp_code"/>-->
+<!--                </xpath>-->
+
+<!--            </field>-->
+<!--        </record>-->
+        <!--        Air ticket [form] view-->
+        <record id="view_air_ticket_form" model="ir.ui.view">
+            <field name="name">Air Ticket Form</field>
+            <field name="model">air.ticket</field>
+            <field name="arch" type="xml">
+                <form string="Air Ticket">
+                    <header>
+                        <button name="send_request" string="Send Request" class="oe_highlight" states="draft"
+                                type="object"/>
+
+                        <button name="direct_manager" string="Direct Manager Approve"
+                                attrs="{'invisible':[('show_direct_manager_button','=',False)]}"
+                                class="oe_highlight" states="direct_manager" type="object"/>
+
+                        <button name="hr_manager" string="HR Manager Approve"
+                                class="oe_highlight" groups="hr.group_hr_manager"
+                                states="hr_manager" type="object"/>
+
+                        <button name="finance_manager" string="Finance Manager Approve" states="finance_manager"
+                                class="oe_highlight" groups="account.group_account_manager"
+                                type="object"/>
+
+                        <button name="admin_approve" string="Admin &amp; Finance Director" states="admin_fd"
+                                class="oe_highlight" groups="hr_loan_advance.group_admin_fd_user"
+                                type="object"/>
+
+                        <field name="state" widget="statusbar"/>
+                        <field name="is_direct_manager" invisible="1"/>
+                        <field name="show_direct_manager_button" invisible="1"/>
+                    </header>
+                    <sheet>
+
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Employee Name"
+                                       required="1"/>
+                                <field name="contract_state"/>
+                                <field name="job_id" string="Job Title"/>
+                                <field name="department_id" string="Department"/>
+                                <field name="date" string="Date"/>
+                                <field name="type" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Type" required="1"/>
+                            </group>
+                            <group>
+                                <field name="contract_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="employee_no" string="Employee Code"/>
+                                <field name="company_id" string="Company Name" readonly="1"/>
+                                <field name="adults" string="Adults"/>
+                                <field name="children" string="Children"/>
+                            </group>
+                        </group>
+                        <group string="Air Ticket Info">
+                            <group>
+                                <field name="vacation_start_date" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Vacation Start Date" required="1"/>
+                                <field name="travel_date_from" string="Travel Date From"/>
+                                <field name="country_from_id" string="Country From"/>
+                                <field name="city_from" string="City From"/>
+                                <field name="allocated_air_ticket_allowance" string="Allocated Air ticket Allowance"/>
+                                <field name="air_ticket_difference" string="Air ticket Difference"/>
+                                <field name="deduct_ticket_difference_in_salary"
+                                       string="Deduct Ticket Difference in Salary"/>
+                            </group>
+                            <group>
+                                <field name="vacation_end_date" attrs="{'readonly':[('state','!=','draft')]}"
+                                       string="Vacation End Date" required="1"/>
+                                <field name="travel_date_to" string="Travel Date To"/>
+                                <field name="country_to_id" string="Country To"/>
+                                <field name="city_to" string="City To"/>
+                                <field name="airline" string="Airline"/>
+                                <field name="total_airfare" string="Total Airfare"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Approval Notes">
+                                <group>
+                                    <field name="d_manager_date" invisible="1"/>
+                                    <field name="hr_manager_date" invisible="1"/>
+                                    <field name="account_manager_date" invisible="1"/>
+                                    <field name="admin_manager_date" invisible="1"/>
+                                    <group>
+                                        <field name="d_manager" readonly="True"/>
+                                        <field name="d_manager_note" nolabel="1" placeholder="Direct Manager Note"
+                                               attrs="{'readonly':[('state','!=','direct_manager')]}"/>
+                                        <field name="hr_manager_id" readonly="True"/>
+                                        <field name="hr_manager_note" nolabel="1" placeholder="HR Manager Note"
+                                               attrs="{'readonly':[('state','!=','hr_manager')]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="account_manager_id" readonly="True"/>
+                                        <field name="account_manager_note" nolabel="1"
+                                               placeholder='Account Manager Note'
+                                               attrs="{'readonly':[('state','!=','finance_manager')]}"/>
+                                        <field name="admin_manager_id" readonly="True"/>
+                                        <field name="admin_manager_note" nolabel="1"
+                                               placeholder="Admin Manager Note"
+                                               attrs="{'readonly':[('state','!=','admin_fd')]}"/>
+                                    </group>
+                                </group>
+
+                            </page>
+                        </notebook>
+                        <group string="Notes">
+                            <field name="note" string="Notes" nolabel="1" placeholder="Add notes ..."/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!--        Air ticket [tree] view-->
+        <record id="view_air_ticket_tree" model="ir.ui.view">
+            <field name="name">Air Ticket Tree</field>
+            <field name="model">air.ticket</field>
+            <field name="arch" type="xml">
+                <tree string="Air Ticket">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="vacation_start_date" string="Vacation Start Date"/>
+                    <field name="vacation_end_date" string="Vacation End Date"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Air ticket [action] view-->
+        <record id="view_air_ticket_action" model="ir.actions.act_window">
+            <field name="name">Air Ticket</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">air.ticket</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <!--        Air ticket [menu] view-->
+        <menuitem id="view_air_ticket_menu"
+                  name="Air Ticket"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="view_air_ticket_action" sequence="2"/>
+    </data>
+</odoo>

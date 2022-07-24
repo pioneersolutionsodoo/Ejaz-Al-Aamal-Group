@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--       Vacation Resettlement [form] view -->
+        <record id="view_vacation_resettlement_form" model="ir.ui.view">
+            <field name="name">Vacation Resettlement Form</field>
+            <field name="model">vacation.resettlement</field>
+            <field name="arch" type="xml">
+                <form string="Vacation Resettlement">
+                    <header>
+
+                        <!--<button name="make_draft" string="Draft"
+                                class="oe_highlight" states="approved" type="object"/>
+-->
+                        <button name="send_request" string="Send Request" class="oe_highlight" states="draft"
+                                type="object"/>
+
+                        <button name="hr_manager" string="HR Manager Approve"
+                                class="oe_highlight" groups="hr.group_hr_manager"
+                                states="hr_manager"
+                                type="object"/>
+
+                        <button name="finance_manager" string="Finance Manager Approve"
+                                states="finance_manager" groups="account.group_account_manager"
+                                class="oe_highlight"
+                                type="object"/>
+                        <button name="admin_approve" string="Admin &amp; Finance Director" states="admin_fd"
+                                class="oe_highlight" groups="hr_loan_advance.group_admin_fd_user"
+                                type="object"/>
+
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group string="Employee Info">
+                            <group>
+                                <field name="employee_id" string="Employee Name" required="1"/>
+                                <field name="job_id" string="Job Title"/>
+                                <field name="department_id" string="Department"/>
+                                <field name="date" string="Date"/>
+                            </group>
+                            <group>
+                                <field name="employee_no" string="Employee Code"/>
+                                <field name="company_id" string="Company Name"/>
+                                <field name="passport_id" string="Passport"/>
+                            </group>
+                        </group>
+                        <group string="Vacation Resettlement Info">
+                            <group>
+                                <field name="vacation_start_date" string="Vacation Start Date" required="1"/>
+                                <field name="travel_order_no" string="Travel Order NO"/>
+                                <field name="departure_date" string="Departure Date"/>
+                                <field name="last_date_from_vacation" string="Last Date From Vacation"/>
+                            </group>
+                            <group>
+                                <field name="vacation_end_date" string="Vacation End Date" required="1"/>
+                                <field name="airline" string="Airline"/>
+                                <field name="finish_duty" string="Finish Duty"/>
+                            </group>
+                        </group>
+                        <group string="Salary Info">
+                            <group>
+                                <field name="current_salary_status" string="Current Salary Status"/>
+                                <field name="loan_amount" string="Loan Amount"/>
+                                <field name="deduction" string="Deduction"/>
+                                <field name="other_deductions" string="Other Deduction"/>
+                                <field name="total_deductions" string="Total Deduction"/>
+                                <field name="net_pay" string="Net Pay"/>
+                                <field name="vendor_bill_id" string="Vendor Bill" readonly="1"/>
+                            </group>
+                            <group>
+                                <field name="currency_id" string="Currency" invisible="1"/>
+                                <field name="contract_basic" string="Basic"/>
+                                <field name="other_allowance" string="Other Allowance"/>
+                                <field name="house_allowance" string="House Allowance"/>
+                                <field name="transport_allowance" string="Transport Allowance"/>
+                                <field name="tel_allowance" string="Tel Allowance"/>
+                                <field name="contract_period" string="Contract Period"/>
+                            </group>
+                        </group>
+                        <group string="Other Info">
+                            <group>
+                                <field name="total_services" string="Total services"/>
+                                <field name="days" string="Days"/>
+                                <field name="months" string="Months"/>
+                                <field name="years" string="Years"/>
+                                <field name="total" string="Total [Days]"/>
+                            </group>
+                            <group>
+                                <field name="vacation_pay" string="Vacation Pay"/>
+                                <field name="air_fare_difference" string="Air Fare Difference"/>
+                                <field name="iqama" string="Iqama"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Approval Notes">
+                                <group>
+                                    <group>
+                                        <field name="hr_manager_id" readonly="1"/>
+                                        <field name="hr_manager_note" nolabel="1" placeholder="HR Manager Note"
+                                               attrs="{'readonly':[('state','!=','hr_manager')]}"/>
+                                        <field name="account_manager_id" readonly="1"/>
+                                        <field name="account_manager_note" nolabel="1" placeholder='Admin Manager Note'
+                                               attrs="{'readonly':[('state','!=','finance_manager')]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="admin_manager_id" readonly="1"/>
+                                        <field name="admin_manager_note" nolabel="1"
+                                               placeholder="Accounting Manager Note"
+                                               attrs="{'readonly':[('state','!=','admin_fd')]}"/>
+                                    </group>
+                                </group>
+
+                            </page>
+                            <page string="Other Notes">
+                                <group string="Notes">
+                                    <field name="note" string="Notes" nolabel="1" placeholder="Add notes ..."/>
+                                </group>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!--       Vacation Resettlement [tree] view-->
+        <record id="view_vacation_resettlement_tree" model="ir.ui.view">
+            <field name="name">Vacation Resettlement Tree</field>
+            <field name="model">vacation.resettlement</field>
+            <field name="arch" type="xml">
+                <tree string="Vacation Resettlement">
+                    <field name="employee_id" string="Employee Name"/>
+                    <field name="vacation_start_date" string="Vacation Start Date"/>
+                    <field name="vacation_end_date" string="Vacation End Date"/>
+                    <field name="state" string="Status"/>
+                </tree>
+            </field>
+        </record>
+        <!--        Vacation Resettlement [action] view-->
+        <record id="view_vacation_resettlement_action" model="ir.actions.act_window">
+            <field name="name">Vacation Resettlement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vacation.resettlement</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+        <!--        Vacation Resettlement [menu] view-->
+        <menuitem id="view_vacation_resettlement_menu"
+                  name="Vacation Resettlement"
+                  parent="alshrooq_employee_details.menu_hr_employee_self_service"
+                  action="view_vacation_resettlement_action" sequence="3"/>
+    </data>
+</odoo>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_payslip_ps">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-set="o" t-value="o.with_context(lang = o.company_id.partner_id.lang)"/>
+                <t t-call="web.external_layout">
+                    <div class="page">
+
+                        <div class="row mt32 mb32">
+                            <div class="col-xs-4">
+                                <p>
+                                    <t t-if="docs.f_date">
+                                        <strong>Date from :</strong>
+                                        <span t-esc="docs.f_date"/>
+                                        <br/>
+                                    </t>
+                                    <t t-if="docs.t_date">
+                                        <strong>Date to :</strong>
+                                        <span t-esc="docs.t_date"/>
+                                        <br/>
+                                    </t>
+                                    <t t-if="docs.company_id">
+                                        <strong>Company :</strong>
+                                        <span t-esc="docs.company_id.name"/>
+                                    </t>
+                                </p>
+                            </div>
+                            <div class="text-center col-xs-4">
+                                <span style="font-size: 20px;">
+                                    <b>Salary Statement</b>
+                                </span>
+                            </div>
+                            <div class="col-xs-4">
+                                <p>
+                                    <t t-if="docs.type">
+                                        <strong>Type :</strong>
+                                        <span t-esc="docs.type"/>
+                                        <br/>
+                                    </t>
+                                    <t t-if="docs.state">
+                                        <strong>State :</strong>
+                                        <span t-esc="docs.state"/>
+                                    </t>
+                                </p>
+                            </div>
+                        </div>
+
+                        <table class="table table-condensed oe_tbl_border" border="1">
+                            <thead>
+                                <tr>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>#</span>
+                                    </th>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Name</span>
+                                    </th>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Arabic Name</span>
+                                    </th>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Date Start</span>
+                                    </th>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Work Location</span>
+                                    </th>
+                                    <t t-foreach="allowance" t-as="alw">
+                                        <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                            <span t-esc="alw['name']"/>
+                                        </th>
+                                    </t>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Total Allowance</span>
+                                    </th>
+                                    <t t-foreach="deduction" t-as="ded">
+                                        <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                            <span t-esc="ded['name']"/>
+                                        </th>
+                                    </t>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Total deduction</span>
+                                    </th>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span>Net</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <t t-set="i" t-value="1"/>
+                                <tr t-foreach="payslips" t-as="p">
+                                    <td class="oe_tbl_border" style="border: 1px solid gray;">
+                                        <span t-esc="i"/>
+                                        <t t-set="i" t-value="i+1"/>
+                                    </td>
+                                    <td style="border: 1px solid gray;">
+                                        <span t-esc="p.employee_id.name"/>
+                                    </td>
+                                    <td style="border: 1px solid gray;">
+                                        <span t-esc="p.employee_id.arabic_name"/>
+                                    </td>
+                                    <td style="border: 1px solid gray;">
+                                        <span t-esc="p.date_from"/>
+                                    </td>
+
+                                    <td style="border: 1px solid gray;">
+                                        <span t-esc="p.employee_id.work_location"/>
+                                    </td>
+                                    <t t-set="total_allowance" t-value="0"/>
+                                    <t t-foreach="allowance" t-as="alw">
+                                        <td style="border: 1px solid gray;">
+                                            <t t-foreach="alw['employee_ids']" t-as="employee">
+                                                <t t-if="employee['employee_id']==p.employee_id.id">
+                                                    <t t-if="employee['payslip_id']==p.id">
+                                                        <span t-esc="employee['total']"/>
+                                                        <t t-set="total_allowance" t-value="total_allowance + employee['total']"/>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                        </td>
+                                    </t>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span t-esc="total_allowance" />
+                                    </th>
+
+                                    <t t-set="total_deduction" t-value="0"/>
+                                    <t t-foreach="deduction" t-as="ded">
+                                        <td style="border: 1px solid gray;">
+                                            <t t-foreach="ded['employee_ids']" t-as="employee">
+                                                <t t-if="employee['employee_id']==p.employee_id.id">
+                                                    <t t-if="employee['payslip_id']==p.id">
+                                                        <span t-esc="employee['total']"/>
+                                                        <t t-set="total_deduction" t-value="total_deduction + employee['total']"/>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                        </td>
+                                    </t>
+                                    <th style="border: 1px solid gray;background-color:#16a085 !important;color:white">
+                                        <span t-esc="total_deduction" />
+                                    </th>
+                                    <th style="border: 1px solid gray;">
+                                        <span t-esc="total_deduction + total_allowance" />
+                                    </th>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="row mt32 mb32">
+                            <div class="col-xs-2 text-center">
+                                <span>Personnel Officer</span>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <span>HR Manager</span>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <span>Accountant</span>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <span>Chief Accountant</span>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <span>Finance Manager</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+     <record id="ps_action_report_payslip_ps" model="ir.actions.report">
+        <field name="name">Payslip report</field>
+        <field name="model">report.payslip_report_xls_ps.report_payslip_ps</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">payslip_report_xls_ps.report_payslip_ps</field>
+        <field name="report_file">payslip_report_xls_ps.report_payslip_ps</field>
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

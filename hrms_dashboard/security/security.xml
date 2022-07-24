@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--<record id="rule_case_RU_employes" model="ir.rule">
+            <field name="name">RULE Employes</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="global" eval="False"/>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="domain_force">[('user_id', '=', uid)]</field>
+        </record>
+        <record id="rule_case_hr_payslip_employes" model="ir.rule">
+            <field name="name">Payslip Employes</field>
+            <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+            <field name="global" eval="False"/>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>-->
+    </data>
+</odoo>

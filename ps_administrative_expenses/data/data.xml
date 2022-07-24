@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="administrative_expenses_sequence" model="ir.sequence">
+            <field name="name">Administrative Expenses</field>
+            <field name="code">administrative.expenses</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">AE</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record model="ir.rule" id="administrative_expenses_rule">
+            <field name="name">Administrative Expenses multi-company</field>
+            <field name="model_id" ref="model_administrative_expenses"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+
+        <!--    Administrative Expenses Salary rule   -->
+        <record id="hr_rule_administrative_expenses" model="hr.salary.rule">
+            <field name="name">Administrative Expenses</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">Expenses</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (employee.get_administrative_expenses(payslip.employee_id,payslip.date_from,payslip.date_to))
+            </field>
+<!--            <field name="struct_id" ref="hr_payroll_customize.structure_worker_0111"/>-->
+        </record>
+
+<!--        <record id="administrative_expenses_view_tree_create" model="ir.ui.view">-->
+<!--            <field name="model">administrative.expenses</field>-->
+<!--            <field name="inherit_id" ref="ps_administrative_expenses.view_administrative_expenses_tree"/>-->
+<!--            <field name="groups_id" eval="[(4, ref('hr.group_hr_user'))]"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//tree" position="attributes">-->
+<!--                    <attribute name="create">false</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--        <record id="administrative_expenses_view_tree_form_create" model="ir.ui.view">-->
+<!--            <field name="model">administrative.expenses</field>-->
+<!--            <field name="inherit_id" ref="ps_administrative_expenses.view_administrative_expenses_form"/>-->
+<!--            <field name="groups_id" eval="[(4, ref('hr.group_hr_user'))]"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//form" position="attributes">-->
+<!--                    <attribute name="create">false</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--        <record id="administrative_expenses_view_form_create_00" model="ir.ui.view">-->
+<!--            <field name="model">administrative.expenses</field>-->
+<!--            <field name="inherit_id" ref="ps_administrative_expenses.view_administrative_expenses_form"/>-->
+<!--            <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//form" position="attributes">-->
+<!--                    <attribute name="create">true</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--        <record id="administrative_expenses_view_form_edit_00" model="ir.ui.view">-->
+<!--            <field name="model">administrative.expenses</field>-->
+<!--            <field name="inherit_id" ref="ps_administrative_expenses.view_administrative_expenses_form"/>-->
+<!--            <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//form" position="attributes">-->
+<!--                    <attribute name="edit">true</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--        <record id="administrative_expenses_view_tree_create_00" model="ir.ui.view">-->
+<!--            <field name="model">administrative.expenses</field>-->
+<!--            <field name="inherit_id" ref="ps_administrative_expenses.view_administrative_expenses_tree"/>-->
+<!--            <field name="groups_id" eval="[(4, ref('hr.group_hr_manager'))]"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//tree" position="attributes">-->
+<!--                    <attribute name="create">true</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

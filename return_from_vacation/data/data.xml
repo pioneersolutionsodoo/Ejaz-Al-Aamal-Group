@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="return_from_vacation_sequence" model="ir.sequence">
+            <field name="name">Return From Vacation</field>
+            <field name="code">return.from.vacation</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">RV</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record model="ir.rule" id="return_from_vacation_rule">
+            <field name="name">Return From Vacation multi-company</field>
+            <field name="model_id" ref="model_return_from_vacation"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">
+                ['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+    </data>
+</odoo>

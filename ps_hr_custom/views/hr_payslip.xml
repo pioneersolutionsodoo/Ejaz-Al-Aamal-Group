@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_hr_payslip_form_inherit">
+            <field name="name">HR Payslip Inherit</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header/button[@name='action_print_payslip']" position="replace">
+                    <button name="print_customized_report" type="object" string="Print Payslip"/>
+                </xpath>
+                <xpath expr="//field[@name='struct_id']" position="after">
+                    <field name="res_partner_bank_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="hr_salary_rule_form_inherit">
+            <field name="name">HR Salary Rule Form Inherit</field>
+            <field name="model">hr.salary.rule</field>
+            <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='main_details']" position="before">
+                    <group>
+                        <group>
+                            <field name="type" />
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="hr_salary_rule_list_inherit">
+            <field name="name">HR Salary Rule List Inherit</field>
+            <field name="model">hr.salary.rule</field>
+            <field name="inherit_id" ref="hr_payroll.hr_salary_rule_list"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='code']" position="after">
+                    <field name="type" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

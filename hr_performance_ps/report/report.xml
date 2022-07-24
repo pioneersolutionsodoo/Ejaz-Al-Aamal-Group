@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="hr_performance_evaluation_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="case">
+                <t t-set="case" t-value="case.with_context(lang = case.employee_id.user_id.partner_id.lang)"/>
+                <t t-call="web.external_layout">
+                    <div class="page oe_bg">
+                        <div class="text-center">
+                            <h2>Employee Performance Evaluation</h2>
+                            <h2>
+                                <span t-esc="case.employee_id.emp_code"/>
+                                -
+                                <span t-esc="case.employee_id.name"/>
+                            </h2>
+                        </div>
+
+                        <table class="table table-condensed">
+                            <th class="text-center">Comments on Employee's Performance and fill in
+                                performance rating (1 to 10) in the box for each category as follows :
+                            </th>
+                            <th class="text-center">Comments on Employee's Performance and fill in
+                                performance rating (1 to 10) in the box for each category as follows :
+                            </th>
+                        </table>
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black;width:15%;font-color:red!important">
+                                        <span style="color:red!important">9-10</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;width:25%">
+                                        <span style="color:red!important">Exceeds Job Requirement</span>
+                                    </td>
+                                    <td class="text-center" style="width:5%"></td>
+                                    <td class="text-center" style="border: 2px solid black;width:25%">
+                                        <span style="color:red!important">Exceeds Job Requirement</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;width:15%">
+                                        <span style="color:red!important">10-9</span>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">7-8</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">Meets Job Requirement</span>
+                                    </td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">Meets Job Requirement</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">8-7</span>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">5-6</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">Requires Development</span>
+                                    </td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">Requires Development</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">6-5</span>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">1-4</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">Inadequate</span>
+                                    </td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">Inadequate</span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">
+                                        <span style="color:red!important">4-1</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <table class="table table-condensed">
+                            <tr class="text-center">
+                                <th/>
+                                <th class="text-center" style="background-color:#d7d7d7 ! important;border: 2px solid black">
+                                    <span style="background-color:#d7d7d7;">Evaluation <p>(of 10)</p></span>
+
+                                </th>
+                                <th/>
+                                <th class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                    <span style="background-color:#d7d7d7;">Evaluation <p>(of 10)</p></span>
+
+                                </th>
+                                <th/>
+                            </tr>
+
+                            <tbody>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Comprehension of work
+                                        techniques
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span style="background-color:#d7d7d7;"><t t-esc="case['pe_technique']"/></span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span style="background-color:#d7d7d7;"><t t-esc="case['pe_technique']" /></span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Comprehension of work
+                                        techniques
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Quality of work
+                                        accomplished
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span style="background-color:#d7d7d7 !important;"><t t-esc="case['pe_quality']"/></span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span style="background-color:#d7d7d7 !important;"><t t-esc="case['pe_quality']"/></span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Quality of work
+                                        accomplished
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Quantity of work
+                                        accomplished
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span style="background-color:#d7d7d7 !important;"><t t-esc="case['pe_quantity']"/></span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span  style="background-color:#d7d7d7 !important;"><t t-esc="case['pe_quantity']"/></span>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Quantity of work
+                                        accomplished
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Implementation level of
+                                        Instruction
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_implementation']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_implementation']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Implementation level of
+                                        Instruction
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Completion of work within
+                                        normal working hours
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_completition']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_completition']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Completion of work within
+                                        normal working hours
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Team work attitude</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_team']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_team']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Team work attitude</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Desire to develop oneself
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_desire']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_desire']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Desire to develop oneself
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Professional development
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_professional']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_professional']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Professional development
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Performance under pressure
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_pressure']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_pressure']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Performance under pressure
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Adapts to changes and
+                                        improvements in work techniques
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_adapt']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_adapt']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Adapts to changes and
+                                        improvements in work techniques
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Reports information to
+                                        superiors clearly and concisely
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_reporting']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_reporting']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Reports information to
+                                        superiors clearly and concisely
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Honesty, confidentiality
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_honesty']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_honesty']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Honesty, confidentiality
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Safeguarding assets of
+                                        institution
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_assets']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_assets']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Safeguarding assets of
+                                        institution
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Colleagues Relationship</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_relationship']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_relationship']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Colleagues Relationship</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">Discipline &amp; punctuality
+                                        of work
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_punctuality']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_punctuality']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Discipline &amp; punctuality
+                                        of work
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="text-center" style="border: 2px solid black">General appearance</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_appearance']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">6%</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_appearance']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">General appearance</td>
+                                </tr>
+                                <tr class="text-center" style="font-weight:bold;">
+
+                                    <td class="text-center" style="border: 2px solid black">Percentage</td>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_percentage']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black"/>
+                                    <td class="text-center" style="border: 2px solid black;background-color:#d7d7d7 !important;">
+                                        <span t-esc="case['pe_percentage']" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                    <td class="text-center" style="border: 2px solid black">Percentage</td>
+
+                                </tr>
+                                <tr class="text-center" style="font-weight:bold;">
+                                    <td class="text-center" style="border: 2px solid black" colspan="5">
+                                        <span t-esc="case.performance" style="background-color:#d7d7d7 !important;"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+
+
+
+</odoo>

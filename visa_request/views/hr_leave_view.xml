@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_hr_holidays_saudi_form_inherit_004" model="ir.ui.view">
+            <field name="name">view hr holidays saudi form inherit 004</field>
+            <field name="model">hr.leave</field>
+            <field name="inherit_id" ref="pioneer_HR_Leave.view_hr_holidays_saudi_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='request_date']" position="after">
+                    <field name="out_side_saudi_arabia" string="Out Side Saudi Arabia?"
+                        attrs="{'readonly':[('state','!=','draft')]}"/>
+                    <field name="visa_request_id" string="Visa Request" readonly="1"/>
+                    <field name="check_visa_request" string="Visa Request Count" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//header" position="inside">
+                    <button type="object" string="Create Visa Request" class="btn-primary"
+                            name="create_visa_request"
+                            attrs="{'invisible':[('check_visa_request','=',1)]}"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

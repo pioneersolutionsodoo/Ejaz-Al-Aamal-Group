@@ -1,0 +1,694 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ps_medical_insurance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-30 09:04+0000\n"
+"PO-Revision-Date: 2022-01-30 09:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+msgid "<span> Adults,</span>"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+msgid "<span> Child</span>"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_needaction
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+msgid "Activate"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance__state__active
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_search_view
+msgid "Active"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_hr_employee__active_insurance_id
+msgid "Active Insurance"
+msgstr "التأمين النشط"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_ids
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_ids
+msgid "Activities"
+msgstr "الانشطة"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_exception_decoration
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_state
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_type_icon
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__adult_number
+msgid "Adults"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Approve"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance_upgrade__state__approve
+msgid "Approved"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_attachment_count
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance__state__cancel
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance_upgrade__state__cancel
+msgid "Canceled"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.actions.server,name:ps_medical_insurance.medical_insurance_expiration_ir_actions_server
+#: model:ir.cron,cron_name:ps_medical_insurance.medical_insurance_expiration
+#: model:ir.cron,name:ps_medical_insurance.medical_insurance_expiration
+msgid "Check Medical Insurance Expiration"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__child_number
+msgid "Child"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.constraint,message:ps_medical_insurance.constraint_medical_insurance_class_name_unique
+msgid "Class name must be unique"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.actions.act_window,help:ps_medical_insurance.action_medical_insurance
+msgid "Create a new Medical Insurance"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.actions.act_window,help:ps_medical_insurance.action_medical_insurance_class
+msgid "Create a new Medical Insurance Class"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.actions.act_window,help:ps_medical_insurance.action_medical_insurance_provider
+msgid "Create a new Medical Insurance Provider"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.actions.act_window,help:ps_medical_insurance.action_medical_insurance_upgrade
+msgid "Create a new Medical Insurance Upgrade Request"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__create_uid
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__create_uid
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__create_uid
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__create_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__create_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__create_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__active_insurance_id
+msgid "Current Active Insurance"
+msgstr "التأمين الحالي النشط"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__insurance_class_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_tree_view
+msgid "Current Class"
+msgstr "الفئة الحالية"
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Current Medical Insurance"
+msgstr "التأمبن الحالي"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__insurance_provider_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_tree_view
+msgid "Current Provider"
+msgstr "المزود الحالي"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__department_id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__description
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__description
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_class_form_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_provider_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__display_name
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__display_name
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__display_name
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance__state__draft
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance_upgrade__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model,name:ps_medical_insurance.model_hr_employee
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__employee_id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__employee_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_search_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_search_view
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#, python-format
+msgid ""
+"Employee %s already has an active medical insurance! \n"
+"You can not active two medical insurances for the same employee at the same time."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid "Employee %s has a new %s waiting for your approval,\n"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance__state__expired
+msgid "Expired"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_follower_ids
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_partner_ids
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__activity_type_icon
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_search_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_search_view
+msgid "Group By"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__has_message
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid ""
+"Hello, %s\n"
+"\n"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid ""
+"Hello, %s \n"
+"\n"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__id
+msgid "ID"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_exception_icon
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__activity_exception_icon
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_needaction
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_unread
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_needaction
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_has_error
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_has_sms_error
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_has_error
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__insurance_amount
+msgid "Insurance Amount"
+msgstr "قيمة التأمين"
+
+#. module: ps_medical_insurance
+#: model:ir.model,name:ps_medical_insurance.model_medical_insurance_class
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__insurance_class_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_search_view
+msgid "Insurance Class"
+msgstr "فئة التأمين"
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+msgid "Insurance Coverage"
+msgstr "تغطية النأمين"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__insurance_expiry_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__insurance_expiry_date
+msgid "Insurance Expiry Date"
+msgstr "تاريخ انتهاء التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__insurance_provider_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_search_view
+msgid "Insurance Provider"
+msgstr "مزود التأمين"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_is_follower
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__job_id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__job_id
+msgid "Job"
+msgstr "الوظيفة"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance____last_update
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class____last_update
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider____last_update
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__write_uid
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__write_uid
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__write_uid
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__write_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__write_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__write_date
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_main_attachment_id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/hr_employee.py:0
+#: model:ir.actions.act_window,name:ps_medical_insurance.action_medical_insurance
+#: model:ir.model,name:ps_medical_insurance.model_medical_insurance
+#: model:ir.ui.menu,name:ps_medical_insurance.medical_insurance_menu
+#: model:ir.ui.menu,name:ps_medical_insurance.medical_insurance_root
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.view_employee_form_inherit
+#, python-format
+msgid "Medical Insurance"
+msgstr "التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.actions.act_window,name:ps_medical_insurance.action_medical_insurance_class
+#: model:ir.ui.menu,name:ps_medical_insurance.medical_insurance_class_menu
+msgid "Medical Insurance Class"
+msgstr "فئة التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_hr_employee__medical_insurance_count
+msgid "Medical Insurance Count"
+msgstr "عدد التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.actions.act_window,name:ps_medical_insurance.action_medical_insurance_provider
+#: model:ir.model,name:ps_medical_insurance.model_medical_insurance_provider
+msgid "Medical Insurance Provider"
+msgstr "مزود التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.ui.menu,name:ps_medical_insurance.medical_insurance_provider_menu
+msgid "Medical Insurance Providers"
+msgstr "مزود التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.actions.act_window,name:ps_medical_insurance.action_medical_insurance_upgrade
+#: model:ir.ui.menu,name:ps_medical_insurance.medical_insurance_upgrade_menu
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Medical Insurance Upgrade"
+msgstr "ترقية التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.model,name:ps_medical_insurance.model_medical_insurance_upgrade
+msgid "Medical Insurance Upgrade Request"
+msgstr "طلب ترقية التأمين الطبي"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_has_error
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_ids
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_search_view
+msgid "My Requests"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__name
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_class__name
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_provider__name
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__name
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_class_form_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_provider_form_view
+msgid "Name"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__new_insurance_class_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_tree_view
+msgid "New Class"
+msgstr "فئة جديدة"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__new_insurance_provider_id
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_tree_view
+msgid "New Provider"
+msgstr "مزود جديد"
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_date_deadline
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_summary
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_type_id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__note
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_class_form_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_provider_form_view
+msgid "Notes"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_needaction_counter
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_has_error_counter
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_needaction_counter
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_has_error_counter
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__message_unread_counter
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid ""
+"Please take necessary steps.\n"
+"\n"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__reason
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Reason"
+msgstr "الاسباب"
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Refuse"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance_upgrade__state__refuse
+msgid "Refused"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Request From HRM"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__activity_user_id
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_has_sms_error
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_form_view
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "Set to Draft"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__state
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__state
+msgid "Status"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__activity_state
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_form_view
+msgid "The Chosen Employee doesn't have an Active Medical Insurance!"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid ""
+"The selected employee doesn't have an active medical insurance to upgrade"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model_terms:ir.ui.view,arch_db:ps_medical_insurance.medical_insurance_upgrade_search_view
+msgid "To Be Approved"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__activity_exception_decoration
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_unread
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__message_unread_counter
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields.selection,name:ps_medical_insurance.selection__medical_insurance_upgrade__state__wait_4_hr_mgr
+msgid "Waiting HRM Approval"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance__website_message_ids
+#: model:ir.model.fields,field_description:ps_medical_insurance.field_medical_insurance_upgrade__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance__website_message_ids
+#: model:ir.model.fields,help:ps_medical_insurance.field_medical_insurance_upgrade__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#, python-format
+msgid ""
+"You can't activate this Medical Insurance.\n"
+"Expiration Date Reached!"
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid "You cannot delete record which is not in Draft."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance.py:0
+#, python-format
+msgid "You have to determine the Expiration Date."
+msgstr ""
+
+#. module: ps_medical_insurance
+#: code:addons/ps_medical_insurance/models/medical_insurance_upgrade.py:0
+#, python-format
+msgid ""
+"Your %s %s has been Approved by HR Manager.\n"
+"\n"
+"Best Regards."
+msgstr ""
